@@ -4,5 +4,6 @@ void setup() {
 
 void loop() {
   char var = Serial.read();
-  Serial.print(var); 
+  Serial.print(var);
+  delay(500); 
 }
