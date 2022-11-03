@@ -7,9 +7,14 @@ void setup()
 
 void loop()
 {
-  while(Serial.available() == false){
-    delayMicroseconds((1/1200)*1.5);
-    Serial.readBytes(array, 13);
-    Serial.write(array);
+  if (analogRead(13) == LOW)
+  {
+    delayMicroseconds(1250);
+    for (int i = 0; i < 8; i++)
+    {
+      char var = analogRead(13);
+      Serial.print(var);
+      delayMicroseconds(1250);
+    }
   }
 }
