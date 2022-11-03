@@ -1,14 +1,19 @@
-void setup() {
+void setup()
+{
   Serial.begin(1200);
-  pinMode(13, INPUT_PULLUP);
+  pinMode(13, INPUT);
 }
 
-void loop() {
-  while(true) {
-    if(digitalRead(13) == HIGH) {
-      char var = analogRead(13); 
-      Serial.print(var); 
-    } 
-    delay(500);
+void loop()
+{
+  if (digitalRead(13) == LOW)
+  {
+    delayMicroseconds(1250);
+    for (int i = 0; i < 8; i++)
+    {
+      char var = digitalRead(13);
+      Serial.print(var);
+      delay(1/1200);
+    }
   }
 }
