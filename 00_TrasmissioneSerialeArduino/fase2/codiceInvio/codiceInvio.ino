@@ -3,6 +3,8 @@ void setup() {
 }
 
 void loop() {
-  char var = Serial.read();
-  Serial.print(var); 
+  if(Serial.available() > 0) {
+    char invio = Serial.read();
+    Serial.print(invio);
+  }
 }
