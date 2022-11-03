@@ -6,7 +6,7 @@ void setup() {
 void loop() {
   while(true) {
     if(digitalRead(13) == HIGH) {
-      char var = digitalRead(13); 
+      char var = analogRead(13); 
       Serial.print(var); 
     } 
     delay(500);
