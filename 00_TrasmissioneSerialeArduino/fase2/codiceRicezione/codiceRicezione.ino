@@ -11,9 +11,9 @@ void loop()
     delayMicroseconds(1250);
     for (int i = 0; i < 8; i++)
     {
-      char var = digitalRead(13);
+      int var = digitalRead(13);
       Serial.print(var);
-      delay(1/1200);
+      delayMicroseconds(833);
     }
   }
 }
