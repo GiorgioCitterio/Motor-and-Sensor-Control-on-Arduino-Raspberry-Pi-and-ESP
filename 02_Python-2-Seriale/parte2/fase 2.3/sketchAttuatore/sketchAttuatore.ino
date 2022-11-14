@@ -22,7 +22,6 @@ void loop()
         digitalWrite(8, LOW);
         analogWrite(9, vel);
       }
-
       if (rotazione == "indietro")
       {
         digitalWrite(7, LOW);
