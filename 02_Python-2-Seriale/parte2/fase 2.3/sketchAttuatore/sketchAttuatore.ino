@@ -14,7 +14,7 @@ void loop()
     {
       int n = str.indexOf(";");
       String rotazione = str.substring(0, n);
-      n += 2;
+      n += 1;
       int vel = str.substring(n, str.length()).toInt();
       if (rotazione == "avanti")
       {
