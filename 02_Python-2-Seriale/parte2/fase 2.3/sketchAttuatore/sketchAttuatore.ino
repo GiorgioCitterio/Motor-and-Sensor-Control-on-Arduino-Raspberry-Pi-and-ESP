@@ -1,47 +1,33 @@
-String direzione;
-int velocita;
-
 void setup()
 {
+  Serial.begin(9600);
   pinMode(7, OUTPUT);
   pinMode(8, OUTPUT);
-  Serial.begin(9600);
 }
 
 void loop()
 {
   if (Serial.available())
   {
-    String point = Serial.readStringUntil('\n');
-    if (point.length() > 0)
+    String str = Serial.readStringUntil('\n');
+    if (str.length() > 0)
     {
-      int x = 0;
-      int y = point.indexOf(";");
-      int z = 0;
-      while (y > 0)
-      {
-        String num = point.substring(y, x);
-        x = y + 1;
-        y = point.indexOf(";", y + 1);
-
-        processnum(z, num);
-        z++;
-      }
-
-      if (direzione == "avanti")
+      int n = str.indexOf(";");
+      String rotazione = str.substring(0, n);
+      n += 2;
+      int vel = str.substring(n, str.length());
+      if (rotazione == "avanti")
       {
         digitalWrite(7, HIGH);
         digitalWrite(8, LOW);
-        analogWrite(6, velocita);
-        Serial.println("ON");
+        analogWrite(9, vel);
       }
 
-      if (direzione == "indietro")
+      if (rotazione == "indietro")
       {
         digitalWrite(7, LOW);
         digitalWrite(8, HIGH);
-        analogWrite(6, velocita);
-        Serial.println("OFF");
+        analogWrite(9, vel);
       }
     }
   }
