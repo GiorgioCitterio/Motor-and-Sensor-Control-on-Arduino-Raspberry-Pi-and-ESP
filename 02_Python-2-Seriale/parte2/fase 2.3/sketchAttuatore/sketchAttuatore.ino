@@ -14,20 +14,24 @@ void loop()
     {
       int n = str.indexOf(";");
       String rotazione = str.substring(0, n);
+      Serial.println(rotazione);
       n += 1;
       int vel = str.substring(n, str.length()).toInt();
+      Serial.println(vel);
       if (rotazione == "avanti")
       {
-        digitalWrite(3, HIGH);
-        digitalWrite(5, LOW);
-        analogWrite(9, vel);
+        digitalWrite(3, LOW);
+        digitalWrite(5, HIGH);
+        digitalWrite(9, vel);
+        Serial.println("avanti");
       }
 
       if (rotazione == "indietro")
       {
-        digitalWrite(3, LOW);
-        digitalWrite(5, HIGH);
-        analogWrite(9, vel);
+        digitalWrite(3, HIGH);
+        digitalWrite(5, LOW);
+        digitalWrite(9, vel);
+        Serial.println("indietro");
       }
     }
   }
