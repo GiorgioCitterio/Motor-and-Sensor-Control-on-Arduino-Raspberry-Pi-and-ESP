@@ -6,6 +6,5 @@ time.sleep(1)
 
 print('inizio invio dei dati')
 while True:
-    val = input("direzione;velocità"+"\n")
+    val = input("direzione;velocità"+"\n").encode()
     arduino.write(val)
-    print(val)
