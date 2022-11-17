@@ -33,5 +33,5 @@ void loop()
   
   Serial.write((byte *)&msg, sizeof(msg));
   
-  delay(10000);
+  delay(1000);
 }
