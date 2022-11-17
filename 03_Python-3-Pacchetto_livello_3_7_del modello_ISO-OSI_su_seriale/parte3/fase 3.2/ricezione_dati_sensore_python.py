@@ -10,11 +10,11 @@ while True:
     val = arduino.read(32)
     pack = struct.unpack("2s 4s 4s 2s 4s 16s", val)
     id=pack[0].decode()
-    mittente=pack[1]
-    destinatario=pack[2]
-    tipo=pack[3]
-    valoreSensore=pack[4]
-    vuoto=pack[5]
+    mittente=pack[1].decode()
+    destinatario=pack[2].decode()
+    tipo=pack[3].decode()
+    valoreSensore=pack[4].decode()
+    vuoto=pack[5].decode()
     if id==IDCORRETTO:
         print("id corretto")
     else:
