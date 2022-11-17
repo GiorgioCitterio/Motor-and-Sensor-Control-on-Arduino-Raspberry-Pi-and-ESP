@@ -1,38 +1,33 @@
+#define ID "BE"
+#define MITTENTE "M001"
+#define DESTINATARIO "D031"
+
+struct pacchettoS1 {
+    char id[2];
+    char mittente[4];
+    char destinatario[4];
+    char tipo[2];
+    char valoreSensore[4];
+    char vuoto[16]
+  };
+
 void setup()
 {
   Serial.begin(9600);
-  pinMode(3, OUTPUT);
-  pinMode(5, OUTPUT);
 }
-
 void loop()
 {
+  
+  struct pacchettoS1 msg;
+  memcpy(msg.id, ID, sizeof(msg.id);
+  int num = analogRead(A0);
+  char s[5];
+  sprintf(s, "%04d", num);
+  Serial.write((byte *)&msg, sizeof(msg));
+  delay(1000);
   if (Serial.available())
   {
-    String str = Serial.readStringUntil('\n');
-    if (str.length() > 0)
-    {
-      int n = str.indexOf(";");
-      String rotazione = str.substring(0, n);
-      Serial.println(rotazione);
-      n += 1;
-      int vel = str.substring(n, str.length()).toInt();
-      Serial.println(vel);
-      if (rotazione == "avanti")
-      {
-        digitalWrite(3, LOW);
-        digitalWrite(5, HIGH);
-        digitalWrite(9, vel);
-        Serial.println("avanti");
-      }
-
-      if (rotazione == "indietro")
-      {
-        digitalWrite(3, HIGH);
-        digitalWrite(5, LOW);
-        digitalWrite(9, vel);
-        Serial.println("indietro");
-      }
-    }
+    
+  }
   }
 }
