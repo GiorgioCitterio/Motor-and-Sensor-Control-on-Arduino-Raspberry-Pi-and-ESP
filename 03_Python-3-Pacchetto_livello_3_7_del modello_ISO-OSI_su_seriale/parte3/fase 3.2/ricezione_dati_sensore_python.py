@@ -2,6 +2,7 @@ import serial;
 import time;
 import struct;
 IDCORRETTO = "BE"
+DESTINATARIOCORRETTO = "D031"
 
 arduino = serial.Serial('COM3', 9600)
 
@@ -15,8 +16,9 @@ while True:
     tipo=pack[3].decode()
     valoreSensore=pack[4].decode()
     vuoto=pack[5].decode()
-    if id==IDCORRETTO:
-        print("id corretto")
+    if (id==IDCORRETTO)and(destinatario==DESTINATARIOCORRETTO):
+        print("id e destinatario corretti")
+        print(pack)
     else:
         print("pacchetto scartato")
     
