@@ -33,6 +33,13 @@ void loop()
         digitalWrite(9, vel);
         Serial.println("indietro");
       }
+      if (rotazione == "stop")
+      {
+        digitalWrite(3, LOW);
+        digitalWrite(5, LOW);
+        digitalWrite(9, 0);
+        Serial.println("spento");
+      }
     }
   }
 }
