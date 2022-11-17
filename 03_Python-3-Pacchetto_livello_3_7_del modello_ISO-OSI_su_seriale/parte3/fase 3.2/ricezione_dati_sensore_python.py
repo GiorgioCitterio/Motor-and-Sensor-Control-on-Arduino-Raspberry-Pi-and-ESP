@@ -1,6 +1,6 @@
 import serial;
-import time;
 import struct;
+import json;
 IDCORRETTO = "BE"
 DESTINATARIOCORRETTO = "D031"
 
