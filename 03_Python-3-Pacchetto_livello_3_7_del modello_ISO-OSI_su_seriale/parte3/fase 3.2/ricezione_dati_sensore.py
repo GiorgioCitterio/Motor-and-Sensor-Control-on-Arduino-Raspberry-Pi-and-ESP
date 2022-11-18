@@ -1,12 +1,11 @@
 import serial;
 import struct;
-import json;
 IDCORRETTO = "BE"
 DESTINATARIOCORRETTO = "D031"
 
 arduino = serial.Serial('COM3', 9600)
 
-print('inizio invio dei dati')
+print('inizio ricezione dei dati')
 while True:
     val = arduino.read(32)
     pack = struct.unpack("2s 4s 4s 2s 4s 16s", val)
@@ -18,7 +17,7 @@ while True:
     vuoto=pack[5].decode()
     if (id==IDCORRETTO)and(destinatario==DESTINATARIOCORRETTO):
         print("id e destinatario corretti")
-        print(pack)
+        print(valoreSensore)
     else:
         print("pacchetto scartato")
     
