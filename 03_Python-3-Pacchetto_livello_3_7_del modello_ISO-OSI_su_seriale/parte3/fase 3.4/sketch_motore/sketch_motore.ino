@@ -1,3 +1,5 @@
+#define ID "BE"
+#define DESTINATARIO "D031"
 
 struct pacchettoA1 {
   char id[2];
@@ -16,7 +18,6 @@ void setup()
 void loop()
 {  
   if (Serial.available()){
-    String str = Serial.readStringUntil('\n');
-    Serial.print(str);
+    int msg = Serial.readBytes((byte *) &msg, sizeof(msg));
   }
 }
