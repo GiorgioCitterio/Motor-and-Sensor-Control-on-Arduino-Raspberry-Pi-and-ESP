@@ -17,7 +17,8 @@ void setup()
 }
 void loop()
 {  
+  struct pacchettoA1 msg;
   if (Serial.available()){
-    int msg = Serial.readBytes((byte *) &msg, sizeof(msg));
+    byte msg = Serial.readBytes((byte *) &msg, sizeof(msg));
   }
 }
