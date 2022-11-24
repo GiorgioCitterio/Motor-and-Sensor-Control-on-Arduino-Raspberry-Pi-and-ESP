@@ -21,30 +21,38 @@ void setup()
 
 void loop()
 {
-  char vel[4];
   struct pacchettoA1 msg;
   if (Serial.available())
   {
     Serial.readBytes((byte*) &msg, sizeof(msg));
     int controlloId = memcmp(ID, msg.id, 2);
     int controlloDest = memcmp(DESTINATARIO, msg.destinatario, 4);
+    int n = sizeof(msg.velocita);
+    char vel[4];
     if (controlloId == 0 && controlloDest == 0)
     {
-      strcpy(vel, msg.velocita);
+      memcpy(vel,msg.velocita,sizeof(msg.velocita));
+      vel[3] = '\0';
       int velocita = atoi(vel);
       String direzione = (String)msg.direzione;
-      if (direzione == "a")
+      if (memcmp("a",msg.direzione, 1) == 0)
       {
         digitalWrite(3, LOW);
         digitalWrite(5, HIGH);
         digitalWrite(9, velocita);
       }
 
-      if (direzione == "i")
+      if (memcmp("i",msg.direzione, 1) == 0)
       {
         digitalWrite(3, HIGH);
         digitalWrite(5, LOW);
         digitalWrite(9, velocita);
+      }
+      if (memcmp("s",msg.direzione, 1) == 0)
+      {
+        digitalWrite(3, LOW);
+        digitalWrite(5, LOW);
+        digitalWrite(9, 0);
       }
     }
   }
