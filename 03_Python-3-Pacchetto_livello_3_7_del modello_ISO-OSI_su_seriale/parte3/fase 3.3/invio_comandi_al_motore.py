@@ -10,8 +10,8 @@ arduino = serial.Serial('COM3', 9600)
 
 print('inizio invio dei dati')
 while True:
-    d = input("direzione a/i/s: ")
-    if (d=="s"):
+    d = input("direzione A/I/S: ")
+    if (d=="S"):
         v=0
     else:
         v = input("velocità: ")

@@ -35,20 +35,20 @@ void loop()
       vel[3] = '\0';
       int velocita = atoi(vel);
       String direzione = (String)msg.direzione;
-      if (memcmp("a",msg.direzione, 1) == 0)
+      if (memcmp("A",msg.direzione, 1) == 0)
       {
         digitalWrite(3, LOW);
         digitalWrite(5, HIGH);
         digitalWrite(9, velocita);
       }
 
-      if (memcmp("i",msg.direzione, 1) == 0)
+      if (memcmp("I",msg.direzione, 1) == 0)
       {
         digitalWrite(3, HIGH);
         digitalWrite(5, LOW);
         digitalWrite(9, velocita);
       }
-      if (memcmp("s",msg.direzione, 1) == 0)
+      if (memcmp("S",msg.direzione, 1) == 0)
       {
         digitalWrite(3, LOW);
         digitalWrite(5, LOW);
