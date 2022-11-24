@@ -1,5 +1,5 @@
-import serial;
-import struct;
+import serial
+import struct
 IDCORRETTO = "BE"
 DESTINATARIOCORRETTO = "D031"
 
@@ -19,5 +19,4 @@ while True:
         print("id e destinatario corretti")
         print(valoreSensore)
     else:
-        print("pacchetto scartato")
-    
+        print("pacchetto scartato")   
