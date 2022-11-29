@@ -20,23 +20,23 @@ void loop()
       Serial.println(vel);
       if (rotazione == "avanti")
       {
-        digitalWrite(3, LOW);
-        digitalWrite(5, HIGH);
+        digitalWrite(5, LOW);
+        digitalWrite(3, HIGH);
         digitalWrite(9, vel);
         Serial.println("avanti");
       }
 
       if (rotazione == "indietro")
       {
-        digitalWrite(3, HIGH);
-        digitalWrite(5, LOW);
+        digitalWrite(5, HIGH);
+        digitalWrite(3, LOW);
         digitalWrite(9, vel);
         Serial.println("indietro");
       }
       if (rotazione == "stop")
       {
-        digitalWrite(3, LOW);
         digitalWrite(5, LOW);
+        digitalWrite(3, LOW);
         digitalWrite(9, 0);
         Serial.println("spento");
       }
