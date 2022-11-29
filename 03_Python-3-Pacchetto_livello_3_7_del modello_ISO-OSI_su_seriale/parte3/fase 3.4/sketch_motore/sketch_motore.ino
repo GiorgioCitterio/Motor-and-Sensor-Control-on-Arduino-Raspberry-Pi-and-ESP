@@ -37,21 +37,21 @@ void loop()
       String direzione = (String)msg.direzione;
       if (memcmp("A",msg.direzione, 1) == 0)
       {
-        digitalWrite(3, LOW);
-        digitalWrite(5, HIGH);
+        digitalWrite(5, LOW);
+        digitalWrite(3, HIGH);
         digitalWrite(9, velocita);
       }
 
       if (memcmp("I",msg.direzione, 1) == 0)
       {
-        digitalWrite(3, HIGH);
-        digitalWrite(5, LOW);
+        digitalWrite(5, HIGH);
+        digitalWrite(3, LOW);
         digitalWrite(9, velocita);
       }
       if (memcmp("S",msg.direzione, 1) == 0)
       {
-        digitalWrite(3, LOW);
         digitalWrite(5, LOW);
+        digitalWrite(3, LOW);
         digitalWrite(9, 0);
       }
     }
