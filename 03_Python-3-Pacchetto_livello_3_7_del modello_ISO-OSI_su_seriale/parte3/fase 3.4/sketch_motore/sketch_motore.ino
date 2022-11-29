@@ -15,7 +15,7 @@ struct pacchettoA1
 void setup()
 {
   Serial.begin(9600);
-  pinMode(3, OUTPUT);
+  pinMode(9, OUTPUT);
   pinMode(5, OUTPUT);
 }
 
@@ -38,21 +38,21 @@ void loop()
       if (memcmp("A",msg.direzione, 1) == 0)
       {
         digitalWrite(5, LOW);
-        digitalWrite(3, HIGH);
-        digitalWrite(9, velocita);
+        digitalWrite(9, HIGH);
+        digitalWrite(3, velocita);
       }
 
       if (memcmp("I",msg.direzione, 1) == 0)
       {
         digitalWrite(5, HIGH);
-        digitalWrite(3, LOW);
-        digitalWrite(9, velocita);
+        digitalWrite(9, LOW);
+        digitalWrite(3, velocita);
       }
       if (memcmp("S",msg.direzione, 1) == 0)
       {
         digitalWrite(5, LOW);
-        digitalWrite(3, LOW);
-        digitalWrite(9, 0);
+        digitalWrite(9, LOW);
+        digitalWrite(3, 0);
       }
     }
   }
