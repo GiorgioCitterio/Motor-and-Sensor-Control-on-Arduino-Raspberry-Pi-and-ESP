@@ -37,5 +37,6 @@ entry1 = tk.Entry(window, width=20)
 entry1.grid(row=1, column=1)
 
 
+
 if __name__ == "__main__":
     window.mainloop()
