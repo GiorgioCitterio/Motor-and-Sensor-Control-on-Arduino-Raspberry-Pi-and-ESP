@@ -6,6 +6,8 @@ MITTENTE=b"M001"
 DESTINATARIO=b"D031"
 TIPO=b"A1"
 VUOTO=b"----------------"
+direzione = b"A"
+velocita = 0
 
 arduino = serial.Serial('COM3', 9600)
 window = tk.Tk() 
@@ -13,17 +15,41 @@ window.geometry("265x100")
 window.title("Controllo motore")
 window.resizable(False, False)
 
+def StampaVelocità(vel):
+    velocitaText_Label = tk.Label(window, text = "Velocità = " + str(vel))
+    velocitaText_Label.grid(row=2, column=0, pady=3)
+    #velocitaVal_Label = tk.Label(window, text=vel)
+    #velocitaVal_Label.grid(row=2, column=1, pady=3, padx=7)
+
 def AumentaVelocita10():
-    text = "Hello World!"
+    global velocita
+    velocita += 10
+    StampaVelocità(velocita)
+    v=str(velocita).zfill(3).encode()
+    pack=struct.pack("2s 4s 4s 2s 1s 3s 16s",ID,MITTENTE,DESTINATARIO, TIPO, direzione, v, VUOTO)
+    arduino.write(pack)
+    print(pack)
 
 def DiminuisciVelocita10():
-    text = "Nuovo Messaggio! Nuova Funzione!"
+    global velocita
+    velocita -= 10
+    StampaVelocità(velocita)
+    v=str(velocita).zfill(3).encode()
+    pack=struct.pack("2s 4s 4s 2s 1s 3s 16s",ID,MITTENTE,DESTINATARIO, TIPO, direzione, v, VUOTO)
+    arduino.write(pack)
+    print(pack)
 
 def DirezioneAvanti():
-    DIREZIONE  = "A"
+    global direzione
+    direzione = b"A"
+    pack=struct.pack("2s 4s 4s 2s 1s 3s 16s",ID,MITTENTE,DESTINATARIO, TIPO, direzione, velocita, VUOTO)
+    arduino.write(pack)
 
 def DirezioneIndietro():
-    DIREZIONE = "I"
+    global direzione
+    direzione = b"I"
+    pack=struct.pack("2s 4s 4s 2s 1s 3s 16s",ID,MITTENTE,DESTINATARIO, TIPO, direzione, velocita, VUOTO)
+    arduino.write(pack)
 
 aumentaVel_button = tk.Button(text="Aumenta velocità di 10", command=AumentaVelocita10)
 aumentaVel_button.grid(row=0, column=0, sticky="W")
@@ -39,7 +65,4 @@ indietroDir_button.grid(row=1, column=1, sticky="E")
 
 if __name__ == "__main__":
     window.mainloop()
-    DIREZIONE = "A"
-    VELOCITA = 135
-    pack=struct.pack("2s 4s 4s 2s 1s 3s 16s",ID,MITTENTE,DESTINATARIO, TIPO, DIREZIONE, VELOCITA, VUOTO)
-    arduino.write(pack)
+    
