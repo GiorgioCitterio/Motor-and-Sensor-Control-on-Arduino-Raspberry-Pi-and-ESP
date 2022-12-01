@@ -22,12 +22,17 @@ void loop()
         digitalWrite(5, HIGH);
         analogWrite(3, vel);
       }
-
       if (rotazione == "I")
       {
         digitalWrite(9, HIGH);
         digitalWrite(5, LOW);
         analogWrite(3, vel);
+      }
+      if (rotazione == "S")
+      {
+        digitalWrite(9, HIGH);
+        digitalWrite(5, LOW);
+        analogWrite(3, 0);
       }
     }
   }
