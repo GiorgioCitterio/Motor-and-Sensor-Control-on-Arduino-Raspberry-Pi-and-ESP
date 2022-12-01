@@ -1,5 +1,6 @@
 import tkinter as tk
 import serial
+import time
 
 arduino = serial.Serial('COM3', 9600)
 window = tk.Tk() 
@@ -14,11 +15,13 @@ def update_lbl(val):
         stringaDaInviare = "{0};{1}".format(direzione,str(v)).encode()
         print(stringaDaInviare)
         arduino.write(stringaDaInviare)
+        time.sleep(1)
     else:
         direzione = "A"
         stringaDaInviare = "{0};{1}".format(direzione,val).encode()
         print(stringaDaInviare)
         arduino.write(stringaDaInviare)
+        time.sleep(1)
 
 velocitaText_Label = tk.Label(window, text = "Velocità:")
 velocitaText_Label.grid(row=1, column=0, pady=10)
@@ -26,7 +29,6 @@ velocitaText_Label.grid(row=1, column=0, pady=10)
 scale = tk.Scale(window, orient="horizontal", length=510, from_=-255.0, to=255.0, command=update_lbl)
 scale.grid(column=1, row=1)
 scale.set(0)
-
 
 if __name__ == "__main__":
     window.mainloop()
