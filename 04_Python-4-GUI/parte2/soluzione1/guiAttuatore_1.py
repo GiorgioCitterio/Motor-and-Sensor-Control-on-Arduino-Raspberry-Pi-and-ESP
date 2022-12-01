@@ -37,11 +37,9 @@ avantiDir_button.grid(row=1, column=0, sticky="W")
 indietroDir_button = tk.Button(text="Indietro", command=DirezioneIndietro)
 indietroDir_button.grid(row=1, column=1, sticky="E")
 
-while True:
+if __name__ == "__main__":
     window.mainloop()
     DIREZIONE = "A"
     VELOCITA = 135
     pack=struct.pack("2s 4s 4s 2s 1s 3s 16s",ID,MITTENTE,DESTINATARIO, TIPO, DIREZIONE, VELOCITA, VUOTO)
     arduino.write(pack)
-#if __name__ == "__main__":
-#   window.mainloop()
