@@ -42,13 +42,17 @@ def DiminuisciVelocita10():
 def DirezioneAvanti():
     global direzione
     direzione = b"A"
-    pack=struct.pack("2s 4s 4s 2s 1s 3s 16s",ID,MITTENTE,DESTINATARIO, TIPO, direzione, velocita, VUOTO)
+    StampaVelocità(velocita)
+    v=str(velocita).zfill(3).encode()
+    pack=struct.pack("2s 4s 4s 2s 1s 3s 16s",ID,MITTENTE,DESTINATARIO, TIPO, direzione, v, VUOTO)
     arduino.write(pack)
 
 def DirezioneIndietro():
     global direzione
     direzione = b"I"
-    pack=struct.pack("2s 4s 4s 2s 1s 3s 16s",ID,MITTENTE,DESTINATARIO, TIPO, direzione, velocita, VUOTO)
+    StampaVelocità(velocita)
+    v=str(velocita).zfill(3).encode()
+    pack=struct.pack("2s 4s 4s 2s 1s 3s 16s",ID,MITTENTE,DESTINATARIO, TIPO, direzione, v, VUOTO)
     arduino.write(pack)
 
 aumentaVel_button = tk.Button(text="Aumenta velocità di 10", command=AumentaVelocita10)
