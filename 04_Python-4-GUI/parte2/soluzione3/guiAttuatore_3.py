@@ -10,12 +10,15 @@ window.resizable(False, False)
 def update_lbl(val):
     if int(val)<0:
         direzione = "I"
+        v = ~int(val)+1
+        stringaDaInviare = "{0};{1}".format(direzione,str(v)).encode()
+        print(stringaDaInviare)
+        arduino.write(stringaDaInviare)
     else:
         direzione = "A"
-    
-    stringaDaInviare = "{0};{1}".format(direzione,val).encode()
-    print(stringaDaInviare)
-    arduino.write(stringaDaInviare)
+        stringaDaInviare = "{0};{1}".format(direzione,val).encode()
+        print(stringaDaInviare)
+        arduino.write(stringaDaInviare)
 
 velocitaText_Label = tk.Label(window, text = "Velocità:")
 velocitaText_Label.grid(row=1, column=0, pady=10)
