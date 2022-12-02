@@ -23,11 +23,10 @@ def update_lbl(val):
         arduino.write(stringaDaInviare)
         time.sleep(1)
 
-velocitaText_Label = tk.Label(window, text = "Velocità:")
-velocitaText_Label.grid(row=1, column=0, pady=10)
+velocitaText_Label = tk.Label(window, text = "Velocità:").grid(row=0, column=0, pady=4)
 
-scale = tk.Scale(window, orient="horizontal", length=510, from_=-255.0, to=255.0, command=update_lbl)
-scale.grid(column=1, row=1)
+scale = tk.Scale(window, orient="horizontal", length=510, from_=-255.0, to=255.0, command=update_lbl, cursor="target")
+scale.grid(column=1, row=0)
 scale.set(0)
 
 if __name__ == "__main__":

@@ -18,12 +18,13 @@ window.resizable(False, False)
 def StampaVelocità(vel):
     velocitaText_Label = tk.Label(window, text = "Velocità = " + str(vel))
     velocitaText_Label.grid(row=2, column=0, pady=3)
-    #velocitaVal_Label = tk.Label(window, text=vel)
-    #velocitaVal_Label.grid(row=2, column=1, pady=3, padx=7)
 
 def AumentaVelocita10():
     global velocita
-    velocita += 10
+    if velocita >= 250:
+        velocita = 250
+    else:
+        velocita += 10
     StampaVelocità(velocita)
     v=str(velocita).zfill(3).encode()
     pack=struct.pack("2s 4s 4s 2s 1s 3s 16s",ID,MITTENTE,DESTINATARIO, TIPO, direzione, v, VUOTO)
@@ -32,7 +33,10 @@ def AumentaVelocita10():
 
 def DiminuisciVelocita10():
     global velocita
-    velocita -= 10
+    if velocita <= 0:
+        velocita = 0
+    else:
+        velocita -= 10
     StampaVelocità(velocita)
     v=str(velocita).zfill(3).encode()
     pack=struct.pack("2s 4s 4s 2s 1s 3s 16s",ID,MITTENTE,DESTINATARIO, TIPO, direzione, v, VUOTO)

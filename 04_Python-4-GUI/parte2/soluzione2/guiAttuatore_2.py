@@ -12,6 +12,14 @@ def DirezioneAvanti():
     global direzione
     direzione = "A"
     entry1String = entry1.get()
+    if int(entry1String) > 255:
+        entry1String = 255
+        entry1.delete(0, tk.END)
+        entry1.insert(0, "255")
+    elif int(entry1String) < 0:
+        entry1String = 0
+        entry1.delete(0, tk.END)
+        entry1.insert(0, "0")
     stringaDaInviare = "{0};{1}".format(direzione,entry1String).encode()
     print(stringaDaInviare)
     arduino.write(stringaDaInviare)
@@ -20,6 +28,14 @@ def DirezioneIndietro():
     global direzione
     direzione = "I"
     entry1String = entry1.get()
+    if int(entry1String)>255:
+        entry1String = 255
+        entry1.delete(0, tk.END)
+        entry1.insert(0, "255")
+    elif int(entry1String) < 0:
+        entry1String = 0
+        entry1.delete(0, tk.END)
+        entry1.insert(0, "0")
     stringaDaInviare = "{0};{1}".format(direzione,entry1String).encode()
     print(stringaDaInviare)
     arduino.write(stringaDaInviare)
