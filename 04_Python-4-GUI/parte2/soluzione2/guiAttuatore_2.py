@@ -66,7 +66,7 @@ def InviaVelocita(event):
     v = str(velocita).zfill(3).encode()
     pack=struct.pack("2s 4s 4s 2s 1s 3s 16s",ID,MITTENTE,DESTINATARIO, TIPO, direzione, v, VUOTO)
     print(pack)
-    arduino.write(pack)
+    arduino.write(pack)     
 
 avantiDir_button = tk.Button(text="Avanti", command=DirezioneAvanti).grid(row=0, column=0)
 
