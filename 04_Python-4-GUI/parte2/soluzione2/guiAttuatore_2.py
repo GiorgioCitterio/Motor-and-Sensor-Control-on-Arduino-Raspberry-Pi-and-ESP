@@ -51,6 +51,23 @@ def DirezioneIndietro():
     print(pack)
     arduino.write(pack)
 
+def InviaVelocita(event):
+    global direzione
+    global velocita
+    velocita = entry1.get()
+    if int(velocita)>255:
+        velocita = 255
+        entry1.delete(0, tk.END)
+        entry1.insert(0, "255")
+    elif int(velocita) < 0:
+        velocita = 0
+        entry1.delete(0, tk.END)
+        entry1.insert(0, "0")
+    v = str(velocita).zfill(3).encode()
+    pack=struct.pack("2s 4s 4s 2s 1s 3s 16s",ID,MITTENTE,DESTINATARIO, TIPO, direzione, v, VUOTO)
+    print(pack)
+    arduino.write(pack)
+
 avantiDir_button = tk.Button(text="Avanti", command=DirezioneAvanti).grid(row=0, column=0)
 
 indietroDir_button = tk.Button(text="Indietro", command=DirezioneIndietro).grid(row=0, column=2)
@@ -59,6 +76,8 @@ velocitaText_Label = tk.Label(window, text = "Velocità:").grid(row=1, column=0,
 
 entry1 = tk.Entry(window, width=20)
 entry1.grid(row=1, column=1)
+
+enterEvent = window.bind('<Return>', InviaVelocita)
 
 if __name__ == "__main__":
     window.mainloop()
