@@ -31,7 +31,7 @@ def update_lbl(val):
         print(pack)
         arduino.write(pack)
         time.sleep(1)
-
+        
 velocitaText_Label = tk.Label(window, text = "Velocità:").grid(row=0, column=0, pady=4)
 
 scale = tk.Scale(window, orient="horizontal", length=510, from_=-255.0, to=255.0, command=update_lbl, cursor="target")
