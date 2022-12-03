@@ -16,8 +16,7 @@ window.title("Controllo motore")
 window.resizable(False, False)
 
 def StampaVelocità(vel):
-    velocitaText_Label = tk.Label(window, text = "Velocità = " + str(vel))
-    velocitaText_Label.grid(row=2, column=0, pady=3)
+    velocitaText_Label = tk.Label(window, text = "Velocità = " + str(vel)).grid(row=2, column=0, pady=3)
 
 def AumentaVelocita10():
     global velocita
@@ -59,17 +58,13 @@ def DirezioneIndietro():
     pack=struct.pack("2s 4s 4s 2s 1s 3s 16s",ID,MITTENTE,DESTINATARIO, TIPO, direzione, v, VUOTO)
     arduino.write(pack)
 
-aumentaVel_button = tk.Button(text="Aumenta velocità di 10", command=AumentaVelocita10)
-aumentaVel_button.grid(row=0, column=0, sticky="W")
+aumentaVel_button = tk.Button(text="Aumenta velocità di 10", command=AumentaVelocita10).grid(row=0, column=0, sticky="W")
 
-dimiuisciVel_button = tk.Button(text="Dimiuisci velocità di 10", command=DiminuisciVelocita10)
-dimiuisciVel_button.grid(row=0, column=1, sticky="E")
+dimiuisciVel_button = tk.Button(text="Dimiuisci velocità di 10", command=DiminuisciVelocita10).grid(row=0, column=1, sticky="E")
 
-avantiDir_button = tk.Button(text="Avanti", command=DirezioneAvanti)
-avantiDir_button.grid(row=1, column=0, sticky="W")
+avantiDir_button = tk.Button(text="Avanti", command=DirezioneAvanti).grid(row=1, column=0, sticky="W")
 
-indietroDir_button = tk.Button(text="Indietro", command=DirezioneIndietro)
-indietroDir_button.grid(row=1, column=1, sticky="E")
+indietroDir_button = tk.Button(text="Indietro", command=DirezioneIndietro).grid(row=1, column=1, sticky="E")
 
 if __name__ == "__main__":
     window.mainloop()
