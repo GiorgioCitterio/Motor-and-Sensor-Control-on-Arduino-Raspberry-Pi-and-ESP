@@ -13,7 +13,6 @@ window.resizable(False, False)
 def StampaValori(val):
     valoreText_Label = tk.Label(window, text = "Valore sensore = " + str(val), font=('Courier New', 10)).grid(row=1, column=0, pady=13)
 
-# funzione che viene chiamata ogni secondo 
 def funz(window): 
     val = arduino.read(32)
     pack = struct.unpack("2s 4s 4s 2s 4s 16s", val)
@@ -31,11 +30,9 @@ def funz(window):
         StampaValori(valoreSensore)
     else:
         print("pacchetto scartato")   
-    
-    
-    window.after(1000, funz, window)    #richiamo della funzione dopo un secondo 
+    window.after(1000, funz, window)
 
-window.after(1000, funz, window) #richiamo della funzione dopo un secondo 
+window.after(1000, funz, window)
  
 if __name__ == "__main__":
     window.mainloop()
