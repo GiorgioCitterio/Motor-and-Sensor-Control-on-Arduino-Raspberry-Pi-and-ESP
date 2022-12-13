@@ -6,7 +6,7 @@ DESTINATARIOCORRETTO = "D031"
 
 arduino = serial.Serial('COM3', 9600)
 window = tk.Tk() 
-C = tk.Canvas(window, bg="purple", height=250, width=300)
+C = tk.Canvas(window, bg="purple", height=250, width=255)
 C.pack()
 
 rettangolo = C.create_rectangle(0, 0, 0, 0)
@@ -26,7 +26,7 @@ def funz(window):
     if (id==IDCORRETTO)and(destinatario==DESTINATARIOCORRETTO):
         print("id e destinatario corretti, valore del sensore = "+valoreSensore)
         v = int(valoreSensore)
-        coordinate = 30, 90, v/4, 200
+        coordinate = 0, 70, v/4, 150
         rettangolo = C.create_rectangle(coordinate, fill="yellow")
     else:
         print("pacchetto scartato")    
