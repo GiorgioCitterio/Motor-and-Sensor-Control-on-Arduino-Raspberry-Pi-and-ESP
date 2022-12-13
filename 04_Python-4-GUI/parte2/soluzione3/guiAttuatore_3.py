@@ -23,14 +23,12 @@ def update_lbl(val):
         pack=struct.pack("2s 4s 4s 2s 1s 3s 16s",ID,MITTENTE,DESTINATARIO, TIPO, direzione, v, VUOTO)
         print(pack)
         arduino.write(pack)
-        #time.sleep(1)
     else:
         direzione = b"A"
         v = str(val).zfill(3).encode()
         pack=struct.pack("2s 4s 4s 2s 1s 3s 16s",ID,MITTENTE,DESTINATARIO, TIPO, direzione, v, VUOTO)
         print(pack)
         arduino.write(pack)
-        #time.sleep(1)
         
 velocitaText_Label = tk.Label(window, text = "Velocità:").grid(row=0, column=0, pady=4)
 
