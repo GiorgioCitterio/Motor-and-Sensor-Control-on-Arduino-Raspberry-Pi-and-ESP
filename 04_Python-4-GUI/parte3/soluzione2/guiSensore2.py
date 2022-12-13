@@ -24,8 +24,7 @@ def funz(window):
     valoreSensore=pack[4].decode()
     vuoto=pack[5].decode()
     if (id==IDCORRETTO)and(destinatario==DESTINATARIOCORRETTO):
-        print("id e destinatario corretti")
-        print(valoreSensore)
+        print("id e destinatario corretti, valore del sensore = "+valoreSensore)
         v = int(valoreSensore)
         coordinate = 30, 90, v/4, 200
         rettangolo = C.create_rectangle(coordinate, fill="yellow")
@@ -33,8 +32,7 @@ def funz(window):
         print("pacchetto scartato")    
 
     window.after(1000, funz, window)
-
-
+    
 window.after(1000, funz, window) 
 
 if __name__ == "__main__":
