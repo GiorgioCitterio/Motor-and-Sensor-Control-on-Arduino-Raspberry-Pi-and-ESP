@@ -1,14 +1,12 @@
-import tkinter as tk
 import serial
 import struct
 import matplotlib.pyplot as plt
-import numpy as np 
 IDCORRETTO = "BE"
 DESTINATARIOCORRETTO = "D031"
 
 arduino = serial.Serial('COM3', 9600)
-window = tk.Tk()
-listaDati = []
+y = []
+x = []
 
 for i in range(30):
     val = arduino.read(32)
@@ -22,24 +20,13 @@ for i in range(30):
     vuoto=pack[5].decode()
     if (id==IDCORRETTO)and(destinatario==DESTINATARIOCORRETTO):
         print("id e destinatario corretti, valore del sensore = "+valoreSensore)
-        listaDati.append(valoreSensore)
+        y.append(valoreSensore)
+        x.append(i)
     else:
-        print("pacchetto scartato")    
+        print("pacchetto scartato")
 
-def funz(window):
-    
-        x = np.linspace(-(2*np.pi), 2*np.pi, 100)
-        y = np.sin(x)
-        plt.plot(x, y, marker = "o", color = 'red')
-        plt.title("Il grafico dei valori del sensore")
-        plt.xlabel("X")
-        plt.ylabel("Y")
-        plt.show()
-    
-
-    
-
-
-
-if __name__ == "__main__":
-    window.mainloop()
+plt.plot(x, y, color = 'red')
+plt.title("Il grafico dei valori del sensore")
+plt.xlabel("X - Secondi")
+plt.ylabel("Y - Valori sensore")
+plt.show()
