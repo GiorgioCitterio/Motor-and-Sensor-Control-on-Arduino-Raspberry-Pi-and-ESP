@@ -25,6 +25,7 @@ for i in range(30):
     else:
         print("pacchetto scartato")
 
+y.sort()
 plt.plot(x, y, color = 'red')
 plt.title("Il grafico dei valori del sensore")
 plt.xlabel("X - Secondi")
