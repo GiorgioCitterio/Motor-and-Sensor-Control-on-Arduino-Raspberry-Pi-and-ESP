@@ -8,10 +8,7 @@ for i in range(7):
     lista.append(dizionario)
 
 print("\n")
-print(lista[-5:])
-
 data = json.dumps(lista)
-
 file = open('05_Python-5-JSON/parte2/esDiz.json', 'a')
 file.write(data)
 file.close()
