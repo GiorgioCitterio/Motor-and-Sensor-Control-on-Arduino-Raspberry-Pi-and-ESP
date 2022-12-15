@@ -32,9 +32,9 @@ while True:
     
     if cont>10:
         data = json.dumps(lista[-10:])
-        with open('05_Python-5-JSON/parte3/esDiz2.json', 'w') as fp:
+        with open('05_Python-5-JSON/parte3/datiSensore.json', 'w') as fp:
             fp.write(data)
-        with open('05_Python-5-JSON/parte3/esDiz2.json', 'r') as fp:
+        with open('05_Python-5-JSON/parte3/datiSensore.json', 'r') as fp:
             lista2 = json.load(fp)
         print(lista2)
         #time.sleep(30)
