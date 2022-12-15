@@ -6,7 +6,6 @@ DESTINATARIOCORRETTO = "D031"
 
 arduino = serial.Serial('COM3', 9600)
 y = []
-#y1 = [0, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100]
 x = []
 
 for i in range(20):
