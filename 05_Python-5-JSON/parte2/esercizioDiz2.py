@@ -11,11 +11,11 @@ for i in range(7):
 
 print("\n")
 data = json.dumps(lista)
-file = open('05_Python-5-JSON/parte2/esDiz.json', 'w')
+file = open('05_Python-5-JSON/parte2/esDiz1.json', 'w')
 file.write(data)
 file.close()
 
-with open('05_Python-5-JSON/parte2/esDiz.json', 'r') as fp:
+with open('05_Python-5-JSON/parte2/esDiz1.json', 'r') as fp:
     lista2 = json.load(fp)
 
 print(lista2[-5:])
