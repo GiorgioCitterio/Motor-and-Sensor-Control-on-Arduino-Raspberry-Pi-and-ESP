@@ -22,7 +22,7 @@ void loop()
       {
         digitalWrite(5, LOW);
         digitalWrite(3, HIGH);
-        digitalWrite(9, vel);
+        analogWrite(9, vel);
         Serial.println("avanti");
       }
 
@@ -30,14 +30,14 @@ void loop()
       {
         digitalWrite(5, HIGH);
         digitalWrite(3, LOW);
-        digitalWrite(9, vel);
+        analogWrite(9, vel);
         Serial.println("indietro");
       }
       if (rotazione == "stop")
       {
         digitalWrite(5, LOW);
         digitalWrite(3, LOW);
-        digitalWrite(9, 0);
+        analogWrite(9, 0);
         Serial.println("spento");
       }
     }
