@@ -3,10 +3,10 @@ lista = []
 lista2 = []
 
 for i in range(7):
-    #dataOra = input("inserire la data e l'ora: ")
-    #val = int(input("inserire il valore: "))
-    #dizionario = {'DataOra': dataOra, 'Valore' : val}
-    dizionario = {'DataOra': i+1, 'Valore' : i+1}
+    #dizionario = {'DataOra': i+1, 'Valore' : i+1}
+    dataOra = input("inserire la data e l'ora: ")
+    val = int(input("inserire il valore: "))
+    dizionario = {'DataOra': dataOra, 'Valore' : val}
     lista.append(dizionario)
 
 print("\n")
