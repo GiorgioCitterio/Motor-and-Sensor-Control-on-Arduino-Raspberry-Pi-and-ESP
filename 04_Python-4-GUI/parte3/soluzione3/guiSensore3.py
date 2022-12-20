@@ -24,10 +24,10 @@ for i in range(20):
         x.append(i)
     else:
         print("pacchetto scartato")
-
-plt.plot(x, y, marker="o",color = 'red')
-plt.title("Il grafico dei valori del sensore")
-plt.xlabel("X - Secondi")
-plt.ylabel("Y - Valori sensore")
-plt.axes([0, 15, 0, 1023])
-plt.show()
+    plt.plot(x, y, marker="o",color = 'red')
+    plt.title("Il grafico dei valori del sensore")
+    plt.xlabel("X - Secondi")
+    plt.ylabel("Y - Valori sensore")
+    plt.axes([0, i, 0, 1023])
+    plt.show()
+    plt.close()
