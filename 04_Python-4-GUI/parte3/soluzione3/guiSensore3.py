@@ -6,15 +6,19 @@ IDCORRETTO = "BE"
 DESTINATARIOCORRETTO = "D031"
 
 arduino = serial.Serial('COM3', 9600)
-y = []
 x = []
-
+y = []
 graf = plt.figure()
 ax = graf.add_subplot(1, 1, 1)
 
-def GrafFunz(i, xs, ys):
-    xs.append(i)
-    ys.append(int(valoreSensore))
+def GrafFunz(i, valSensore):
+    x.append(i)
+    y.append(int(valoreSensore))
+    plt.plot(x, y, marker="o",color = 'red')
+    plt.title("Il grafico dei valori del sensore")
+    plt.xlabel("X - Secondi")
+    plt.ylabel("Y - Valori sensore")
+    plt.axes([0, i, 0, 1023])
 
 for i in range(20):
     val = arduino.read(32)
@@ -28,15 +32,7 @@ for i in range(20):
     vuoto=pack[5].decode()
     if (id==IDCORRETTO)and(destinatario==DESTINATARIOCORRETTO):
         print("id e destinatario corretti, valore del sensore = "+valoreSensore)
-        y.append(int(valoreSensore))
-        x.append(i)
+        ani = animation.FuncAnimation(graf, GrafFunz,fargs=(i, valoreSensore), interval=1000)
+        plt.show()
     else:
         print("pacchetto scartato")
-    plt.plot(x, y, marker="o",color = 'red')
-    plt.title("Il grafico dei valori del sensore")
-    plt.xlabel("X - Secondi")
-    plt.ylabel("Y - Valori sensore")
-    plt.axes([0, i, 0, 1023])
-    plt.show()
-    plt.close()
-
