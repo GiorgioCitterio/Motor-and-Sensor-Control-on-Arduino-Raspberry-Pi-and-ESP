@@ -26,15 +26,12 @@ while True:
         dataOra = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())
         dizionario = {'DataOra': dataOra, 'Valore' : s}
         lista.append(dizionario)
-        cont += 1
     else:
         print("pacchetto scartato")
-
-    if cont>10:
-        data = json.dumps(lista[-10:])
-        with open('05_Python-5-JSON/parte3/datiSensore.json', 'w') as fp:
-            fp.write(data)
-        with open('05_Python-5-JSON/parte3/datiSensore.json', 'r') as fp:
-            lista2 = json.load(fp)
-        print(lista2)
-        #time.sleep(30)
+    
+    data = json.dumps(lista[-10:])
+    with open('05_Python-5-JSON/parte3/datiSensore.json', 'w') as fp:
+        fp.write(data)
+    with open('05_Python-5-JSON/parte3/datiSensore.json', 'r') as fp:
+        lista2 = json.load(fp)
+    print(lista2)
