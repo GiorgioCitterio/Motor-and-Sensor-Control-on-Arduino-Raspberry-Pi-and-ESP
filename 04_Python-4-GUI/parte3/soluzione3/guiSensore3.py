@@ -6,19 +6,18 @@ IDCORRETTO = "BE"
 DESTINATARIOCORRETTO = "D031"
 
 arduino = serial.Serial('COM3', 9600)
-x = []
-y = []
 graf = plt.figure()
 ax = graf.add_subplot(1, 1, 1)
 
-def GrafFunz(i, valSensore):
+def GrafFunz(i, x, y):
     x.append(i)
     y.append(int(valoreSensore))
-    plt.plot(x, y, marker="o",color = 'red')
-    plt.title("Il grafico dei valori del sensore")
-    plt.xlabel("X - Secondi")
-    plt.ylabel("Y - Valori sensore")
-    plt.axes([0, i, 0, 1023])
+    ax.clear()
+    ax.plot(x, y)
+    ax.title("Il grafico dei valori del sensore")
+    ax.xlabel("X - Secondi")
+    ax.ylabel("Y - Valori sensore")
+    ax.axes([0, i, 0, 1023])
 
 for i in range(20):
     val = arduino.read(32)
