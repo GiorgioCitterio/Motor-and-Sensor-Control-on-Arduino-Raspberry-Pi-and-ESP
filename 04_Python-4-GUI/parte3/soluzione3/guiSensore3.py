@@ -1,12 +1,20 @@
 import serial
 import struct
 import matplotlib.pyplot as plt
+import matplotlib.animation as animation
 IDCORRETTO = "BE"
 DESTINATARIOCORRETTO = "D031"
 
 arduino = serial.Serial('COM3', 9600)
 y = []
 x = []
+
+graf = plt.figure()
+ax = graf.add_subplot(1, 1, 1)
+
+def GrafFunz(i, xs, ys):
+    xs.append(i)
+    ys.append(int(valoreSensore))
 
 for i in range(20):
     val = arduino.read(32)
@@ -24,10 +32,11 @@ for i in range(20):
         x.append(i)
     else:
         print("pacchetto scartato")
-    plt.scatter(x, y, marker="o",color = 'red')
+    plt.plot(x, y, marker="o",color = 'red')
     plt.title("Il grafico dei valori del sensore")
     plt.xlabel("X - Secondi")
     plt.ylabel("Y - Valori sensore")
     plt.axes([0, i, 0, 1023])
+    plt.show()
+    plt.close()
 
-plt.show()
