@@ -2,5 +2,5 @@
     "board": "arduino:avr:uno",
     "programmer": "arduino:avrispmkii",
     "port": "COM3",
-    "sketch": "03_Python-3-Pacchetto_livello_3_7_del modello_ISO-OSI_su_seriale\\parte3\\fase 3.4\\sketch_motore\\sketch_motore.ino"
+    "sketch": "05_Python-5-JSON\\parte3\\sketch_sensore_json\\sketch_sensore_json.ino"
 }
