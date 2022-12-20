@@ -28,8 +28,8 @@ while True:
         lista.append(dizionario)
         cont += 1
     else:
-        print("pacchetto scartato")  
-    
+        print("pacchetto scartato")
+
     if cont>10:
         data = json.dumps(lista[-10:])
         with open('05_Python-5-JSON/parte3/datiSensore.json', 'w') as fp:
