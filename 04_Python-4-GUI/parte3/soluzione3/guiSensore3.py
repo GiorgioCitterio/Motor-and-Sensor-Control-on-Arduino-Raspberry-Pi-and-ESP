@@ -2,7 +2,7 @@ import serial
 import struct
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
-import time
+import datetime as dt
 IDCORRETTO = "BE"
 DESTINATARIOCORRETTO = "D031"
 
@@ -24,12 +24,14 @@ def animate(i, xs, ys):
     vuoto=pack[5].decode()
     if (id==IDCORRETTO)and(destinatario==DESTINATARIOCORRETTO):
         print("id e destinatario corretti, valore del sensore = "+valoreSensore)
-        xs.append(i)
+        xs.append(dt.datetime.now().strftime('%H:%M:%S.%f'))
         ys.append(int(valoreSensore))
-        xs = xs[-20:]
-        ys = ys[-20:]
+        xs = xs[-20:-1]
+        ys = ys[-20:-1]
         ax.clear()
         ax.plot(xs, ys, marker="o")
+        plt.xticks(rotation=45, ha='right')
+        plt.subplots_adjust(bottom=0.30)
         plt.title("Il grafico dei valori del sensore")
         plt.xlabel("X - Secondi")
         plt.ylabel("Y - Valori sensore")
@@ -39,5 +41,3 @@ def animate(i, xs, ys):
 
 ani = animation.FuncAnimation(fig, animate, fargs=(xs, ys), interval=1000)
 plt.show()
-
-
