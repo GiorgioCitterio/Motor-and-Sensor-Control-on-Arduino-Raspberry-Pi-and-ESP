@@ -31,6 +31,10 @@ Documentazione ufficiale libreria [serial](https://pyserial.readthedocs.io/en/la
 
 Come riorganizzare il formato dei messaggi scambiati fra i sensori/attuatori e l’applicazione python, preparando le cose in modo tale che possano funzionare utilizzando un RF24, che ha un payload di 32 byte.
 
+Per realizzare questi pacchetti si utilizza la libreria struct già presente in python.
+
+Documentazione ufficiale libreria [struct](https://docs.python.org/3/library/struct.html)
+
 ---
 
 # Attività 4
@@ -38,6 +42,10 @@ Come riorganizzare il formato dei messaggi scambiati fra i sensori/attuatori e l
 **Relazione attività 4**: [Controllo sensore/attuatore tramite interfaccia grafica GUI (Python)](04_Python-4-GUI/04_Python_4_GUI_Relazione.pdf).
 
 Come gestire il sensore e l'attuatore tramite interfaccia grafica GUI su python, 3 programmi diversi per l'attuatore e 3 per il sensore.
+
+Per realizzare la GUI (Graphical User Interface) si utilizza la libreria tkinter già presente in python:
+
+Documentazione ufficiale libreria [tkinter](https://docs.python.org/3/library/tk.html).
 
 ---
 
