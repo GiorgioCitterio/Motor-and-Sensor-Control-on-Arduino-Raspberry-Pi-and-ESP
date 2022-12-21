@@ -31,7 +31,7 @@ Documentazione ufficiale libreria [serial](https://pyserial.readthedocs.io/en/la
 
 Come riorganizzare il formato dei messaggi scambiati fra i sensori/attuatori e l’applicazione python, preparando le cose in modo tale che possano funzionare utilizzando un RF24, che ha un payload di 32 byte.
 
-Per realizzare questi pacchetti si utilizza la libreria struct già presente in python.
+Per realizzare questi pacchetti si utilizza la libreria *struct* già presente in python.
 
 Documentazione ufficiale libreria [struct](https://docs.python.org/3/library/struct.html)
 
@@ -43,9 +43,15 @@ Documentazione ufficiale libreria [struct](https://docs.python.org/3/library/str
 
 Come gestire il sensore e l'attuatore tramite interfaccia grafica GUI su python, 3 programmi diversi per l'attuatore e 3 per il sensore.
 
-Per realizzare la GUI (Graphical User Interface) si utilizza la libreria tkinter già presente in python:
+Per realizzare la GUI (Graphical User Interface) si utilizza la libreria *tkinter* già presente in python:
 
 Documentazione ufficiale libreria [tkinter](https://docs.python.org/3/library/tk.html).
+
+Nell'ultima versione del programma per il sensore, per la realizzazione del grafico si utilizza la libreria *matplotlib* installabile con il comando seguente:
+
+`python -m pip install matplotlib`
+
+Documentazione ufficiale libreria [matplotlib](https://matplotlib.org/).
 
 ---
 
@@ -54,3 +60,7 @@ Documentazione ufficiale libreria [tkinter](https://docs.python.org/3/library/tk
 **Relazione attività 5**: [Memorizzazione dati sensore su un file JSON](05_Python-5-JSON/05_Python_5_JSON_Relazione.pdf).
 
 Come memorizzare i dati ricevuti dal sensore su un file JSON in modo da poterli rendere disponibili successivamente per lo scambio di dati client/server.
+
+Per scrivere su un file JSON da python si utilizza la libreria *json* già presente in python:
+
+Documentazione ufficiale libreria [json](https://docs.python.org/3/library/json.html).
