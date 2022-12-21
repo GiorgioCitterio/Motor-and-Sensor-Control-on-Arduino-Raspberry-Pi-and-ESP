@@ -17,8 +17,11 @@ Controllare come avviene comunicazione sulla seriale da parte di arduino.
 
 Comunicare tramite un' applicazione python che gira su Windows un sensore (potenziometro)  ed  un  attuatore  (motore  con 
 L293D), entrambi realizzati su breadboard e gestiti da un programma su arduino.
+
 Per comunicare sulla porta seriale tramite python si utilizza la libreria *serial* che può essere installata con il seguente comando:
-'py -m pip install pyserial'
+
+`py -m pip install pyserial`
+
 Documentazione ufficiale libreria [serial](https://pyserial.readthedocs.io/en/latest/pyserial.html).
 
 ---
