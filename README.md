@@ -48,7 +48,6 @@ Per realizzare la GUI (Graphical User Interface) si utilizza la libreria *tkinte
 Documentazione ufficiale libreria [tkinter](https://docs.python.org/3/library/tk.html).
 
 Nell'ultima versione del programma per il sensore, per la realizzazione del grafico si utilizza la libreria *matplotlib* installabile con il comando seguente:
-
 `python -m pip install matplotlib`
 
 Documentazione ufficiale libreria [matplotlib](https://matplotlib.org/).
