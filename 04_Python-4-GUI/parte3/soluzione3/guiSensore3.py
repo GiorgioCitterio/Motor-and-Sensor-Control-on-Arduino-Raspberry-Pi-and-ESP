@@ -26,16 +26,15 @@ def animate(i, xs, ys):
         print("id e destinatario corretti, valore del sensore = "+valoreSensore)
         xs.append(dt.datetime.now().strftime('%H:%M:%S.%f'))
         ys.append(int(valoreSensore))
-        xs = xs[-20:-1]
-        ys = ys[-20:-1]
+        xs = xs[-21:-1]
+        ys = ys[-21:-1]
         ax.clear()
         ax.plot(xs, ys, marker="o")
         plt.xticks(rotation=45, ha='right')
         plt.subplots_adjust(bottom=0.30)
-        plt.title("Il grafico dei valori del sensore")
-        plt.xlabel("X - Secondi")
+        plt.title("Grafico dei valori del sensore")
+        plt.xlabel("X - Tempo")
         plt.ylabel("Y - Valori sensore")
-        plt.axes([0, i, 0, 1023])
     else:
         print("pacchetto scartato")
 
