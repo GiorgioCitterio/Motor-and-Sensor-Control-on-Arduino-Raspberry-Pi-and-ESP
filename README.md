@@ -33,7 +33,7 @@ Come riorganizzare il formato dei messaggi scambiati fra i sensori/attuatori e l
 
 Per realizzare questi pacchetti si utilizza la libreria *struct* già presente in python.
 
-Documentazione ufficiale libreria [struct](https://docs.python.org/3/library/struct.html)
+Documentazione ufficiale libreria [struct](https://docs.python.org/3/library/struct.html).
 
 ---
 
