@@ -18,7 +18,7 @@ Controllare come avviene comunicazione sulla seriale da parte di arduino.
 Comunicare tramite un' applicazione python che gira su Windows un sensore (potenziometro)  ed  un  attuatore  (motore  con 
 L293D), entrambi realizzati su breadboard e gestiti da un programma su arduino.
 
-Per comunicare sulla porta seriale tramite python si utilizza la libreria *serial* che può essere installata con il seguente comando:
+Per comunicare sulla porta seriale tramite python si utilizza la libreria *serial* che può essere installata (su Windows) con il seguente comando:
 `py -m pip install pyserial`
 
 Documentazione ufficiale libreria [serial](https://pyserial.readthedocs.io/en/latest/pyserial.html).
@@ -33,7 +33,7 @@ Come riorganizzare il formato dei messaggi scambiati fra i sensori/attuatori e l
 
 Per realizzare questi pacchetti si utilizza la libreria *struct* già presente in python.
 
-Documentazione ufficiale libreria [struct](https://docs.python.org/3/library/struct.html)
+Documentazione ufficiale libreria [struct](https://docs.python.org/3/library/struct.html).
 
 ---
 
@@ -47,9 +47,8 @@ Per realizzare la GUI (Graphical User Interface) si utilizza la libreria *tkinte
 
 Documentazione ufficiale libreria [tkinter](https://docs.python.org/3/library/tk.html).
 
-Nell'ultima versione del programma per il sensore, per la realizzazione del grafico si utilizza la libreria *matplotlib* installabile con il comando seguente:
-
-`python -m pip install matplotlib`
+Nell'ultima versione del programma per il sensore, per la realizzazione del grafico si utilizza la libreria *matplotlib* installabile (su Windows) con il comando seguente:
+`py -m pip install matplotlib`
 
 Documentazione ufficiale libreria [matplotlib](https://matplotlib.org/).
 
