@@ -3,10 +3,18 @@ import struct
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 import datetime as dt
+import serial.tools.list_ports
 IDCORRETTO = "BE"
 DESTINATARIOCORRETTO = "D031"
 
-arduino = serial.Serial('COM3', 9600)
+ports = serial.tools.list_ports.comports()
+comDescList = []
+for port, desc, _ in sorted(ports):
+    comDescList.append(port)
+
+porta = comDescList[0]
+print(porta)
+arduino = serial.Serial(porta, 9600)
 fig = plt.figure()
 ax = fig.add_subplot(1, 1, 1)
 xs = []
@@ -24,7 +32,7 @@ def animate(i, xs, ys):
     vuoto=pack[5].decode()
     if (id==IDCORRETTO)and(destinatario==DESTINATARIOCORRETTO):
         print("id e destinatario corretti, valore del sensore = "+valoreSensore)
-        xs.append(dt.datetime.now().strftime('%H:%M:%S.%f'))
+        xs.append(dt.datetime.now().strftime('%H:%M:%S'))
         ys.append(int(valoreSensore))
         xs = xs[-21:-1]
         ys = ys[-21:-1]
