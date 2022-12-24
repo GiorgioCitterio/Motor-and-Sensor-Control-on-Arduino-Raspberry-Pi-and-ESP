@@ -2,10 +2,16 @@ import serial
 import struct
 import json
 import time
+import serial.tools.list_ports
 IDCORRETTO = "BE"
 DESTINATARIOCORRETTO = "D031"
 
-arduino = serial.Serial('COM3', 9600)
+ports = serial.tools.list_ports.comports()
+portaSeriale = []
+for port, desc, _ in sorted(ports):
+    portaSeriale.append(port)
+
+arduino = serial.Serial(portaSeriale[0], 9600)
 
 lista = []
 cont = 0

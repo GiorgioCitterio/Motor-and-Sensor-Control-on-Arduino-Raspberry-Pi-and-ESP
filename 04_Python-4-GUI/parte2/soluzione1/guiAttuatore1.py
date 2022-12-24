@@ -1,6 +1,7 @@
 import tkinter as tk
 import serial
 import struct
+import serial.tools.list_ports
 ID=b"BE"
 MITTENTE=b"M001"
 DESTINATARIO=b"D031"
@@ -9,7 +10,13 @@ VUOTO=b"----------------"
 direzione = b"A"
 velocita = 0
 
-arduino = serial.Serial('COM3', 9600)
+ports = serial.tools.list_ports.comports()
+comDescList = []
+for port, desc, _ in sorted(ports):
+    comDescList.append(port)
+
+porta = comDescList[0]
+arduino = serial.Serial(porta, 9600)
 window = tk.Tk() 
 window.geometry("265x100")
 window.title("Controllo motore")
