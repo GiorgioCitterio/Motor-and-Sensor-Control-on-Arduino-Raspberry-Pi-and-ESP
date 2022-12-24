@@ -44,8 +44,7 @@ Documentazione ufficiale libreria [struct](https://docs.python.org/3/library/str
 Come gestire il sensore e l'attuatore tramite interfaccia grafica GUI su python, 3 programmi diversi per l'attuatore e 3 per il sensore.
 
 Per realizzare la GUI (Graphical User Interface) si utilizza la libreria *tkinter* installabile per la maggior parte degli utenti con il seguente comando:
-
-`py -m pip install pyserial`
+`py -m pip install tkinter`
 
 Documentazione ufficiale libreria [tkinter](https://docs.python.org/3/library/tk.html).
 
