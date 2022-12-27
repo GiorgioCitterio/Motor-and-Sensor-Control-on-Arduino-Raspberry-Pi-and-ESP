@@ -2,20 +2,52 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="_04_GUI_Csharp.MenuAttuatore"
-             Title="MenuAttuatore">
-    <VerticalStackLayout>
+             Title="MenuAttuatore"
+             BackgroundColor="Black">
+    <VerticalStackLayout
+        Margin="5">
         <Label 
             Text="Menu Attuatore"
+            FontAttributes="Bold"
+            FontSize="20"
+            TextColor="White"
             VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+            HorizontalOptions="Center"
+            Padding="20"
+            Margin="1"/>
         <Button
             Text="Soluzione 1"
-            Clicked="Soluzione1"/>
+            FontSize="20"
+            TextColor="Black"
+            Clicked="Soluzione1"
+            BorderColor="DarkRed"
+            BackgroundColor="Red"
+            BorderWidth="5"
+            Padding="40"
+            WidthRequest="200"
+            Margin="10"/>
         <Button
             Text="Soluzione 2"
-            Clicked="Soluzione2"/>
+            FontSize="20"
+            Clicked="Soluzione2"
+            TextColor="Black"
+            VerticalOptions="Center"
+            BorderColor="DarkGoldenrod"
+            BackgroundColor="Yellow"
+            BorderWidth="5"
+            Padding="40"
+            WidthRequest="200"
+            Margin="10"/>
         <Button
             Text="Soluzione 3"
-            Clicked="Soluzione3"/>
+            FontSize="20"
+            Clicked="Soluzione3"
+            TextColor="Black"
+            BorderColor="DarkGreen"
+            BackgroundColor="Green"
+            BorderWidth="5"
+            WidthRequest="200"
+            Padding="40"
+            Margin="10"/>
     </VerticalStackLayout>
 </ContentPage>

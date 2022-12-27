@@ -3,10 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="_04_GUI_Csharp.Home"
              Title="Home"
-             BackgroundColor="DarkBlue">
+             BackgroundColor="Black">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
             <RowDefinition Height="100"></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition Height="100"/>
@@ -17,16 +17,18 @@
         </Grid.ColumnDefinitions>
 
         <Label Text="GUI sensore/attuatore"
-               TextColor="NavajoWhite"
+               TextColor="White"
                Grid.Row="0"
                Grid.Column="0"
                Grid.ColumnSpan="2"
                Padding="20"
+               FontAttributes="Bold"
                FontSize="25"
                HorizontalTextAlignment="Center"
                VerticalTextAlignment="Center"/>
         <Label Text="Attuatore"
-               FontSize="20"
+               FontSize="25"
+               TextColor="White"
                Grid.Row="1"
                Grid.Column="0"
                VerticalTextAlignment="Center"
@@ -35,9 +37,11 @@
                 Source="attuatore.png"
                 Clicked="Attuatore"
                 Grid.Column="0"
-                Grid.Row="2"/>
+                Grid.Row="2"
+            BackgroundColor="Black"/>
         <Label Text="Sensore" 
-               FontSize="20"
+               FontSize="25"
+               TextColor="White"
                Grid.Row="1"
                Grid.Column="1"
                VerticalTextAlignment="Center"
@@ -46,6 +50,7 @@
                 Source="sensore.jpeg"
                 Clicked="Sensore"
                 Grid.Column="1"
-                Grid.Row="2"/>
+                Grid.Row="2"
+            BackgroundColor="Black"/>
     </Grid>
 </ContentPage>
