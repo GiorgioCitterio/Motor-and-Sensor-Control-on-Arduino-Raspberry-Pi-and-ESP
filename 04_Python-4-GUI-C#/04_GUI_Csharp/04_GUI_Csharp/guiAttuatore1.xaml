@@ -3,10 +3,27 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="_04_GUI_Csharp.guiAttuatore1"
              Title="guiAttuatore1">
-    <VerticalStackLayout>
-        <Label 
-            Text="guiAttuatore1"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Button
+            Text="Aumenta velocità di 10"
+            Clicked="Inc10"/>
+        <Button
+            Text="Diminuisci velocità di 10"
+            Clicked="Dec10"/>
+        <Button
+            Text="Avanti"
+            Clicked="Avanti"/>
+        <Button
+            Text="Indietro"
+            Clicked="Indietro"/>
+    </Grid>
 </ContentPage>

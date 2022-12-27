@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Umberto\\OneDrive\\Documenti\\GitHub\\tps_2022_2023\\04_Python-4-GUI-C#\\04_GUI_Csharp\\04_GUI_Csharp\\04_GUI_Csharp.csproj": {}
+    "C:\\Users\\giorg\\Desktop\\Giorgio\\Scuola\\4IB 2022-2023\\Tps\\tps_2022_2023\\04_Python-4-GUI-C#\\04_GUI_Csharp\\04_GUI_Csharp\\04_GUI_Csharp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Umberto\\OneDrive\\Documenti\\GitHub\\tps_2022_2023\\04_Python-4-GUI-C#\\04_GUI_Csharp\\04_GUI_Csharp\\04_GUI_Csharp.csproj": {
+    "C:\\Users\\giorg\\Desktop\\Giorgio\\Scuola\\4IB 2022-2023\\Tps\\tps_2022_2023\\04_Python-4-GUI-C#\\04_GUI_Csharp\\04_GUI_Csharp\\04_GUI_Csharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Umberto\\OneDrive\\Documenti\\GitHub\\tps_2022_2023\\04_Python-4-GUI-C#\\04_GUI_Csharp\\04_GUI_Csharp\\04_GUI_Csharp.csproj",
+        "projectUniqueName": "C:\\Users\\giorg\\Desktop\\Giorgio\\Scuola\\4IB 2022-2023\\Tps\\tps_2022_2023\\04_Python-4-GUI-C#\\04_GUI_Csharp\\04_GUI_Csharp\\04_GUI_Csharp.csproj",
         "projectName": "04_GUI_Csharp",
-        "projectPath": "C:\\Users\\Umberto\\OneDrive\\Documenti\\GitHub\\tps_2022_2023\\04_Python-4-GUI-C#\\04_GUI_Csharp\\04_GUI_Csharp\\04_GUI_Csharp.csproj",
-        "packagesPath": "C:\\Users\\Umberto\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Umberto\\OneDrive\\Documenti\\GitHub\\tps_2022_2023\\04_Python-4-GUI-C#\\04_GUI_Csharp\\04_GUI_Csharp\\obj\\",
+        "projectPath": "C:\\Users\\giorg\\Desktop\\Giorgio\\Scuola\\4IB 2022-2023\\Tps\\tps_2022_2023\\04_Python-4-GUI-C#\\04_GUI_Csharp\\04_GUI_Csharp\\04_GUI_Csharp.csproj",
+        "packagesPath": "C:\\Users\\giorg\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\giorg\\Desktop\\Giorgio\\Scuola\\4IB 2022-2023\\Tps\\tps_2022_2023\\04_Python-4-GUI-C#\\04_GUI_Csharp\\04_GUI_Csharp\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Umberto\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\giorg\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -53,12 +53,12 @@
           "dependencies": {
             "Microsoft.Maui.Dependencies": {
               "target": "Package",
-              "version": "[6.0.536, )",
+              "version": "[6.0.548, )",
               "autoReferenced": true
             },
             "Microsoft.Maui.Extensions": {
               "target": "Package",
-              "version": "[6.0.536, )",
+              "version": "[6.0.548, )",
               "autoReferenced": true
             }
           },
@@ -73,6 +73,64 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.Android.Ref.31",
+              "version": "[32.0.476, 32.0.476]"
+            },
+            {
+              "name": "Microsoft.Android.Runtime.31.android-arm",
+              "version": "[32.0.476, 32.0.476]"
+            },
+            {
+              "name": "Microsoft.Android.Runtime.31.android-arm64",
+              "version": "[32.0.476, 32.0.476]"
+            },
+            {
+              "name": "Microsoft.Android.Runtime.31.android-x64",
+              "version": "[32.0.476, 32.0.476]"
+            },
+            {
+              "name": "Microsoft.Android.Runtime.31.android-x86",
+              "version": "[32.0.476, 32.0.476]"
+            },
+            {
+              "name": "Microsoft.AspNetCore.App.Runtime.linux-arm",
+              "version": "[6.0.12, 6.0.12]"
+            },
+            {
+              "name": "Microsoft.AspNetCore.App.Runtime.linux-arm64",
+              "version": "[6.0.12, 6.0.12]"
+            },
+            {
+              "name": "Microsoft.AspNetCore.App.Runtime.linux-x64",
+              "version": "[6.0.12, 6.0.12]"
+            },
+            {
+              "name": "Microsoft.Maui.Controls.Ref.android",
+              "version": "[6.0.548, 6.0.548]"
+            },
+            {
+              "name": "Microsoft.Maui.Controls.Runtime.android",
+              "version": "[6.0.548, 6.0.548]"
+            },
+            {
+              "name": "Microsoft.Maui.Core.Ref.android",
+              "version": "[6.0.548, 6.0.548]"
+            },
+            {
+              "name": "Microsoft.Maui.Core.Runtime.android",
+              "version": "[6.0.548, 6.0.548]"
+            },
+            {
+              "name": "Microsoft.Maui.Essentials.Ref.android",
+              "version": "[6.0.548, 6.0.548]"
+            },
+            {
+              "name": "Microsoft.Maui.Essentials.Runtime.android",
+              "version": "[6.0.548, 6.0.548]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.Android": {
               "privateAssets": "all"
@@ -90,19 +148,19 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         },
         "net6.0-windows10.0.19041": {
           "targetAlias": "net6.0-windows10.0.19041.0",
           "dependencies": {
             "Microsoft.Maui.Dependencies": {
               "target": "Package",
-              "version": "[6.0.536, )",
+              "version": "[6.0.548, )",
               "autoReferenced": true
             },
             "Microsoft.Maui.Extensions": {
               "target": "Package",
-              "version": "[6.0.536, )",
+              "version": "[6.0.548, )",
               "autoReferenced": true
             },
             "Microsoft.Windows.SDK.BuildTools": {
@@ -126,19 +184,43 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-              "version": "[6.0.9, 6.0.9]"
+              "version": "[6.0.12, 6.0.12]"
+            },
+            {
+              "name": "Microsoft.Maui.Controls.Ref.win",
+              "version": "[6.0.548, 6.0.548]"
+            },
+            {
+              "name": "Microsoft.Maui.Controls.Runtime.win",
+              "version": "[6.0.548, 6.0.548]"
+            },
+            {
+              "name": "Microsoft.Maui.Core.Ref.win",
+              "version": "[6.0.548, 6.0.548]"
+            },
+            {
+              "name": "Microsoft.Maui.Core.Runtime.win",
+              "version": "[6.0.548, 6.0.548]"
+            },
+            {
+              "name": "Microsoft.Maui.Essentials.Ref.win",
+              "version": "[6.0.548, 6.0.548]"
+            },
+            {
+              "name": "Microsoft.Maui.Essentials.Runtime.win",
+              "version": "[6.0.548, 6.0.548]"
             },
             {
               "name": "Microsoft.NETCore.App.Runtime.win-x64",
-              "version": "[6.0.9, 6.0.9]"
+              "version": "[6.0.12, 6.0.12]"
             },
             {
               "name": "Microsoft.Windows.SDK.NET.Ref",
-              "version": "[10.0.19041.27, 10.0.19041.27]"
+              "version": "[10.0.19041.28, 10.0.19041.28]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-              "version": "[6.0.9, 6.0.9]"
+              "version": "[6.0.12, 6.0.12]"
             }
           ],
           "frameworkReferences": {
@@ -158,7 +240,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {

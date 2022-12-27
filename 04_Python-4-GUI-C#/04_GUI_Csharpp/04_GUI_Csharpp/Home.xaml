@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_04_GUI_Csharpp.Home"
+             Title="Home"
+             BackgroundColor="Black">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Label Text="GUI sensore/attuatore"
+               TextColor="White"
+               Grid.Row="0"
+               Grid.Column="0"
+               Grid.ColumnSpan="2"
+               Padding="20"
+               FontAttributes="Bold"
+               FontSize="25"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"/>
+        <Label Text="Attuatore"
+               FontSize="25"
+               TextColor="White"
+               Grid.Row="1"
+               Grid.Column="0"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"/>
+        <ImageButton
+                Source="attuatore.png"
+                Clicked="Attuatore"
+                Grid.Column="0"
+                Grid.Row="2"
+            BackgroundColor="Black"/>
+        <Label Text="Sensore" 
+               FontSize="25"
+               TextColor="White"
+               Grid.Row="1"
+               Grid.Column="1"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"/>
+        <ImageButton
+                Source="sensore.jpeg"
+                Clicked="Sensore"
+                Grid.Column="1"
+                Grid.Row="2"
+            BackgroundColor="Black"/>
+    </Grid>
+</ContentPage>
