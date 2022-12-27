@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_04_GUI_Csharp.Home"
+             Title="Home"
+             BackgroundColor="DarkBlue">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Label Text="GUI sensore/attuatore"
+               TextColor="NavajoWhite"
+               Grid.Row="0"
+               Grid.Column="0"
+               Grid.ColumnSpan="2"
+               Padding="20"
+               FontSize="25"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"/>
+        <Label Text="Attuatore"
+               FontSize="20"
+               Grid.Row="1"
+               Grid.Column="0"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"/>
+        <ImageButton
+                Source="attuatore.png"
+                Clicked="Attuatore"
+                Grid.Column="0"
+                Grid.Row="2"/>
+        <Label Text="Sensore" 
+               FontSize="20"
+               Grid.Row="1"
+               Grid.Column="1"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"/>
+        <ImageButton
+                Source="sensore.jpeg"
+                Clicked="Sensore"
+                Grid.Column="1"
+                Grid.Row="2"/>
+    </Grid>
+</ContentPage>

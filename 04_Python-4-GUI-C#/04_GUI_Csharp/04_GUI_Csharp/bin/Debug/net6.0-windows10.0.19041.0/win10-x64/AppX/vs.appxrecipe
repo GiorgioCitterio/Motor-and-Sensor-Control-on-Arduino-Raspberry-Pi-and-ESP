@@ -29,25 +29,25 @@
     <AppXManifest Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-12-27T12:35:27.150</Modified>
+      <Modified>2022-12-27T14:09:03.738</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2022-12-27T12:28:49.844</Modified>
+      <Modified>2022-12-27T14:08:29.486</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\04_GUI_Csharp.runtimeconfig.json">
       <PackagePath>04_GUI_Csharp.runtimeconfig.json</PackagePath>
-      <Modified>2022-12-27T12:28:49.631</Modified>
+      <Modified>2022-12-27T13:07:29.862</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\04_GUI_Csharp.dll">
       <PackagePath>04_GUI_Csharp.dll</PackagePath>
-      <Modified>2022-12-27T12:28:47.954</Modified>
+      <Modified>2022-12-27T14:09:01.981</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>04_GUI_Csharp.exe</PackagePath>
-      <Modified>2022-12-27T12:28:47.990</Modified>
+      <Modified>2022-12-27T14:09:01.991</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\.nuget\packages\microsoft.netcore.app.runtime.win-x64\6.0.12\runtimes\win-x64\lib\net6.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -1063,7 +1063,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\04_GUI_Csharp.deps.json">
       <PackagePath>04_GUI_Csharp.deps.json</PackagePath>
-      <Modified>2022-12-27T12:35:26.818</Modified>
+      <Modified>2022-12-27T14:09:03.568</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\.nuget\packages\microsoft.maui.controls.ref.win\6.0.548\ref\net6.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
@@ -1083,23 +1083,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2022-12-27T12:28:46.626</Modified>
+      <Modified>2022-12-27T13:07:27.037</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2022-12-27T12:28:46.648</Modified>
+      <Modified>2022-12-27T13:07:27.055</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2022-12-27T12:28:46.682</Modified>
+      <Modified>2022-12-27T13:07:27.086</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2022-12-27T12:28:46.733</Modified>
+      <Modified>2022-12-27T13:07:27.122</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2022-12-27T12:28:46.959</Modified>
+      <Modified>2022-12-27T13:07:27.268</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
@@ -1111,207 +1111,215 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2022-12-27T12:28:47.053</Modified>
+      <Modified>2022-12-27T14:08:27.255</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2022-12-27T12:28:47.508</Modified>
+      <Modified>2022-12-27T14:08:27.646</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2022-12-27T12:28:47.519</Modified>
+      <Modified>2022-12-27T14:08:27.669</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2022-12-27T12:28:47.532</Modified>
+      <Modified>2022-12-27T14:08:27.689</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2022-12-27T12:28:47.553</Modified>
+      <Modified>2022-12-27T14:08:27.722</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2022-12-27T12:28:47.638</Modified>
+      <Modified>2022-12-27T14:08:27.824</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2022-12-27T12:28:47.299</Modified>
+      <Modified>2022-12-27T14:08:27.380</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2022-12-27T12:28:47.302</Modified>
+      <Modified>2022-12-27T14:08:27.385</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2022-12-27T12:28:47.318</Modified>
+      <Modified>2022-12-27T14:08:27.405</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2022-12-27T12:28:47.305</Modified>
+      <Modified>2022-12-27T14:08:27.390</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2022-12-27T12:28:47.307</Modified>
+      <Modified>2022-12-27T14:08:27.395</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2022-12-27T12:28:47.268</Modified>
+      <Modified>2022-12-27T14:08:27.343</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2022-12-27T12:28:47.273</Modified>
+      <Modified>2022-12-27T14:08:27.349</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2022-12-27T12:28:47.294</Modified>
+      <Modified>2022-12-27T14:08:27.375</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2022-12-27T12:28:47.279</Modified>
+      <Modified>2022-12-27T14:08:27.356</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2022-12-27T12:28:47.283</Modified>
+      <Modified>2022-12-27T14:08:27.362</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2022-12-27T12:28:47.211</Modified>
+      <Modified>2022-12-27T14:08:27.277</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2022-12-27T12:28:47.215</Modified>
+      <Modified>2022-12-27T14:08:27.283</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2022-12-27T12:28:47.221</Modified>
+      <Modified>2022-12-27T14:08:27.291</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2022-12-27T12:28:47.227</Modified>
+      <Modified>2022-12-27T14:08:27.297</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2022-12-27T12:28:47.234</Modified>
+      <Modified>2022-12-27T14:08:27.307</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2022-12-27T12:28:47.240</Modified>
+      <Modified>2022-12-27T14:08:27.311</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2022-12-27T12:28:47.243</Modified>
+      <Modified>2022-12-27T14:08:27.316</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2022-12-27T12:28:47.263</Modified>
+      <Modified>2022-12-27T14:08:27.337</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2022-12-27T12:28:47.247</Modified>
+      <Modified>2022-12-27T14:08:27.321</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2022-12-27T12:28:47.252</Modified>
+      <Modified>2022-12-27T14:08:27.325</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2022-12-27T12:28:47.364</Modified>
+      <Modified>2022-12-27T14:08:27.473</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2022-12-27T12:28:47.370</Modified>
+      <Modified>2022-12-27T14:08:27.481</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2022-12-27T12:28:47.378</Modified>
+      <Modified>2022-12-27T14:08:27.491</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2022-12-27T12:28:47.387</Modified>
+      <Modified>2022-12-27T14:08:27.503</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2022-12-27T12:28:47.410</Modified>
+      <Modified>2022-12-27T14:08:27.525</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2022-12-27T12:28:47.339</Modified>
+      <Modified>2022-12-27T14:08:27.439</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2022-12-27T12:28:47.342</Modified>
+      <Modified>2022-12-27T14:08:27.443</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2022-12-27T12:28:47.346</Modified>
+      <Modified>2022-12-27T14:08:27.450</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2022-12-27T12:28:47.350</Modified>
+      <Modified>2022-12-27T14:08:27.455</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2022-12-27T12:28:47.359</Modified>
+      <Modified>2022-12-27T14:08:27.467</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2022-12-27T12:28:47.321</Modified>
+      <Modified>2022-12-27T14:08:27.410</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2022-12-27T12:28:47.324</Modified>
+      <Modified>2022-12-27T14:08:27.414</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2022-12-27T12:28:47.327</Modified>
+      <Modified>2022-12-27T14:08:27.421</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2022-12-27T12:28:47.330</Modified>
+      <Modified>2022-12-27T14:08:27.426</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2022-12-27T12:28:47.336</Modified>
+      <Modified>2022-12-27T14:08:27.435</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2022-12-27T12:28:47.416</Modified>
+      <Modified>2022-12-27T14:08:27.533</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2022-12-27T12:28:47.425</Modified>
+      <Modified>2022-12-27T14:08:27.541</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2022-12-27T12:28:47.436</Modified>
+      <Modified>2022-12-27T14:08:27.553</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2022-12-27T12:28:47.449</Modified>
+      <Modified>2022-12-27T14:08:27.573</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2022-12-27T12:28:47.498</Modified>
+      <Modified>2022-12-27T14:08:27.628</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\attuatore.scale-100.png">
+      <PackagePath>attuatore.scale-100.png</PackagePath>
+      <Modified>2022-12-27T14:07:48.220</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2022-12-27T12:28:47.250</Modified>
+      <Modified>2022-12-27T14:08:27.213</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2022-12-27T12:28:47.268</Modified>
+      <Modified>2022-12-27T14:08:27.234</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2022-12-27T12:28:47.288</Modified>
+      <Modified>2022-12-27T14:08:27.261</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2022-12-27T12:28:47.319</Modified>
+      <Modified>2022-12-27T14:08:27.304</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2022-12-27T12:28:47.389</Modified>
+      <Modified>2022-12-27T14:08:27.392</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\sensore.scale-100.jpeg">
+      <PackagePath>sensore.scale-100.jpeg</PackagePath>
+      <Modified>2022-12-27T13:48:43.988</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

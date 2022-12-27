@@ -970,6 +970,9 @@
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\attuatore.scale-100.png">
+      <PackagePath>attuatore.scale-100.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
     </AppxPackagedFile>
@@ -984,6 +987,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\sensore.scale-100.jpeg">
+      <PackagePath>sensore.scale-100.jpeg</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

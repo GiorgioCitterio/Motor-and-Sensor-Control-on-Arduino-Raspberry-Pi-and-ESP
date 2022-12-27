@@ -8,33 +8,87 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = _04_GUI_Csharp
-build_property.ProjectDir = c:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\
+build_property.ProjectDir = C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharp\04_GUI_Csharp\
 
-[c:/Users/giorg/Desktop/Giorgio/Scuola/4IB 2022-2023/Tps/tps_2022_2023/04_Python-4-GUI-C\#/04_GUI_Csharp/04_GUI_Csharp/App.xaml]
+[C:/Users/giorg/Desktop/Giorgio/Scuola/4IB 2022-2023/Tps/tps_2022_2023/04_Python-4-GUI-C\#/04_GUI_Csharp/04_GUI_Csharp/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = _04_GUI_Csharp.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[c:/Users/giorg/Desktop/Giorgio/Scuola/4IB 2022-2023/Tps/tps_2022_2023/04_Python-4-GUI-C\#/04_GUI_Csharp/04_GUI_Csharp/AppShell.xaml]
+[C:/Users/giorg/Desktop/Giorgio/Scuola/4IB 2022-2023/Tps/tps_2022_2023/04_Python-4-GUI-C\#/04_GUI_Csharp/04_GUI_Csharp/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = _04_GUI_Csharp.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[c:/Users/giorg/Desktop/Giorgio/Scuola/4IB 2022-2023/Tps/tps_2022_2023/04_Python-4-GUI-C\#/04_GUI_Csharp/04_GUI_Csharp/MainPage.xaml]
+[C:/Users/giorg/Desktop/Giorgio/Scuola/4IB 2022-2023/Tps/tps_2022_2023/04_Python-4-GUI-C\#/04_GUI_Csharp/04_GUI_Csharp/guiAttuatore1.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = _04_GUI_Csharp.guiAttuatore1.xaml
+build_metadata.AdditionalFiles.TargetPath = guiAttuatore1.xaml
+build_metadata.AdditionalFiles.RelativePath = guiAttuatore1.xaml
+
+[C:/Users/giorg/Desktop/Giorgio/Scuola/4IB 2022-2023/Tps/tps_2022_2023/04_Python-4-GUI-C\#/04_GUI_Csharp/04_GUI_Csharp/guiAttuatore2.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = _04_GUI_Csharp.guiAttuatore2.xaml
+build_metadata.AdditionalFiles.TargetPath = guiAttuatore2.xaml
+build_metadata.AdditionalFiles.RelativePath = guiAttuatore2.xaml
+
+[C:/Users/giorg/Desktop/Giorgio/Scuola/4IB 2022-2023/Tps/tps_2022_2023/04_Python-4-GUI-C\#/04_GUI_Csharp/04_GUI_Csharp/guiAttuatore3.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = _04_GUI_Csharp.guiAttuatore3.xaml
+build_metadata.AdditionalFiles.TargetPath = guiAttuatore3.xaml
+build_metadata.AdditionalFiles.RelativePath = guiAttuatore3.xaml
+
+[C:/Users/giorg/Desktop/Giorgio/Scuola/4IB 2022-2023/Tps/tps_2022_2023/04_Python-4-GUI-C\#/04_GUI_Csharp/04_GUI_Csharp/guiSensore1.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = _04_GUI_Csharp.guiSensore1.xaml
+build_metadata.AdditionalFiles.TargetPath = guiSensore1.xaml
+build_metadata.AdditionalFiles.RelativePath = guiSensore1.xaml
+
+[C:/Users/giorg/Desktop/Giorgio/Scuola/4IB 2022-2023/Tps/tps_2022_2023/04_Python-4-GUI-C\#/04_GUI_Csharp/04_GUI_Csharp/guiSensore2.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = _04_GUI_Csharp.guiSensore2.xaml
+build_metadata.AdditionalFiles.TargetPath = guiSensore2.xaml
+build_metadata.AdditionalFiles.RelativePath = guiSensore2.xaml
+
+[C:/Users/giorg/Desktop/Giorgio/Scuola/4IB 2022-2023/Tps/tps_2022_2023/04_Python-4-GUI-C\#/04_GUI_Csharp/04_GUI_Csharp/guiSensore3.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = _04_GUI_Csharp.guiSensore3.xaml
+build_metadata.AdditionalFiles.TargetPath = guiSensore3.xaml
+build_metadata.AdditionalFiles.RelativePath = guiSensore3.xaml
+
+[C:/Users/giorg/Desktop/Giorgio/Scuola/4IB 2022-2023/Tps/tps_2022_2023/04_Python-4-GUI-C\#/04_GUI_Csharp/04_GUI_Csharp/Home.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = _04_GUI_Csharp.Home.xaml
+build_metadata.AdditionalFiles.TargetPath = Home.xaml
+build_metadata.AdditionalFiles.RelativePath = Home.xaml
+
+[C:/Users/giorg/Desktop/Giorgio/Scuola/4IB 2022-2023/Tps/tps_2022_2023/04_Python-4-GUI-C\#/04_GUI_Csharp/04_GUI_Csharp/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = _04_GUI_Csharp.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[c:/Users/giorg/Desktop/Giorgio/Scuola/4IB 2022-2023/Tps/tps_2022_2023/04_Python-4-GUI-C\#/04_GUI_Csharp/04_GUI_Csharp/Resources/Styles/Colors.xaml]
+[C:/Users/giorg/Desktop/Giorgio/Scuola/4IB 2022-2023/Tps/tps_2022_2023/04_Python-4-GUI-C\#/04_GUI_Csharp/04_GUI_Csharp/MenuAttuatore.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = _04_GUI_Csharp.MenuAttuatore.xaml
+build_metadata.AdditionalFiles.TargetPath = MenuAttuatore.xaml
+build_metadata.AdditionalFiles.RelativePath = MenuAttuatore.xaml
+
+[C:/Users/giorg/Desktop/Giorgio/Scuola/4IB 2022-2023/Tps/tps_2022_2023/04_Python-4-GUI-C\#/04_GUI_Csharp/04_GUI_Csharp/MenuSensore.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = _04_GUI_Csharp.MenuSensore.xaml
+build_metadata.AdditionalFiles.TargetPath = MenuSensore.xaml
+build_metadata.AdditionalFiles.RelativePath = MenuSensore.xaml
+
+[C:/Users/giorg/Desktop/Giorgio/Scuola/4IB 2022-2023/Tps/tps_2022_2023/04_Python-4-GUI-C\#/04_GUI_Csharp/04_GUI_Csharp/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = _04_GUI_Csharp.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[c:/Users/giorg/Desktop/Giorgio/Scuola/4IB 2022-2023/Tps/tps_2022_2023/04_Python-4-GUI-C\#/04_GUI_Csharp/04_GUI_Csharp/Resources/Styles/Styles.xaml]
+[C:/Users/giorg/Desktop/Giorgio/Scuola/4IB 2022-2023/Tps/tps_2022_2023/04_Python-4-GUI-C\#/04_GUI_Csharp/04_GUI_Csharp/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = _04_GUI_Csharp.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml

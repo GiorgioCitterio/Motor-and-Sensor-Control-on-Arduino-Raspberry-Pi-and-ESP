@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_04_GUI_Csharp.MenuSensore"
+             Title="MenuSensore">
+    <VerticalStackLayout>
+        <Label 
+            Text="Menu Sensore"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Button
+            Text="Soluzione 1"
+            Clicked="Soluzione1"/>
+        <Button
+            Text="Soluzione 2"
+            Clicked="Soluzione2"/>
+        <Button
+            Text="Soluzione 3"
+            Clicked="Soluzione3"/>
+    </VerticalStackLayout>
+</ContentPage>
