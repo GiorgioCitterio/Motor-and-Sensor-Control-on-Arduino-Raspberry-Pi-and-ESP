@@ -53,10 +53,6 @@ Nell'ultima versione del programma per il sensore, per la realizzazione del graf
 
 Documentazione ufficiale libreria [matplotlib](https://matplotlib.org/).
 
-## Attività 4 - variante C#
-
-Variante della gui per controllare il sensore e l'attuatore, realizzata in C# tramite progetto MAUI.
-
 ---
 
 # Attività 5
