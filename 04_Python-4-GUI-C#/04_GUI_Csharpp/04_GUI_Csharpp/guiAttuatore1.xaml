@@ -15,18 +15,32 @@
         </Grid.ColumnDefinitions>
         <Button
             Text="Aumenta velocità di 10"
-            Clicked="Inc10"/>
+            Clicked="Inc10"
+            Grid.Row="0"
+            Grid.Column="0"/>
         <Button
             Text="Diminuisci velocità di 10"
-            Clicked="Dec10"/>
+            Clicked="Dec10"
+            Grid.Row="0"
+            Grid.Column="1"/>
         <Button
             Text="Avanti"
-            Clicked="Avanti"/>
+            Clicked="Avanti"
+            Grid.Row="1"
+            Grid.Column="0"/>
         <Button
             Text="Indietro"
-            Clicked="Indietro"/>
+            Clicked="Indietro"
+            Grid.Row="1"
+            Grid.Column="1"/>
         <Label
             x:Name="Velocità"
-            Text="Velocità: 0"/>
+            Text="Velocità: 0"
+            Grid.Row="2"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"
+            FontSize="30"/>
     </Grid>
 </ContentPage>
