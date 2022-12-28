@@ -1,31 +1,26 @@
 using System.IO.Ports;
-using System.Runtime.InteropServices;
+using System.Text.Encodings;
 namespace _04_GUI_Csharpp;
 
 [StructLayout(LayoutKind.Explicit)]
-public struct pack
+public struct Pack
 {
-    [FieldOffset(0)]
-    public byte IDCORRETTO = "BE";
-    [FieldOffset(1)]
-    public byte MITTENTE = "M001";
-    [FieldOffset(5)]
-    public byte DESTINATARIO = "D031";
-    [FieldOffset(9)]
-    public byte TIPO = "A1";
-    [FieldOffset(11)]
-    public byte direzione = "A";
-    [FieldOffset(12)]
-    public byte velocita = 0;
-    [FieldOffset(15)]
-    public byte VUOTO = "----------------";
+    
 }
 public partial class guiAttuatore1 : ContentPage
 {
-	static SerialPort serialPort = new SerialPort("COM3", 9600);   
-	public guiAttuatore1()
+	static SerialPort serialPort = new SerialPort("COM3", 9600);
+    static const byte[] IDCORRETTO = Encoding.ASCII.GetBytes("BE");
+    static const byte[] MITTENTE =  "M001";
+    static const string DESTINATARIO = "D031";
+    static const string TIPO = "A1";
+    static byte direzione = "A";
+    static byte velocita = 0;
+    static const string VUOTO = "----------------";
+    public guiAttuatore1()
 	{
 		InitializeComponent();
+        Pack pack = new Pack();
 	}
     private void Inc10(object sender, EventArgs e)
     {

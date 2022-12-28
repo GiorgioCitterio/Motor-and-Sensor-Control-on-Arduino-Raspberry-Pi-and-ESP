@@ -80,6 +80,10 @@
               "version": "[7.0.52, )",
               "autoReferenced": true
             },
+            "System.IO.Ports": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "Xamarin.Android.Glide": {
               "target": "Package",
               "version": "[4.13.2.2, )",
@@ -213,6 +217,10 @@
               "target": "Package",
               "version": "[1.2.221109.1, )",
               "autoReferenced": true
+            },
+            "System.IO.Ports": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             }
           },
           "imports": [

@@ -1,0 +1,12 @@
+C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharpp\04_GUI_Csharpp\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\04_GUI_Csharpp.csproj.AssemblyReference.cache
+C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharpp\04_GUI_Csharpp\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\mauiimage.inputs
+C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharpp\04_GUI_Csharpp\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\mauifont.inputs
+C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharpp\04_GUI_Csharpp\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\mauisplash.inputs
+C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharpp\04_GUI_Csharpp\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\mauimanifest.stamp
+C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharpp\04_GUI_Csharpp\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.g.i.cs
+C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharpp\04_GUI_Csharpp\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.g.cs
+C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharpp\04_GUI_Csharpp\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\XamlTypeInfo.g.cs
+C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharpp\04_GUI_Csharpp\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xaml
+C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharpp\04_GUI_Csharpp\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xbf
+C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharpp\04_GUI_Csharpp\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\XamlSaveStateFile.xml
+C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023\04_Python-4-GUI-C#\04_GUI_Csharpp\04_GUI_Csharpp\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\04_GUI_Csharpp.GeneratedMSBuildEditorConfig.editorconfig
