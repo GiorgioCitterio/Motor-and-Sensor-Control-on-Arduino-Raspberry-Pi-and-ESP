@@ -3,6 +3,7 @@ import struct
 import json
 import time
 import serial.tools.list_ports
+import os
 IDCORRETTO = "BE"
 DESTINATARIOCORRETTO = "D031"
 
@@ -35,9 +36,15 @@ while True:
     else:
         print("pacchetto scartato")
     
-    data = json.dumps(lista[-10:])
+    data = json.dumps(lista[-10:])  
     with open('05_Python-5-JSON/parte3/datiSensore.json', 'w') as fp:
         fp.write(data)
     with open('05_Python-5-JSON/parte3/datiSensore.json', 'r') as fp:
         lista2 = json.load(fp)
     print(lista2)
+    time.sleep(0.5)
+    if os.path.exists("05_Python-5-JSON/parte3/datiSensore.json"):
+        os.remove("05_Python-5-JSON/parte3/datiSensore.json")
+        print("file rimosso")
+    else:
+        print("The file does not exist") 
