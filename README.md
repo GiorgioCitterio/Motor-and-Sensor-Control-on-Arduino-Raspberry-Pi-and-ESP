@@ -71,5 +71,5 @@ Documentazione ufficiale libreria [json](https://docs.python.org/3/library/json.
 
 **Relazione attività 6**:.
 
-la libreria *matplotlib* installabile (su Windows) con il comando seguente:
+la libreria *Flask* installabile (su Windows) con il comando seguente:
 `py -m pip install Flask`
