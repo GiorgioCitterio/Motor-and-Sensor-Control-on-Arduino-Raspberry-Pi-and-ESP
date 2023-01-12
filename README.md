@@ -1,5 +1,5 @@
 # tps_2022_2023
-tps_GiorgioCitterio_UmbertoColombo_2022_2023       
+tps_GiorgioCitterio_UmbertoColombo_2022_2023
 
 ---
 
@@ -64,3 +64,12 @@ Come memorizzare i dati ricevuti dal sensore su un file JSON in modo da poterli 
 Per scrivere su un file JSON da python si utilizza la libreria *json* già presente in python:
 
 Documentazione ufficiale libreria [json](https://docs.python.org/3/library/json.html).
+
+---
+
+# Attività 6
+
+**Relazione attività 6**:.
+
+la libreria *matplotlib* installabile (su Windows) con il comando seguente:
+`py -m pip install Flask`
