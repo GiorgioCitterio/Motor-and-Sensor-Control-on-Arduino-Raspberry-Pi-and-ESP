@@ -67,9 +67,9 @@ Documentazione ufficiale libreria [json](https://docs.python.org/3/library/json.
 
 ---
 
-# Attività 6
+# Attività 7
 
-**Relazione attività 6**:.
+**Relazione attività 7**: [Rendere disponibili sul Web i dati del sensore](07).
 
 la libreria *Flask* installabile (su Windows) con il comando seguente:
 `py -m pip install Flask`
