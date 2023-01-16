@@ -20,7 +20,7 @@ L293D), entrambi realizzati su breadboard e gestiti da un programma su arduino.
 
 Per comunicare sulla porta seriale tramite python si utilizza la libreria *serial* che può essere installata (su Windows) con il seguente comando:
 ```
->py -m pip install pyserial
+py -m pip install pyserial
 ```
 
 Documentazione ufficiale libreria [serial](https://pyserial.readthedocs.io/en/latest/pyserial.html).
@@ -46,12 +46,16 @@ Documentazione ufficiale libreria [struct](https://docs.python.org/3/library/str
 Come gestire il sensore e l'attuatore tramite interfaccia grafica GUI su python, 3 programmi diversi per l'attuatore e 3 per il sensore.
 
 Per realizzare la GUI (Graphical User Interface) si utilizza la libreria *tkinter* installabile per la maggior parte degli utenti con il seguente comando:
-`py -m pip install tkinter`
+```
+py -m pip install tkinter
+```
 
 Documentazione ufficiale libreria [tkinter](https://docs.python.org/3/library/tk.html).
 
 Nell'ultima versione del programma per il sensore, per la realizzazione del grafico si utilizza la libreria *matplotlib* installabile (su Windows) con il comando seguente:
-`py -m pip install matplotlib`
+```
+py -m pip install matplotlib
+```
 
 Documentazione ufficiale libreria [matplotlib](https://matplotlib.org/).
 
@@ -74,4 +78,6 @@ Documentazione ufficiale libreria [json](https://docs.python.org/3/library/json.
 **Relazione attività 7**: [Rendere disponibili sul Web i dati del sensore](07).
 
 la libreria *Flask* installabile (su Windows) con il comando seguente:
-`py -m pip install Flask`
+```
+py -m pip install Flask
+```
