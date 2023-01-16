@@ -19,7 +19,9 @@ Comunicare tramite un' applicazione python che gira su Windows un sensore (poten
 L293D), entrambi realizzati su breadboard e gestiti da un programma su arduino.
 
 Per comunicare sulla porta seriale tramite python si utilizza la libreria *serial* che può essere installata (su Windows) con il seguente comando:
-`py -m pip install pyserial`
+```
+>py -m pip install pyserial
+```
 
 Documentazione ufficiale libreria [serial](https://pyserial.readthedocs.io/en/latest/pyserial.html).
 
