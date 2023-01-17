@@ -5,7 +5,7 @@ app = Flask(__name__)
 @app.route('/')
 
 def returnHtml():
-        with open('05_Python-5-JSON/parte3/datiSensore.json', 'r') as fp:
+        with open('07_Python-7-Flask/parte3/datiSensore.json', 'r') as fp:
                 lista = json.load(fp)
         date = []
         valoriSensori = []
