@@ -1,11 +1,13 @@
 from flask import Flask
 import json
+import os
 
+path = os.getcwd()+'/datiSensore.json'
 app = Flask(__name__)
 @app.route('/')
 
 def returnHtml():
-        with open('07_Python-7-Flask/parte3/datiSensore.json', 'r') as fp:
+        with open(path, 'r') as fp:
                 lista = json.load(fp)
         date = []
         valoriSensori = []
