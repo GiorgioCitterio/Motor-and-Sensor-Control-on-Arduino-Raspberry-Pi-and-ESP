@@ -14,7 +14,6 @@ for port, desc, _ in sorted(ports):
     portaSeriale.append(port)
 
 arduino = serial.Serial(portaSeriale[0], 9600)
-
 lista = []
 
 while True:
@@ -35,11 +34,10 @@ while True:
         lista.append(dizionario)
     else:
         print("pacchetto scartato")
-    
     data = json.dumps(lista[-10:])  
-    with open('05_Python-5-JSON/parte3/datiSensore.json', 'w') as fp:
+    with open('07_Python-7-Flask/parte5/datiSensore.json', 'w') as fp:
         fp.write(data)
-    with open('05_Python-5-JSON/parte3/datiSensore.json', 'r') as fp:
+    with open('07_Python-7-Flask/parte5/datiSensore.json', 'r') as fp:
         lista2 = json.load(fp)
     print(lista2)
     path = os.getcwd()+'/datiSensore.json'
@@ -58,8 +56,8 @@ while True:
         stringaFinale= "<style>table, th, td{border: 1px solid black;}</style><body><table><tr><th>Data e ora</th><th>Valore</th></tr>"+stringa+"</table></body>"
         print(stringaFinale)
         return stringaFinale
-    if os.path.exists("05_Python-5-JSON/parte3/datiSensore.json"):
-        os.remove("05_Python-5-JSON/parte3/datiSensore.json")
+    if os.path.exists("07_Python-7-Flask/parte5/datiSensore.json"):
+        os.remove("07_Python-7-Flask/parte5/datiSensore.json")
         print("file rimosso")
     else:
         print("The file does not exist")
