@@ -3,6 +3,10 @@ tps_GiorgioCitterio_UmbertoColombo_2022_2023
 
 ---
 
+Per l'installazione delle librerie su sistemi [Linux](lib.md).
+
+---
+
 # Attività 1
 
 **Relazione attività 1**: [Trasmissione seriale su arduino](01_TrasmissioneSerialeArduino/01_TrasmissioneSerialeArduino_Relazione.pdf).
@@ -75,9 +79,13 @@ Documentazione ufficiale libreria [json](https://docs.python.org/3/library/json.
 
 # Attività 7
 
-**Relazione attività 7**: [Rendere disponibili sul Web i dati del sensore](07).
+**Relazione attività 7**: [Rendere disponibili sul Web i dati del sensore](07_Python-7-Flask/07_Python_7_Flask_Relazione.pdf).
 
-la libreria *Flask* installabile (su Windows) con il comando seguente:
+Come rendere disponibili sul Web i dati del sensore memorizzati nel file JSON grazie all'utilizzo di Flask e del tunneling.
+
+Per creare il Web server utilizzeremo la libreria *Flask* installabile (su Windows) con il comando seguente:
 ```
 py -m pip install Flask
 ```
+
+Documentazione ufficiale libreria [Flask](https://flask.palletsprojects.com/en/2.2.x/).
