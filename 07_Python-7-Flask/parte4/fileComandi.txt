@@ -1,2 +1,5 @@
 ssh –N -4 –v –R 8105:172.17.4.160:5000 greppi@tunnel.vincenzov.net
 tunnel.vincenzov.net:8105
+
+ssh –N -4 –v –R 8106:192.168.1.123:5000 greppi@tunnel.vincenzov.net
+tunnel.vincenzov.net:8106
