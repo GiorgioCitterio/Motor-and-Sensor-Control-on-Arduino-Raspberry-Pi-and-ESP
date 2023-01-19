@@ -16,6 +16,6 @@ def returnHtml():
                 date.append(lista[i]["DataOra"])
                 valoriSensori.append(lista[i]["Valore"])
                 stringa += "<tr><td>"+str(date[i])+"</td><td>"+str(valoriSensori[i])+"</td></tr>"
-        stringaFinale= "<html><head><meta http-equiv=refresh content=1><style>table, th, td{border: 1px solid black;}</style></head><body><table><tr><th>Data e ora</th><th>Valore</th></tr>"+stringa+"</table></body></html>"
+        stringaFinale= "<head><meta http-equiv=refresh content=1><style>table, th, td{border: 1px solid black;}</style></head><body><table><tr><th>Data e ora</th><th>Valore</th></tr>"+stringa+"</table></body>"
         print(stringaFinale)
         return stringaFinale
