@@ -1,5 +1,8 @@
-ssh –N -4 –v –R 8105:172.23.16.1:5000 greppi@tunnel.vincenzov.net
+ssh -N -4 -v -R 8105:172.23.224.1:5000 greppi@tunnel.vincenzov.net
 tunnel.vincenzov.net:8105
 
 ssh –N -4 –v –R 8106:172.17.3.95:5000 greppi@tunnel.vincenzov.net
 tunnel.vincenzov.net:8106
+
+py -m flask --app flask1 run --host 0.0.0.0
+ssh -N -4 -v -R 8105:172.23.224.1:5000 greppi@tunnel.vincenzov.net
