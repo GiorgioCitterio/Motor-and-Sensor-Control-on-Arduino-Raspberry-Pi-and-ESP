@@ -4,11 +4,13 @@ import json
 import os
 
 pathJ = os.getcwd()+'/datiSensore.json'
-pathH = os.getcwd()+'/index.html'
+pathH = os.getcwd()+'/templates/index.html'
 app = Flask(__name__)
 @app.route('/')
 
 def returnHtml():
         with open(pathJ, 'r') as fp:
                 lista = json.load(fp)
-        return render_template(pathH, dizValori=lista)
+        return render_template('index.html', dizValori=lista)
+if __name__=="__main__":
+        app.run(debug=True)
