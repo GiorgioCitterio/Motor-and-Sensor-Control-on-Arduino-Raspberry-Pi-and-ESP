@@ -4,11 +4,7 @@ Per l'installazione di *pip* su **Arch** il comando sarà il seguente:
 ```
 sudo pacman -S python-pip
 ```
-Per l'installazione di *pip* su **Debian** il comando sarà il seguente:
-```
-sudo apt install python3-pip
-```
-Per l'installazione di *pip* su **Ubuntu** il comando sarà il seguente:
+Per l'installazione di *pip* su **Debian** e **Ubuntu** il comando sarà il seguente:
 ```
 sudo apt install python3-pip
 ```
