@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="1">
     <title>Controllo motore</title>
 </head>
 <body>
-    <form submit="py">
+    <form action="/ricevi">
         <label for="velocita">velocità:</label>
-        <input type="number" id="velocita" name="btnAvanti" required>ù
-        <input type="submit">
+        <input type="number" id="velocita" name="Velocita" required>
+        <input type="submit" value="Invia">
+        <br>
+        <input type="radio" id="Avanti" name="btnAvanti">
+        <label> Avanti </label>
+        <br>
+        <input type="radio" id="Indietro" name="btnIndietro">
+        <label> Indietro </label>
     </form>
 </body>
 </html>
