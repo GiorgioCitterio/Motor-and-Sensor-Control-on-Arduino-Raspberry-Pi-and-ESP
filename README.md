@@ -89,3 +89,11 @@ py -m pip install Flask
 ```
 
 Documentazione ufficiale libreria [Flask](https://flask.palletsprojects.com/en/2.2.x/).
+
+---
+
+# Attività 8
+
+**Relazione attività 8**: []().
+
+Come inviare dati da Web all’applicazione Flask, in modo da poter controllare l’attuatore.
