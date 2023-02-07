@@ -17,12 +17,14 @@ def inviaFormVuoto():
 
 @app.route("/ricevi")
 def riceviForm():
+    val = request.args["velocita"]
     if(request.args["btn"] == "avanti"):
         direzione = b"A"
+        v = str(val).zfill(3).encode()
     else:
         direzione = b"I"
-    val = request.args["velocita"]
-    v = str(val).zfill(3).encode()
+        vel = ~int(val)+1
+        v = str(vel).zfill(3).encode()
     pack=struct.pack("2s 4s 4s 2s 1s 3s 16s",ID,MITTENTE,DESTINATARIO, TIPO, direzione, v, VUOTO)
     print(pack)
     arduino.write(pack)
