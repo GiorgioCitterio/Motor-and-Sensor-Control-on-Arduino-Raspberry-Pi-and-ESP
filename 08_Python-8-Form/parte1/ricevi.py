@@ -9,15 +9,21 @@ VUOTO=b"----------------"
 direzione = b"A"
 
 arduino = serial.Serial('COM3', 9600)
-
 app = Flask(__name__)
 
-
-@app.route('/')
-def returnHtml():
-    return(render_template('index.html'))
-
+@app.route("/")
+def inviaFormVuoto():
+    return(render_template("index.html"))
 
 @app.route("/ricevi")
 def riceviForm():
-    return(request.args["Velocità"])
+    if(request.args["velocita"] == "avanti"):
+        direzione = b"A"
+    else:
+        direzione = b"I"
+    val = request.args["value"]
+    v = str(val).zfill(3).encode()
+    pack=struct.pack("2s 4s 4s 2s 1s 3s 16s",ID,MITTENTE,DESTINATARIO, TIPO, direzione, v, VUOTO)
+    print(pack)
+    arduino.write(pack)
+    return(request.args["velocita"] + " " + request.args["value"])
