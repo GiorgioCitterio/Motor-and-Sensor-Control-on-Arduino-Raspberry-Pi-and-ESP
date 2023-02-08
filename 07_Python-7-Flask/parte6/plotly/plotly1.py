@@ -9,7 +9,7 @@ path = os.getcwd()+'/datiSensore.json'
 app = Flask(__name__)
 @app.route('/')
 
-def notdash():
+def returnHtml():
    with open(path, 'r') as fp:
          lista = json.load(fp)
    date = []
