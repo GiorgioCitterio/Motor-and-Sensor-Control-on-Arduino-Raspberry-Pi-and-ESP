@@ -44,20 +44,18 @@ while True:
     else:
         print("pacchetto scartato")
     data = json.dumps(lista[-10:])  
-    with open('08_Python-8-Form/parte2/datiSensore.json', 'w') as fp:
+    with open(pathJ, 'w') as fp:
         fp.write(data)
-    with open('08_Python-8-Form/parte2/datiSensore.json', 'r') as fp:
+    with open(pathJ, 'r') as fp:
         lista2 = json.load(fp)
         
     @app.route("/")
     def returnHtml():
         with open(pathJ, 'r') as fp:
                 lista = json.load(fp)
-        return render_template('index.html', dizValori=lista)
-    @app.route("/")
-    def inviaFormVuoto():
-        return(render_template("index.html"))
-    @app.route("/ricevi")
+        return(render_template('index.html', dizValori=lista))
+
+    @app.route("/ricevi2")
     def riceviForm():
         val = request.args["velocita"]
         if(request.args["btn"] == "avanti"):
