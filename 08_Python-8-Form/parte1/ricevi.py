@@ -26,4 +26,4 @@ def riceviForm():
     pack=struct.pack("2s 4s 4s 2s 1s 3s 16s",ID,MITTENTE,DESTINATARIO, TIPO, direzione, v, VUOTO)
     print(pack)
     arduino.write(pack)
-    return("Velocità: "+request.args["velocita"] + "\t" + "Direzione: " + request.args["btn"])
+    return("Velocità: "+request.args["velocita"] + " " + "Direzione: " + request.args["btn"])
