@@ -4,6 +4,7 @@ import struct
 import os
 import json
 import time
+import serial.tools.list_ports
 ID=b"BE"
 MITTENTE=b"M001"
 DESTINATARIO=b"D031"
@@ -15,8 +16,12 @@ direzione = b"A"
 
 pathJ = os.getcwd()+'/datiSensore.json'
 pathH = os.getcwd()+'/templates/index.html'
-arduinoSensore = serial.Serial('COM3', 9600)
-arduinoAttuatore = serial.Serial('COM4', 9600)
+ports = serial.tools.list_ports.comports()
+porteSeriali = []
+for port, desc, _ in sorted(ports):
+    porteSeriali.append(port)
+arduinoSensore = serial.Serial(porteSeriali[0], 9600)
+arduinoAttuatore = serial.Serial(porteSeriali[1], 9600)
 app = Flask(__name__)
 lista = []
 

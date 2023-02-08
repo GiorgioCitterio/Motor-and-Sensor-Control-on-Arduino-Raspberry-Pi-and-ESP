@@ -7,16 +7,18 @@
     <title>Controllo motore</title>
 </head>
 <body>
+    <h2>Controllo motore</h2>
     <form action="/ricevi">
         <label for="velocita">Velocità:</label>
-        <input type="number" id="velocita" name="velocita" required min="0" max="255">
-        <input type="submit" value="Invia">
+        <input type="number" id="velocita" name="velocita" required min="0" max="255" placeholder="0-255">
         <br>
         <input type="radio" name="btn" checked="checked" value="avanti">
         <label> Avanti </label>
         <br>
         <input type="radio" name="btn" value="indietro">
         <label> Indietro </label>
+        <br>
+        <input type="submit" value="Invia">
     </form>
 </body>
 </html>
