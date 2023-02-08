@@ -37,8 +37,8 @@ while True:
         #fp.write(data)
     #with open('05_Python-5-JSON/parte3/datiSensore.json', 'r') as fp:
         #lista2 = json.load(fp)
-    with open('07_Python-7-Flask/parte3/datiSensore.json', 'w') as fp:
+    with open('07_Python-7-Flask/parte6/plotly/datiSensore.json', 'w') as fp:
         fp.write(data)
-    with open('07_Python-7-Flask/parte3/datiSensore.json', 'r') as fp:
+    with open('07_Python-7-Flask/parte6/plotly/datiSensore.json', 'r') as fp:
         lista2 = json.load(fp)
     print(lista2)
