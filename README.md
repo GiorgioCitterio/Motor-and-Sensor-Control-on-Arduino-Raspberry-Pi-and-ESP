@@ -90,8 +90,6 @@ py -m pip install Flask
 
 Documentazione ufficiale libreria [Flask](https://flask.palletsprojects.com/en/2.2.x/).
 
-- [ ] Plotly
-
 ---
 
 # Attività 8
