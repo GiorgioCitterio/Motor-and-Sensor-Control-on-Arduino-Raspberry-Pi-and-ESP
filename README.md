@@ -94,6 +94,8 @@ Documentazione ufficiale libreria [Flask](https://flask.palletsprojects.com/en/2
 
 # Attività 8
 
-**Relazione attività 8**: []().
+**Relazione attività 8**: [Controllo del motore tramite browser](08_Python-8-Form/08_Python_8_Form_Relazione.pdf).
 
-Come inviare dati da Web all’applicazione Flask, in modo da poter controllare l’attuatore.
+Come inviare dati da Web all’applicazione Flask, in modo da poter controllare il motore.
+
+---
