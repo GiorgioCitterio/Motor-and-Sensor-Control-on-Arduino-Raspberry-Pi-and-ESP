@@ -6,12 +6,7 @@ import serial.tools.list_ports
 IDCORRETTO = "BE"
 DESTINATARIOCORRETTO = "D031"
 
-ports = serial.tools.list_ports.comports()
-portaSeriale = []
-for port, desc, _ in sorted(ports):
-    portaSeriale.append(port)
-
-arduino = serial.Serial(portaSeriale[0], 9600)
+arduino = serial.Serial('COM8', 9600)
 lista = []
 
 while True:
@@ -37,8 +32,8 @@ while True:
         #fp.write(data)
     #with open('05_Python-5-JSON/parte3/datiSensore.json', 'r') as fp:
         #lista2 = json.load(fp)
-    with open('07_Python-7-Flask/parte6/plotly/datiSensore.json', 'w') as fp:
+    with open('08_Python-8-Form/parte2/datiSensore.json', 'w') as fp:
         fp.write(data)
-    with open('07_Python-7-Flask/parte6/plotly/datiSensore.json', 'r') as fp:
+    with open('08_Python-8-Form/parte2/datiSensore.json', 'r') as fp:
         lista2 = json.load(fp)
     print(lista2)
