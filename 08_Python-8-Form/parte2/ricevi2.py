@@ -48,13 +48,13 @@ while True:
         fp.write(data)
     with open(pathJ, 'r') as fp:
         lista2 = json.load(fp)
-        
-    @app.route("/")
+
+    @app.route("/ricevi2")
     def returnHtml():
         with open(pathJ, 'r') as fp:
-                lista = json.load(fp)
+            lista = json.load(fp)
         return(render_template('index.html', dizValori=lista))
-
+        
     @app.route("/ricevi2")
     def riceviForm():
         val = request.args["velocita"]
