@@ -6,7 +6,7 @@ import serial.tools.list_ports
 IDCORRETTO = "BE"
 DESTINATARIOCORRETTO = "D031"
 
-arduino = serial.Serial('COM8', 9600)
+arduino = serial.Serial('COM4', 9600)
 lista = []
 
 while True:

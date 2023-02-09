@@ -3,6 +3,9 @@ import serial
 import struct
 import os
 import json
+import plotly.express as px
+import pandas as pd
+import plotly
 ID=b"BE"
 MITTENTE=b"M001"
 DESTINATARIO=b"D031"
@@ -19,11 +22,20 @@ app = Flask(__name__)
 
 lista = []
 @app.route('/')
-
 def returnHtml():
         with open(pathJ, 'r') as fp:
-                lista = json.load(fp)
-        return render_template('index.html', dizValori=lista)
+            lista = json.load(fp)
+            date = []
+        valoriSensori = []
+        for i in range(len(lista)):
+            date.append(lista[i]["DataOra"])
+            valoriSensori.append(lista[i]["Valore"])
+        df = pd.DataFrame({
+        'DataOra': date,
+        'Valore': valoriSensori})
+        fig = px.bar(df, x='DataOra', y='Valore', barmode='group')
+        graphJSON = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)  
+        return render_template('index.html', dizValori=lista, graphJSON=graphJSON)
 
 @app.route("/ricevi")
 def riceviForm():

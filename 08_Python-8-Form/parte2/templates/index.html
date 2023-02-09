@@ -24,7 +24,7 @@
         <label> Indietro </label>
     </form>
    <h2>Valori sensore</h2> 
-    <table>
+    <table> 
         <tr>
             <th>Data e ora</th>
             <th>Valore</th>
@@ -36,5 +36,11 @@
             {% endfor %}
         </tr>
     </table>
+    <div id='chart' class='chart'”></div>
+    <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+    <script type='text/javascript'>
+    var graphs = {{graphJSON | safe}};
+    Plotly.plot('chart',graphs,{});
+    </script>
 </body>
 </html>
