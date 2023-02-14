@@ -1,0 +1,5 @@
+indirizzo ip: 172.17.2.44
+nome: 4IB-6
+nome utente: pi
+pass: admin
+indirizzo ip statico: 172.17.200.6
