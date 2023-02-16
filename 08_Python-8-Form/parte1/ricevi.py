@@ -1,6 +1,7 @@
 from flask import Flask, request, render_template
 import serial
 import struct
+import serial.tools.list_ports
 ID=b"BE"
 MITTENTE=b"M001"
 DESTINATARIO=b"D031"
@@ -8,7 +9,12 @@ TIPO=b"A1"
 VUOTO=b"----------------"
 direzione = b"A"
 
-arduino = serial.Serial('COM3', 9600)
+ports = serial.tools.list_ports.comports()
+comDescList = []
+for port, desc, _ in sorted(ports):
+    comDescList.append(port)
+
+arduino = serial.Serial(comDescList[0], 9600)
 app = Flask(__name__)
 
 @app.route("/")

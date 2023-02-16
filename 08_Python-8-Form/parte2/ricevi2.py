@@ -6,6 +6,7 @@ import json
 import plotly.express as px
 import pandas as pd
 import plotly
+import serial.tools.list_ports
 ID=b"BE"
 MITTENTE=b"M001"
 DESTINATARIO=b"D031"
@@ -17,7 +18,12 @@ direzione = b"A"
 
 pathJ = os.getcwd()+'/datiSensore.json'
 
-arduinoAttuatore = serial.Serial('COM3', 9600)
+ports = serial.tools.list_ports.comports()
+comDescList = []
+for port, desc, _ in sorted(ports):
+    comDescList.append(port)
+
+arduinoAttuatore = serial.Serial(comDescList[0], 9600)
 app = Flask(__name__)
 
 lista = []
