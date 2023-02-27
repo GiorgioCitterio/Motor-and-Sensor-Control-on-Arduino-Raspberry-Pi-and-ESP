@@ -4,6 +4,9 @@ nome utente: pi
 pass: admin
 indirizzo ip statico: 172.17.200.6
 
+ssh pi@172.17.200.6
+
 comandi:
-python3 -m flask --app 07_Python-7-Flask/parte6/template/template1 run --host 0.0.0.0
+cd /tps/08_Python-8-Form/parte2
+python3 -m flask --app ricevi2 run --host 0.0.0.0
 python3 05_Python-5-JSON/parte3/esercizioSensJ.py   
