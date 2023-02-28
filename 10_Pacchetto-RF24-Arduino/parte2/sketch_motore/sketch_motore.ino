@@ -1,11 +1,11 @@
 #include <RF24.h> 
 RF24 radio(7, 8);
 
-#define ID "BE"               
+#define ID "EP" //BE              
 #define TIPO "A1"            
-#define DESTINATARIO "D031"     
-#define READINGPIPE "00002"    
-
+#define DESTINATARIO "P438"  //A001   
+#define READINGPIPE "00001"    
+  
 struct pacchettoA1 { 
   char id[2]; 
   char mittente[4]; 
@@ -22,7 +22,9 @@ void setup() {
   pinMode(5, OUTPUT);
  
   radio.begin(); 
-  radio.setPALevel(RF24_PA_MIN); 
+  radio.setPALevel(RF24_PA_MIN);
+  radio.setPayloadSize(32);
+  radio.setDataRate(RF24_2MBPS);
   radio.openReadingPipe(0, (byte *) READINGPIPE); 
   radio.startListening();
 }
@@ -35,9 +37,9 @@ void loop() {
     int controlloId = memcmp(ID, msg.id, 2);
     int controlloDest = memcmp(DESTINATARIO, msg.destinatario, 4);
     char vel[4];
-    Serial.println((char *)&msg);
     if (controlloId == 0 && controlloDest == 0)
     {
+      Serial.println((char *)&msg);
       memcpy(vel,msg.velocita,sizeof(msg.velocita));
       vel[3] = '\0';
       int velocita = atoi(vel);
@@ -47,7 +49,6 @@ void loop() {
         digitalWrite(9, HIGH);
         analogWrite(3, velocita);
       }
-
       if (memcmp("I",msg.direzione, 1) == 0)
       {
         digitalWrite(5, HIGH);

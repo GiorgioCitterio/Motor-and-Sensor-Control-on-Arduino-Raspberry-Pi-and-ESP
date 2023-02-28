@@ -99,3 +99,19 @@ Documentazione ufficiale libreria [Flask](https://flask.palletsprojects.com/en/2
 Come inviare dati da Web all’applicazione Flask, in modo da poter controllare il motore.
 
 ---
+
+# Attività 9
+
+Installazione e import programmi su raspberry
+
+---
+
+# Attività 10
+
+**Relazione attività 10**: []().
+
+Come inviare i pacchetti realizzati nella fase “Pacchetto Livello 3 – seriale”, in modo che facciano uso del modulo radio **nRF24L01+**.
+
+Per utilizzare il modulo radio **nRF24L01+** serve importare la libreria **RF24** su arduino.
+
+Documentazione ufficiale libreria [RF24](https://nrf24.github.io/RF24/classRF24.html).

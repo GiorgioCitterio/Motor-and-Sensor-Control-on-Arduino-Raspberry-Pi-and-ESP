@@ -4,7 +4,7 @@ RF24 radio(7, 8);
 #define ID "BE"          
 #define TIPO "S1"           
 #define MITTENTE "M001"    
-#define DESTINATARIO "D031" 
+#define DESTINATARIO "P001" 
 #define WRITINGPIPE "00001" 
 #define VUOTO "----------------"  
 
@@ -22,6 +22,8 @@ void setup() {
  
   radio.begin(); 
   radio.setPALevel(RF24_PA_MIN); 
+  radio.setPayloadSize(32);
+  radio.setDataRate(RF24_2MBPS);
   radio.openWritingPipe((byte *)WRITINGPIPE); 
   radio.stopListening();
 }
@@ -39,10 +41,10 @@ void loop() {
   memcpy(msg.valoreSensore, s, sizeof(msg.valoreSensore));
   memcpy(msg.vuoto, VUOTO, sizeof(msg.vuoto));
   
-  Serial.write((byte *)&msg, sizeof(msg));
+  Serial.write((char *)&msg, sizeof(msg));
   Serial.println();
 
-  radio.write((byte *)&msg, sizeof(msg)); 
+  radio.write((char *)&msg, sizeof(msg)); 
 
   
   delay(2500);
