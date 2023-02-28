@@ -108,10 +108,14 @@ Installazione e importazione programmi su raspberry.
 
 # Attività 10
 
-**Relazione attività 10**: []().
+**Relazione attività 10**: [Inviare pacchetti tramite modulo radio RF24](10_Pacchetto-RF24-Arduino/10_Pacchetto_RF24_Arduino_Relazione.pdf).
 
 Come inviare i pacchetti realizzati nella fase “Pacchetto Livello 3 – seriale”, in modo che facciano uso del modulo radio **nRF24L01+**.
 
 Per utilizzare il modulo radio **nRF24L01+** serve importare la libreria *RF24* su arduino.
 
 Documentazione ufficiale libreria [RF24](https://nrf24.github.io/RF24/classRF24.html).
+
+---
+
+# Attività 11
