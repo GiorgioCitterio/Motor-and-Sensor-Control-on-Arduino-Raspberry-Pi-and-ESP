@@ -102,7 +102,7 @@ Come inviare dati da Web all’applicazione Flask, in modo da poter controllare 
 
 # Attività 9
 
-Installazione e import programmi su raspberry
+Installazione e importazione programmi su raspberry.
 
 ---
 
