@@ -4,7 +4,6 @@ import json
 import os
 
 pathJ = os.getcwd()+'/datiSensore.json'
-pathH = os.getcwd()+'/templates/index.html'
 app = Flask(__name__)
 @app.route('/')
 

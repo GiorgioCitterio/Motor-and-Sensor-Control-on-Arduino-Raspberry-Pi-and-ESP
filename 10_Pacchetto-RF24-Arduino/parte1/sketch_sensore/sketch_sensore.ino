@@ -18,14 +18,18 @@ struct pacchettoS1 {
 }; 
 
 void setup() {
-  Serial.begin(9600); 
- 
+  Serial.begin(9600);
+
   radio.begin(); 
   radio.setPALevel(RF24_PA_MIN); 
   radio.setPayloadSize(32);
   radio.setDataRate(RF24_2MBPS);
   radio.openWritingPipe((byte *)WRITINGPIPE); 
   radio.stopListening();
+  if (radio.isChipConnected())
+     Serial.println ("nRF24L01p presente");
+  else
+     Serial.println ("nRF24L01p non rilevato");
 }
 
 void loop() {

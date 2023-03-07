@@ -4,6 +4,9 @@ import struct
 import json
 import pigpio
 from nrf24 import *
+from flask import render_template
+from flask import Flask
+import os
 
 PIGPIONAME='localhost'
 PIGPIOPORT=8888
@@ -14,6 +17,8 @@ DESTINATARIOCORRETTO=b"P001"
 MIO_TIPO=b"S1"
 
 lista = []
+pathJ = os.getcwd()+'/datiSensore.json'
+app = Flask(__name__)
 
 # connessione a pigpiod
 pi = pigpio.pi(PIGPIONAME, PIGPIOPORT)
@@ -53,3 +58,10 @@ while True:
         with open('11_Pacchetto-RF24-Raspberry/datiSensore.json', 'r') as fp:
                 lista2 = json.load(fp)
         print(lista2)
+    @app.route('/')
+    def returnHtml():
+        with open(pathJ, 'r') as fp:
+                lista = json.load(fp)
+        return render_template('index.html', dizValori=lista)
+    if __name__=="__main__":
+        app.run(debug=True)

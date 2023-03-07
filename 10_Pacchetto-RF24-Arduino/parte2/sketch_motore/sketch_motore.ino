@@ -27,6 +27,10 @@ void setup() {
   radio.setDataRate(RF24_2MBPS);
   radio.openReadingPipe(0, (byte *) READINGPIPE); 
   radio.startListening();
+  if (radio.isChipConnected())
+     Serial.println ("nRF24L01p presente");
+  else
+     Serial.println ("nRF24L01p non rilevato");
 }
 
 void loop() {
