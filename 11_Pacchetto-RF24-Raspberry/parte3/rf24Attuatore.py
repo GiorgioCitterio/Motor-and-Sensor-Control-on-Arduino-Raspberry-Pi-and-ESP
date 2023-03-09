@@ -3,6 +3,7 @@ import sys
 import pigpio
 from nrf24 import *
 import struct
+from flask import Flask, request, render_template
 
 PIGPIONAME='localhost'
 PIGPIOPORT=8888
@@ -13,6 +14,7 @@ DESTINATARIO=b"A001"
 TIPO=b"A1"
 VUOTO=("-"*16).encode()
 direzione = b"A"
+app = Flask(__name__)
 
 # connessione a pigpiod
 pi = pigpio.pi(PIGPIONAME, PIGPIOPORT)
@@ -28,6 +30,19 @@ nrf.set_address_bytes(5)
 nrf.open_writing_pipe(WRITINGPIPE)
 
 #scrittura pacchetto 32 byte
-msg=struct.pack("2s 4s 4s 2s 1s 3s 16s",ID,MITTENTE,DESTINATARIO,TIPO,direzione,velocita,VUOTO)
-nrf.send(msg)
-print(msg)
+@app.route("/")
+def inviaFormVuoto():
+    return(render_template("index.html"))
+
+@app.route("/ricevi")
+def riceviForm():
+    val = request.args["velocita"]
+    if(request.args["btn"] == "avanti"):
+        direzione = b"A"
+    else:
+        direzione = b"I"
+    v = str(val).zfill(3).encode()
+    msg=struct.pack("2s 4s 4s 2s 1s 3s 16s",ID,MITTENTE,DESTINATARIO,TIPO,direzione,v,VUOTO)
+    nrf.send(msg)
+    print(msg)
+    return("Velocità: "+request.args["velocita"] + " " + "Direzione: " + request.args["btn"])

@@ -7,8 +7,7 @@ indirizzo ip statico: 172.17.200.6
 ssh pi@172.17.200.6
 
 comandi:
-cd /tps/08_Python-8-Form/parte2
-python3 -m flask --app ricevi2 run --host 0.0.0.0
-python3 05_Python-5-JSON/parte3/esercizioSensJ.py   
-cd C:\Users\giorg\Desktop\Giorgio\Scuola\4IB 2022-2023\Tps\tps_2022_2023
-scp -r 11_Pacchetto-RF24-Raspberry  pi@172.17.200.6:/home/pi/tps
+python3 -m flask --app FLASKAPP run --host 0.0.0.0
+python3 prog.py 
+cd C:\00_TPS\tps_2022_2023
+scp -r CARTELLA  pi@172.17.200.6:/home/pi/tps
