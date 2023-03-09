@@ -4,21 +4,16 @@ import struct
 import json
 import pigpio
 from nrf24 import *
-from flask import render_template
-from flask import Flask
 import os
 
 PIGPIONAME='localhost'
 PIGPIOPORT=8888
 READINGPIPE='00001'
-
 IDCORRETTO='BE'
 DESTINATARIOCORRETTO='P001'
 MIO_TIPO='S1'
-
 lista = []
 pathJ = os.getcwd()+'/datiSensore.json'
-app = Flask(__name__)
 
 # connessione a pigpiod
 pi = pigpio.pi(PIGPIONAME, PIGPIOPORT)
@@ -32,14 +27,6 @@ nrf = NRF24(pi, ce=17, payload_size=32, channel=76,data_rate=RF24_DATA_RATE.RATE
 # apre la pipe
 nrf.set_address_bytes(5)
 nrf.open_reading_pipe(RF24_RX_ADDR.P1, READINGPIPE)
-
-@app.route('/')
-def returnHtml():
-    with open(pathJ, 'r') as fp:
-        lista = json.load(fp)
-    return render_template('index.html', dizValori=lista)
-if __name__=="__main__":
-    app.run(debug=True)
 
 #lettura pacchetto 32 byte
 while True:
