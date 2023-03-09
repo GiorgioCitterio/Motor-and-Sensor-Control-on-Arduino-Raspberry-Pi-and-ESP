@@ -60,4 +60,4 @@ def riceviForm():
     print(msg)
     nrf.wait_until_sent()
     nrf.power_up_rx()
-    return("Velocità: "+request.args["velocita"] + " " + "Direzione: " + request.args["btn"])
+    return("http://172.17.200.6:5000")

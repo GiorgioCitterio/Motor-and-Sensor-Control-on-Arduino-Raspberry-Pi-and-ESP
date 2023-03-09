@@ -115,6 +115,7 @@ Come inviare i pacchetti realizzati nella fase “Pacchetto Livello 3 – serial
 Per utilizzare il modulo radio **nRF24L01+** serve importare la libreria *RF24* su arduino.
 
 Documentazione ufficiale libreria [RF24](https://nrf24.github.io/RF24/classRF24.html).
+[RF24 GitHub](https://github.com/bjarne-hansen/py-nrf24).
 
 ---
 
