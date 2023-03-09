@@ -1,9 +1,9 @@
 #include <RF24.h> 
 RF24 radio(7, 8);
 
-#define ID "EP" //BE              
+#define ID "BE"             
 #define TIPO "A1"            
-#define DESTINATARIO "P438"  //A001   
+#define DESTINATARIO "A001" 
 #define READINGPIPE "00001"    
   
 struct pacchettoA1 { 

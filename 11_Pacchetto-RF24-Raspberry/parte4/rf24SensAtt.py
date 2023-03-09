@@ -7,20 +7,17 @@ import sys
 import pigpio
 from nrf24 import *
 
+#costanti rf24
+PIGPIONAME='localhost'
+PIGPIOPORT=8888
+READINGPIPE='00001'
+
 #costanti motore
 ID=b"BE"
 MITTENTE=b"P001"
 DESTINATARIO=b"A001"
 TIPO=b"A1"
 VUOTO=("-"*16).encode()
-
-#costanti sensore
-PIGPIONAME='localhost'
-PIGPIOPORT=8888
-READINGPIPE='00001'
-IDCORRETTO='BE'
-DESTINATARIOCORRETTO='P001'
-MIO_TIPO='S1'
 
 lista = []
 pathJ = os.getcwd()+'/datiSensore.json'
@@ -61,4 +58,6 @@ def riceviForm():
     msg=struct.pack("2s 4s 4s 2s 1s 3s 16s",ID,MITTENTE,DESTINATARIO,TIPO,direzione,v,VUOTO)
     nrf.send(msg)
     print(msg)
+    nrf.wait_until_sent()
+    nrf.power_up_rx()
     return("Velocità: "+request.args["velocita"] + " " + "Direzione: " + request.args["btn"])

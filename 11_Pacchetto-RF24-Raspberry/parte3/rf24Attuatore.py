@@ -13,7 +13,6 @@ MITTENTE=b"P001"
 DESTINATARIO=b"A001"
 TIPO=b"A1"
 VUOTO=("-"*16).encode()
-direzione = b"A"
 app = Flask(__name__)
 
 # connessione a pigpiod
@@ -23,7 +22,7 @@ if not pi.connected:
     sys.exit()
 
 # Crea l'oggetto NRF24
-nrf = NRF24(pi, ce=17, payload_size=32, channel=76,data_rate=RF24_DATA_RATE.RATE_1MBPS, pa_level=RF24_PA.LOW)
+nrf = NRF24(pi, ce=17, payload_size=32, channel=76,data_rate=RF24_DATA_RATE.RATE_2MBPS, pa_level=RF24_PA.LOW)
 
 # apre le pipe
 nrf.set_address_bytes(5)
