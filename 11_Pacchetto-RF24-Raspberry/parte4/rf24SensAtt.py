@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, redirect
 import struct
 import os
 import json
@@ -60,4 +60,4 @@ def riceviForm():
     print(msg)
     nrf.wait_until_sent()
     nrf.power_up_rx()
-    return("http://172.17.200.6:5000")
+    return redirect("/ricevi")
