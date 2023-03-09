@@ -60,4 +60,4 @@ def riceviForm():
     print(msg)
     nrf.wait_until_sent()
     nrf.power_up_rx()
-    return redirect("/ricevi")
+    return redirect("/")

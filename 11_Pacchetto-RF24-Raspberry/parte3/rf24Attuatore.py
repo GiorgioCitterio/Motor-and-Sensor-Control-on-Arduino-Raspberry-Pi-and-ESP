@@ -3,7 +3,7 @@ import sys
 import pigpio
 from nrf24 import *
 import struct
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, redirect
 
 PIGPIONAME='localhost'
 PIGPIOPORT=8888
@@ -44,4 +44,4 @@ def riceviForm():
     msg=struct.pack("2s 4s 4s 2s 1s 3s 16s",ID,MITTENTE,DESTINATARIO,TIPO,direzione,v,VUOTO)
     nrf.send(msg)
     print(msg)
-    return("Velocità: "+request.args["velocita"] + " " + "Direzione: " + request.args["btn"])
+    return redirect('/')
