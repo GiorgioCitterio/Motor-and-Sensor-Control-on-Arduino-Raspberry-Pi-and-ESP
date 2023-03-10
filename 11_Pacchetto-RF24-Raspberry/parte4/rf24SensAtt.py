@@ -58,6 +58,6 @@ def riceviForm():
     msg=struct.pack("2s 4s 4s 2s 1s 3s 16s",ID,MITTENTE,DESTINATARIO,TIPO,direzione,v,VUOTO)
     nrf.send(msg)
     print(msg)
-    nrf.wait_until_sent()
-    nrf.power_up_rx()
+    nrf.wait_until_sent() #funzione per la sincronizzazione del modulo rf24 dopo l'invio
+    nrf.power_up_rx() #funzione che rimette il modulo in ascolto
     return redirect("/")

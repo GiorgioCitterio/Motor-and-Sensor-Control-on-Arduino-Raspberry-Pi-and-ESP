@@ -102,7 +102,7 @@ Come inviare dati da Web all’applicazione Flask, in modo da poter controllare 
 
 # Attività 9
 
-Installazione e importazione programmi su raspberry.
+Installazione e importazione programmi su **Raspberry**.
 
 ---
 
@@ -120,3 +120,17 @@ Documentazione ufficiale libreria [RF24](https://nrf24.github.io/RF24/classRF24.
 ---
 
 # Attività 11
+
+**Relazione attività 11**: [BO](11_Pacchetto-RF24-Raspberry/11_Pacchetto-RF24-Raspberry_Relazione.pdf).
+
+Visualizzazione dati sensore e controllo del motore tramite un server Flask che gira su **Raspberry**, che comunica con i due arduini con l'hardware tramite il modulo radio **nRF24L01+**.
+
+Per il controllo dei piedini **GPIO** su **Raspberry** abbiamo dovuto installare la libreria *pigpiod* con il comando seguente:
+```
+sudo apt-get install pigpiod
+```
+
+Per interfacciarsi con il modulo radio **RF24** da python bisogna importare la libreria *nrf24* con il comando seguente:
+```
+python3 –m pip install nrf24  
+```
