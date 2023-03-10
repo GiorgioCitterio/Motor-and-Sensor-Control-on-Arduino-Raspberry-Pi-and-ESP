@@ -121,9 +121,9 @@ Documentazione ufficiale libreria [RF24](https://nrf24.github.io/RF24/classRF24.
 
 # Attività 11
 
-**Relazione attività 11**: [BO](11_Pacchetto-RF24-Raspberry/11_Pacchetto-RF24-Raspberry_Relazione.pdf).
+**Relazione attività 11**: [Controllo motore e sensore da Raspberry](11_Pacchetto-RF24-Raspberry/11_Pacchetto-RF24-Raspberry_Relazione.pdf).
 
-Visualizzazione dati sensore e controllo del motore tramite un server Flask che gira su **Raspberry**, che comunica con i due arduini con l'hardware tramite il modulo radio **nRF24L01+**.
+Come visualizzare i dati sensore e controllare il motore tramite un server Flask che gira su **Raspberry**, che comunica con i due arduino con l'hardware tramite il modulo radio **nRF24L01+**.
 
 Per il controllo dei piedini **GPIO** su **Raspberry** abbiamo dovuto installare la libreria *pigpiod* con il comando seguente:
 ```
