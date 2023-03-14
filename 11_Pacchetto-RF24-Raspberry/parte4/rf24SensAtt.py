@@ -10,7 +10,7 @@ from nrf24 import *
 #costanti rf24
 PIGPIONAME='localhost'
 PIGPIOPORT=8888
-READINGPIPE='00001'
+WRITINGPIPE='00001'
 
 #costanti motore
 ID=b"BE"
@@ -24,18 +24,18 @@ pathJ = os.getcwd()+'/datiSensore.json'
 direzione = b"A"
 app = Flask(__name__)
 
-# connessione a pigpiod
-pi = pigpio.pi(PIGPIONAME, PIGPIOPORT)
-if not pi.connected:
-    print("Pigpiod non connesso. Lanciare: SUDO PIGPIOD")
-    sys.exit()
-
-# Crea l'oggetto NRF24
-nrf = NRF24(pi, ce=17, payload_size=32, channel=76,data_rate=RF24_DATA_RATE.RATE_2MBPS, pa_level=RF24_PA.LOW)
-
-# apre la pipe
-nrf.set_address_bytes(5)
-nrf.open_reading_pipe(RF24_RX_ADDR.P1, READINGPIPE)
+# connessione a pigpiod 
+pi = pigpio.pi(PIGPIONAME, PIGPIOPORT) 
+if not pi.connected: 
+    print("Pigpiod non connesso. Lanciare: SUDO PIGPIOD") 
+    sys.exit() 
+ 
+# Crea l'oggetto NRF24  
+nrf = NRF24(pi, ce=17, payload_size=32, channel=76,data_rate=RF24_DATA_RATE.RATE_2MBPS, pa_level=RF24_PA.LOW) 
+ 
+# apre le pipe 
+nrf.set_address_bytes(5) 
+nrf.open_writing_pipe(WRITINGPIPE)
 
 #programma sensore
 @app.route('/')

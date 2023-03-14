@@ -9,5 +9,5 @@ ssh pi@172.17.200.6
 comandi:
 python3 -m flask --app FLASKAPP run --host 0.0.0.0
 python3 prog.py 
-cd C:\00_TPS\tps_2022_2023
+cd C:\00_Scuola\Tps\tps_2022_2023
 scp -r CARTELLA  pi@172.17.200.6:/home/pi/tps
