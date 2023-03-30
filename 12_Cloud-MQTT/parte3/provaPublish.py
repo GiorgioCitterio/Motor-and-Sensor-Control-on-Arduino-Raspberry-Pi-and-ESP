@@ -1,7 +1,7 @@
 import paho.mqtt.publish as publish
 import time
-TOPIC = "ciao"
-BROKER = "test.mosquitto.org"
+TOPIC = "umbeGio2"
+BROKER = "172.17.4.29"
 
 i = 0
 while True:
