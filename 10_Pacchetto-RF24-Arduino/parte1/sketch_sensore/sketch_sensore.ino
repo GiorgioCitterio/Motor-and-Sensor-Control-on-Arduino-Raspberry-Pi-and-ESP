@@ -51,6 +51,6 @@ void loop() {
   radio.write((char *)&msg, sizeof(msg)); 
 
   
-  delay(2500);
+  delay(5000);
 
 }
