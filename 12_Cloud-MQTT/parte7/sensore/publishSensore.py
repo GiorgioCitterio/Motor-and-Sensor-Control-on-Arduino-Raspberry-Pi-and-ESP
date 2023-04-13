@@ -53,4 +53,3 @@ while True:
             lista.append(dizionario)
         data = json.dumps(lista[-1:])
         publish.single(TOPIC, data, hostname=BROKER)
-        time.sleep(5)

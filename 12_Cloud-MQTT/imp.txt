@@ -1,0 +1,6 @@
+start mosquitto:
+cd .. (*2)
+cd Program Files/mosquitto
+mosquitto -v -c mosquitto.conf
+
+cd tps/12_Cloud-MQTT/parte7/
