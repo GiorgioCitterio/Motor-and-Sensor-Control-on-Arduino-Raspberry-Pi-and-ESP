@@ -18,7 +18,6 @@ READINGPIPE='00001'
 IDCORRETTO='BE'
 DESTINATARIOCORRETTO='P001'
 MIO_TIPO='S1'
-lista = []
 
 # connessione a pigpiod
 pi = pigpio.pi(PIGPIONAME, PIGPIOPORT)
@@ -49,7 +48,5 @@ while True:
             s=int(valoreSensore)
             dataOra = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())
             dizionario = {'DataOra': dataOra, 'Valore' : s}
-            lista.clear()
-            lista.append(dizionario)
-        data = json.dumps(lista[-1:])
-        publish.single(TOPIC, data, hostname=BROKER)
+            data = json.dumps(dizionario)
+            publish.single(TOPIC, data, hostname=BROKER)
