@@ -67,7 +67,8 @@ Nell'ultima versione del programma per il sensore, per la realizzazione del graf
 py -m pip install matplotlib
 ```
 
-Matplotlib 	![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)
+
 Documentazione ufficiale libreria [matplotlib](https://matplotlib.org/).
 
 ---
@@ -95,6 +96,7 @@ Per creare il Web server utilizzeremo la libreria *Flask* installabile (su Windo
 py -m pip install Flask
 ```
 ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
+
 Documentazione ufficiale libreria [Flask](https://flask.palletsprojects.com/en/2.2.x/).
 
 ---
