@@ -1,8 +1,6 @@
 import paho.mqtt.client as client
-from flask import Flask, request, render_template, redirect
 import struct
 import time
-import json
 import sys
 import pigpio
 from nrf24 import *
@@ -18,14 +16,11 @@ MITTENTE=b"P001"
 DESTINATARIO=b"A001"
 TIPO=b"A1"
 VUOTO=("-"*16).encode()
+direzione = b"A"
 
 #costanti mqtt
 TOPIC="tps/motoreAtt"
 BROKER = "172.17.4.29"
-
-lista = []
-direzione = b"A"
-app = Flask(__name__)
 
 # connessione a pigpiod
 pi = pigpio.pi(PIGPIONAME, PIGPIOPORT) 
@@ -42,18 +37,21 @@ nrf.open_writing_pipe(WRITINGPIPE)
 
 def on_connect(subscriber, userdata, flags, rc):
     print("Connesso con return code" + str(rc))
-
     subscriber.subscribe(TOPIC)
 
 def on_message(subscriber, userdata, msg):
-    #print(msg.topic+" "+str(msg.payload))
-    data = json.loads(msg.payload)
-    print(data)
-    dir = data["direzione"]
-    direzione = str(dir).encode()
-    val = data["velocita"]
-    v = str(val).zfill(3).encode()
-    msg=struct.pack("2s 4s 4s 2s 1s 3s 16s",ID,MITTENTE,DESTINATARIO,TIPO,direzione,v,VUOTO)
+    print(msg.topic+" "+str(msg.payload))
+    val = msg.payload
+    if int(val)<0:
+        direzione = b"I"
+        vel = ~int(val)+1
+        v = str(vel).zfill(3).encode()
+        msg=struct.pack("2s 4s 4s 2s 1s 3s 16s",ID,MITTENTE,DESTINATARIO, TIPO, direzione, v, VUOTO)
+    else:
+        direzione = b"A"
+        v = str(val).zfill(3).encode()
+        msg=struct.pack("2s 4s 4s 2s 1s 3s 16s",ID,MITTENTE,DESTINATARIO, TIPO, direzione, v, VUOTO)
+
     nrf.send(msg)
     print(msg)
     nrf.wait_until_sent()
