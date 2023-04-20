@@ -1,5 +1,4 @@
 import paho.mqtt.client as client
-from flask import Flask, request, render_template, redirect
 import struct
 import time
 import json
@@ -18,14 +17,11 @@ MITTENTE=b"P001"
 DESTINATARIO=b"A001"
 TIPO=b"A1"
 VUOTO=("-"*16).encode()
+direzione = b"A"
 
 #costanti mqtt
 TOPIC="tps/motoreAtt"
 BROKER = "172.17.4.29"
-
-lista = []
-direzione = b"A"
-app = Flask(__name__)
 
 # connessione a pigpiod
 pi = pigpio.pi(PIGPIONAME, PIGPIOPORT) 
