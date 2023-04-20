@@ -1,6 +1,5 @@
 import paho.mqtt.publish as publish
 import time
-import time
 import sys
 import struct
 import json
