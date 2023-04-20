@@ -4,3 +4,7 @@ cd Program Files/mosquitto
 mosquitto -v -c mosquitto.conf
 
 cd tps/12_Cloud-MQTT/parte7/
+
+ssh pi@172.17.200.6
+cd C:\00_Scuola\Tps\tps_2022_2023
+scp -r   pi@172.17.200.6:/home/pi/tps

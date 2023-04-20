@@ -41,8 +41,9 @@ def on_connect(subscriber, userdata, flags, rc):
 
 def on_message(subscriber, userdata, msg):
     print(msg.topic+" "+str(msg.payload))
-    val = msg.payload
-    if int(val)<0:
+    val = float(msg.payload.decode())
+    val = int(val)
+    if val < 0:
         direzione = b"I"
         vel = ~int(val)+1
         v = str(vel).zfill(3).encode()
@@ -51,7 +52,6 @@ def on_message(subscriber, userdata, msg):
         direzione = b"A"
         v = str(val).zfill(3).encode()
         msg=struct.pack("2s 4s 4s 2s 1s 3s 16s",ID,MITTENTE,DESTINATARIO, TIPO, direzione, v, VUOTO)
-
     nrf.send(msg)
     print(msg)
     nrf.wait_until_sent()
