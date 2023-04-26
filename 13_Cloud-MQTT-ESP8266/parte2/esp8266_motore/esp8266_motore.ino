@@ -101,13 +101,6 @@ void callback(char *topic, byte *payload, unsigned int length)
   memcpy(msg.velocita, payload + 13, 3);
   memcpy(msg.vuoto, payload + 16, 16);
 
-  msg.id[2] = '\0';
-  msg.mittente[4] = '\0';
-  msg.destinatario[4] = '\0';
-  msg.tipo[2] = '\0';
-  msg.direzione[1] = '\0';
-  msg.velocita[3] = '\0';
-  msg.vuoto[16] = '\0';
   int controlloId = memcmp(ID, msg.id, 2);
   int controlloDest = memcmp(DESTINATARIO, msg.destinatario, 4);
   char vel[4];

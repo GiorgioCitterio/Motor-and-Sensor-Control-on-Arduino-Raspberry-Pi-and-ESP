@@ -149,7 +149,9 @@ python3 –m pip install nrf24
 
 # Attività 12
 
-**Relazione attività 12**: []().
+**Relazione attività 12**: [Utilizzare MQTT tra dispositivi IoT](12_Cloud-MQTT/12_Cloud_MQTT_Relazione.pdf).
+
+Come utilizzare il protocollo MQTT per comunicare tra dispositivi IoT, anche tramite app.
 
 Per utilizzare mqtt da python bisogna importare la libreria *paho-mqtt* con il comando seguente:
 ```
