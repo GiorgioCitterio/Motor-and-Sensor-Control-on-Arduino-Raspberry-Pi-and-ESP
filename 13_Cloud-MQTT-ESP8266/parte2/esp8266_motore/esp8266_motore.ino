@@ -38,7 +38,7 @@ PubSubClient client(espClient);
 // setup
 void setup()
 {
-  pinMode(8, OUTPUT);
+  pinMode(6, OUTPUT);
   pinMode(5, OUTPUT);
   Serial.begin(111520);
   Serial.println("Inizio");
@@ -113,13 +113,13 @@ void callback(char *topic, byte *payload, unsigned int length)
     if (memcmp("A", msg.direzione, 1) == 0)
     {
       digitalWrite(5, LOW);
-      digitalWrite(8, HIGH);
+      digitalWrite(6, HIGH);
       analogWrite(3, velocita);
     }
     if (memcmp("I", msg.direzione, 1) == 0)
     {
       digitalWrite(5, HIGH);
-      digitalWrite(8, LOW);
+      digitalWrite(6, LOW);
       analogWrite(3, velocita);
     }
   }

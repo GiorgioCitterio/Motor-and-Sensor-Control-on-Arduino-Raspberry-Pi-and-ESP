@@ -22,17 +22,6 @@ const int MQTT_PORT = 1883;
 // topic 
 const char *INVIA = "tps/inviaSensore";
 
-//struct sensore
-struct pacchettoS1
-{
-  char id[2];
-  char mittente[4];
-  char destinatario[4];
-  char tipo[2];
-  char valoreSensore[4];
-  char vuoto[16];
-};
-
 // oggetti per wifi e mqtt 
 WiFiClient espClient;
 PubSubClient client(espClient);
@@ -83,20 +72,13 @@ void loop()
   int num = analogRead(A0); //TODO: pin esp valore potenziometro
   char s[5];
   sprintf(s, "%04d", num);
-  struct pacchettoS1 msg;
-  memcpy(msg.id, ID, sizeof(msg.id));
-  memcpy(msg.mittente, MITTENTE, sizeof(msg.mittente));
-  memcpy(msg.destinatario, DESTINATARIO, sizeof(msg.destinatario));
-  memcpy(msg.tipo, TIPO, sizeof(msg.tipo));
-  memcpy(msg.valoreSensore, s, sizeof(msg.valoreSensore));
-  memcpy(msg.vuoto, VUOTO, sizeof(msg.vuoto));
-  JsonObject jsonObj = doc.to<JsonObject> ();
-  jsonObj["id"] = msg.id;
-  jsonObj["mittente"] = msg.mittente;
-  jsonObj["destinatario"] = msg.destinatario;
-  jsonObj["tipo"] = msg.tipo;
-  jsonObj["valoreSensore"] = msg.valoreSensore;
-  jsonObj["vuoto"] = msg.vuoto;
+  JsonObject jsonObj = doc.to<JsonObject>();
+  jsonObj["id"] = ID;
+  jsonObj["mittente"] = MITTENTE;
+  jsonObj["destinatario"] = DESTINATARIO;
+  jsonObj["tipo"] = TIPO;
+  jsonObj["valoreSensore"] = s;
+  jsonObj["vuoto"] = VUOTO;
   char buffer[200];
   serializeJson(jsonObj, buffer);
   Serial.write(buffer);
