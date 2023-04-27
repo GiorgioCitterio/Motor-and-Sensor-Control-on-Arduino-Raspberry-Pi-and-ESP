@@ -1,10 +1,6 @@
 #include <ESP8266WiFi.h>
 #include <PubSubClient.h>
-
-//costanti del motore
-#define ID "BE"
-#define TIPO "A1"
-#define DESTINATARIO "A001"
+#include <ArduinoJson.h>
 
 // WiFi
 const char *WIFI_SSID = "Greppi-2G";  // inserire i dati della rete WiFi
@@ -18,18 +14,6 @@ const int MQTT_PORT = 1883;
 
 // topic
 const char *RICEVI = "tps/riceviAttuatore";
-
-//struct motore
-struct pacchettoA1
-{
-  char id[2];
-  char mittente[4];
-  char destinatario[4];
-  char tipo[2];
-  char direzione[1];
-  char velocita[3];
-  char vuoto[16];
-};
 
 // oggetti per wifi e mqtt
 WiFiClient espClient;
@@ -82,45 +66,35 @@ void loop() {}
 // funzione di callback 
 void callback(char *topic, byte *payload, unsigned int length)
 {
+  StaticJsonDocument<200> jsonDoc;
+  String jsonString = "";
+  char vel[4];
   Serial.print("Arrivato un messaggio nel topic: ");
   Serial.println(topic);
   Serial.print("Messaggio:");
   for (int i = 0; i < length; i++)
   {
     Serial.print((char) payload[i]);
+    jsonString += (char) payload[i];
   }
   Serial.println();
   Serial.println("-----------------------");
-  struct pacchettoA1 msg;
-  
-  memcpy(msg.id, payload, 2);
-  memcpy(msg.mittente, payload + 2, 4);
-  memcpy(msg.destinatario, payload + 6, 4);
-  memcpy(msg.tipo, payload + 10, 2);
-  memcpy(msg.direzione, payload + 12, 1);
-  memcpy(msg.velocita, payload + 13, 3);
-  memcpy(msg.vuoto, payload + 16, 16);
 
-  int controlloId = memcmp(ID, msg.id, 2);
-  int controlloDest = memcmp(DESTINATARIO, msg.destinatario, 4);
-  char vel[4];
-  if (controlloId == 0 && controlloDest == 0)
+  deserializeJson(jsonDoc, jsonString);
+  const char* direzione = jsonDoc["direzione"];
+  const char* velocitaStr = jsonDoc["velocita"];
+  int velocita = atoi(velocitaStr);
+  
+  if (strcmp("A", direzione) == 0)
   {
-    Serial.println((char*) &msg);
-    memcpy(vel, msg.velocita, sizeof(msg.velocita));
-    vel[3] = '\0';
-    int velocita = atoi(vel);
-    if (memcmp("A", msg.direzione, 1) == 0)
-    {
-      digitalWrite(5, LOW);
-      digitalWrite(6, HIGH);
-      analogWrite(3, velocita);
-    }
-    if (memcmp("I", msg.direzione, 1) == 0)
-    {
-      digitalWrite(5, HIGH);
-      digitalWrite(6, LOW);
-      analogWrite(3, velocita);
-    }
+    digitalWrite(5, LOW);
+    digitalWrite(6, HIGH);
+    analogWrite(3, velocita);
+  }
+  if (strcmp("I", direzione) == 0)
+  {
+    digitalWrite(5, HIGH);
+    digitalWrite(6, LOW);
+    analogWrite(3, velocita);
   }
 }
