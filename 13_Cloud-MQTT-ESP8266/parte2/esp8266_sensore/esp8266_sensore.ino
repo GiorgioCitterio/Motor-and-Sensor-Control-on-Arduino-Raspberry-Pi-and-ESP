@@ -2,13 +2,6 @@
 #include <PubSubClient.h>
 #include <ArduinoJson.h>
 
-//costanti del sensore
-#define ID "BE"
-#define TIPO "S1"
-#define MITTENTE "M001"
-#define DESTINATARIO "P001"
-#define VUOTO "----------------"
-
 // WiFi 
 const char *WIFI_SSID = "Greppi-2G";  // inserire i dati della rete WiFi 
 const char *WIFI_PASSWORD = "withProxy";
@@ -69,16 +62,11 @@ void setup()
 void loop()
 {
   StaticJsonDocument<200> doc;
-  int num = analogRead(A0); //TODO: pin esp valore potenziometro
+  int num = analogRead(A0);
   char s[5];
   sprintf(s, "%04d", num);
   JsonObject jsonObj = doc.to<JsonObject>();
-  jsonObj["id"] = ID;
-  jsonObj["mittente"] = MITTENTE;
-  jsonObj["destinatario"] = DESTINATARIO;
-  jsonObj["tipo"] = TIPO;
   jsonObj["valoreSensore"] = s;
-  jsonObj["vuoto"] = VUOTO;
   char buffer[200];
   serializeJson(jsonObj, buffer);
   Serial.write(buffer);
