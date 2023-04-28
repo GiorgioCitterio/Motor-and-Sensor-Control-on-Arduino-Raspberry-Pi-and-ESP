@@ -67,24 +67,19 @@ void loop() {}
 void callback(char *topic, byte *payload, unsigned int length)
 {
   StaticJsonDocument<200> jsonDoc;
-  String jsonString = "";
-  char vel[4];
   Serial.print("Arrivato un messaggio nel topic: ");
   Serial.println(topic);
   Serial.print("Messaggio:");
   for (int i = 0; i < length; i++)
   {
     Serial.print((char) payload[i]);
-    jsonString += (char) payload[i];
   }
   Serial.println();
   Serial.println("-----------------------");
 
-  deserializeJson(jsonDoc, jsonString);
+  deserializeJson(jsonDoc, payload, length);
   const char* direzione = jsonDoc["direzione"];
-  const char* velocitaStr = jsonDoc["velocita"];
-  int velocita = atoi(velocitaStr);
-  
+  int velocita = jsonDoc["velocita"];
   if (strcmp("A", direzione) == 0)
   {
     digitalWrite(5, LOW);
