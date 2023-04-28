@@ -1,5 +1,11 @@
-# VSCode
-.vscode
+#VS
+.vs/
+
+#VScode
+.vscode/
+
+#idea
+.idea/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
