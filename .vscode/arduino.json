@@ -1,6 +1,0 @@
-{
-    "board": "arduino:avr:uno",
-    "programmer": "arduino:avrispmkii",
-    "port": "COM3",
-    "sketch": "05_Python-5-JSON\\parte3\\sketch_sensore_json\\sketch_sensore_json.ino"
-}
