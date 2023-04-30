@@ -2,12 +2,16 @@
 #include <PubSubClient.h>
 #include <ArduinoJson.h>
 
+#define AVANTI_PIN 12 //D6
+#define INDIETRO_PIN 14 //D5
+#define VELOCITA_PIN 0 //D3
+
 // WiFi
 const char *WIFI_SSID = "Greppi-2G";  // inserire i dati della rete WiFi
 const char *WIFI_PASSWORD = "withProxy";
 
 // MQTT Broker
-const char *MQTT_BROKER = "172.17.4.29";  // indirizzo IP del broker
+const char *MQTT_BROKER = "172.17.4.29"; // indirizzo IP del broker
 const char *MQTT_USERNAME = ""; // se necessario
 const char *MQTT_PASSWORD = "";
 const int MQTT_PORT = 1883;
@@ -22,8 +26,8 @@ PubSubClient client(espClient);
 // setup
 void setup()
 {
-  pinMode(6, OUTPUT);
-  pinMode(5, OUTPUT);
+  pinMode(AVANTI_PIN, OUTPUT);
+  pinMode(INDIETRO_PIN, OUTPUT);
   Serial.begin(111520);
   Serial.println("Inizio");
   Serial.print("Connessione al WiFi..");
@@ -56,12 +60,11 @@ void setup()
       delay(2000);
     }
   }
-
   //sottoscrizione  
   client.subscribe(RICEVI);
 }
 
-void loop() {}
+void loop() {client.loop();}
 
 // funzione di callback 
 void callback(char *topic, byte *payload, unsigned int length)
@@ -69,7 +72,7 @@ void callback(char *topic, byte *payload, unsigned int length)
   StaticJsonDocument<200> jsonDoc;
   Serial.print("Arrivato un messaggio nel topic: ");
   Serial.println(topic);
-  Serial.print("Messaggio:");
+  Serial.println("Messaggio:");
   for (int i = 0; i < length; i++)
   {
     Serial.print((char) payload[i]);
@@ -80,16 +83,18 @@ void callback(char *topic, byte *payload, unsigned int length)
   deserializeJson(jsonDoc, payload, length);
   const char* direzione = jsonDoc["direzione"];
   int velocita = jsonDoc["velocita"];
+  Serial.println(velocita);
+  Serial.println(direzione);
   if (strcmp("A", direzione) == 0)
   {
-    digitalWrite(5, LOW);
-    digitalWrite(6, HIGH);
-    analogWrite(3, velocita);
+    digitalWrite(INDIETRO_PIN, LOW);
+    digitalWrite(AVANTI_PIN, HIGH);
+    analogWrite(VELOCITA_PIN, velocita);
   }
   if (strcmp("I", direzione) == 0)
   {
-    digitalWrite(5, HIGH);
-    digitalWrite(6, LOW);
-    analogWrite(3, velocita);
+    digitalWrite(INDIETRO_PIN, HIGH);
+    digitalWrite(AVANTI_PIN, LOW);
+    analogWrite(VELOCITA_PIN, velocita);
   }
 }
