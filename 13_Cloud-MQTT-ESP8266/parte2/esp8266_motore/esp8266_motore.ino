@@ -60,13 +60,16 @@ void setup()
       delay(2000);
     }
   }
-  //sottoscrizione  
+  //sottoscrizione
   client.subscribe(RICEVI);
 }
 
-void loop() {client.loop();}
+void loop()
+{
+  client.loop();
+}
 
-// funzione di callback 
+// funzione di callback
 void callback(char *topic, byte *payload, unsigned int length)
 {
   StaticJsonDocument<200> jsonDoc;
