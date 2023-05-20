@@ -1,3 +1,8 @@
 ssh pi@172.17.200.6
 ssh -N -4 -v -R 8105:172.17.4.29:5000 greppi@tunnel.vincenzov.net
 tunnel.vincenzov.net:8105
+
+{
+    "direzione" : "A",
+    "velocita" : 250
+}

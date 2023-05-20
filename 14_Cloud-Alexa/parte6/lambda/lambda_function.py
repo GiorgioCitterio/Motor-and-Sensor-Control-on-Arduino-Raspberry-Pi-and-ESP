@@ -149,12 +149,14 @@ class CatchAllExceptionHandler(AbstractExceptionHandler):
                 .ask(speak_output)
                 .response
         )
-        
+    
 class ProvaIntentHandler(AbstractRequestHandler):
     def can_handle(self, handler_input):
-        return ask_utils.is_intent_name("parla")(handler_input)
+        return ask_utils.is_intent_name("ProvaIntent")(handler_input)
+        
     def handle(self, handler_input):
         speak_output = "Prova intent sembra funzionare"
+        
         return (
             handler_input.response_builder
                 .speak(speak_output)
@@ -169,6 +171,7 @@ class ProvaIntentHandler(AbstractRequestHandler):
 
 sb = SkillBuilder()
 
+sb.add_request_handler(ProvaIntentHandler())
 sb.add_request_handler(LaunchRequestHandler())
 sb.add_request_handler(HelloWorldIntentHandler())
 sb.add_request_handler(HelpIntentHandler())
