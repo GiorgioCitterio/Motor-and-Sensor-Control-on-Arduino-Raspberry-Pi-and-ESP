@@ -38,10 +38,34 @@
             "dimmi",
             "parla"
           ]
+        },
+        {
+          "name": "Motore",
+          "slots": [],
+          "samples": [
+            "motore"
+          ]
+        },
+        {
+          "name": "Sensore",
+          "slots": [],
+          "samples": [
+            "sensore"
+          ]
+        },
+        {
+          "name": "Direzione",
+          "slots": [],
+          "samples": [
+            "I",
+            "A",
+            "indietro",
+            "avanti"
+          ]
         }
       ],
       "types": []
     }
   },
-  "version": "7"
+  "version": "26"
 }

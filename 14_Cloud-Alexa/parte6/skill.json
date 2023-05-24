@@ -3,27 +3,10 @@
     "apis": {
       "custom": {
         "endpoint": {
-          "uri": "arn:aws:lambda:eu-west-1:803746854728:function:3cbad999-f4d4-4a65-a895-73ed9ffacfa4:Release_0"
+          "uri": "https://tunnel.vincenzov.net:8105/"
         },
         "interfaces": [],
-        "locales": {},
-        "regions": {
-          "EU": {
-            "endpoint": {
-              "uri": "arn:aws:lambda:eu-west-1:803746854728:function:3cbad999-f4d4-4a65-a895-73ed9ffacfa4:Release_0"
-            }
-          },
-          "NA": {
-            "endpoint": {
-              "uri": "arn:aws:lambda:us-east-1:803746854728:function:3cbad999-f4d4-4a65-a895-73ed9ffacfa4:Release_0"
-            }
-          },
-          "FE": {
-            "endpoint": {
-              "uri": "arn:aws:lambda:us-west-2:803746854728:function:3cbad999-f4d4-4a65-a895-73ed9ffacfa4:Release_0"
-            }
-          }
-        }
+        "locales": {}
       }
     },
     "manifestVersion": "1.0",

@@ -6,3 +6,7 @@ tunnel.vincenzov.net:8105
     "direzione" : "A",
     "velocita" : 250
 }
+
+cd .. (*2)
+cd Program Files/mosquitto
+mosquitto -v -c mosquitto.conf

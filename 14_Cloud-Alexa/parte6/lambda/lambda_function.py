@@ -6,6 +6,7 @@
 # This sample is built using the handler classes approach in skill builder.
 import logging
 import ask_sdk_core.utils as ask_utils
+import paho.mqtt.publish as publish
 
 from ask_sdk_core.skill_builder import SkillBuilder
 from ask_sdk_core.dispatch_components import AbstractRequestHandler
@@ -17,6 +18,9 @@ from ask_sdk_model import Response
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
+#costanti mqtt
+TOPIC = "tps/alexa"
+BROKER = "172.17.4.29"
 
 class LaunchRequestHandler(AbstractRequestHandler):
     """Handler for Skill Launch."""
@@ -27,7 +31,7 @@ class LaunchRequestHandler(AbstractRequestHandler):
 
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
-        speak_output = "Welcome, you can say Hello or Help. Which would you like to try?"
+        speak_output = "Ciao, dimmi cosa vuoi controllare, il motore o il sensore?"
 
         return (
             handler_input.response_builder
@@ -164,13 +168,64 @@ class ProvaIntentHandler(AbstractRequestHandler):
                 .response
         )
 
+class MotoreHandler(AbstractRequestHandler):
+    def can_handle(self, handler_input):
+        return ask_utils.is_intent_name("Motore")(handler_input)
+        
+    def handle(self, handler_input):
+        speak_output = "Dimmi la direzione: "
+        
+        return (
+            handler_input.response_builder
+                .speak(speak_output)
+                .ask(speak_output)
+                .response
+        )
+
+class SensoreHandler(AbstractRequestHandler):
+    def can_handle(self, handler_input):
+        return ask_utils.is_intent_name("Sensore")(handler_input)
+        
+    def handle(self, handler_input):
+        speak_output = "Valori sensore: "
+        
+        return (
+            handler_input.response_builder
+                .speak(speak_output)
+                .ask(speak_output)
+                .response
+        )
+
+class DirezioneHandler(AbstractRequestHandler):
+    def can_handle(self, handler_input):
+        return ask_utils.is_intent_name("Direzione")(handler_input)
+        
+    def handle(self, handler_input):
+        #direzione = handler_input
+        #speak_output = "Dimmi la velocità"
+        #velocita = handler_input
+        #dizionario = {'direzione': direzione, 'velocita' : velocita}
+        #data = json.dumps(dizionario)
+        #publish.single(TOPIC, data, hostname=BROKER)
+        speak_output = "Inviato al motore"
+        
+        return (
+            handler_input.response_builder
+                .speak(speak_output)
+                .ask(speak_output)
+                .response
+        )   
+    
+    
 # The SkillBuilder object acts as the entry point for your skill, routing all request and response
 # payloads to the handlers above. Make sure any new handlers or interceptors you've
 # defined are included below. The order matters - they're processed top to bottom.
 
-
 sb = SkillBuilder()
 
+sb.add_request_handler(DirezioneHandler())
+sb.add_request_handler(SensoreHandler())
+sb.add_request_handler(MotoreHandler())
 sb.add_request_handler(ProvaIntentHandler())
 sb.add_request_handler(LaunchRequestHandler())
 sb.add_request_handler(HelloWorldIntentHandler())
