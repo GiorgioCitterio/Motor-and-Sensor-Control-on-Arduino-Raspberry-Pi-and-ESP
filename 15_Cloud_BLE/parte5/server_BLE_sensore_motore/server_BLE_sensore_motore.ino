@@ -9,9 +9,9 @@
 #define CHARACTERISTIC_MOTORDIRECTION "a395aaa4-12fd-484f-b2e7-b4941e0e001a"
 #define CHARACTERISTIC_MOTORSPEED "8f0a2fa8-cad4-435d-907b-38f44f4fe5d3"
 #define ADCPIN A0 //SP
-#define AVANTI_PIN 12 //D6
-#define INDIETRO_PIN 14 //D5
-#define VELOCITA_PIN 0 //D3
+#define AVANTI_PIN 14 //GPIO14
+#define INDIETRO_PIN 27 //GPIO27
+#define VELOCITA_PIN 33 //GPIO33
  
 BLEServer *pServer; 
 BLEService *pService; 
@@ -72,8 +72,23 @@ void loop()
   pCharacteristicSensor -> setValue(s);
 
   //controllo del motore 
-  std::string velocita = pCharacteristicMotorSpeed->getValue();
-  std::string direzione = pCharacteristicMotorDirection->getValue();
+  std::string velo = pCharacteristicMotorSpeed->getValue();
+  std::string dir = pCharacteristicMotorDirection->getValue();
+  const char* direzione = dir.c_str();
+  const char* vel = velo.c_str(); 
+  int velocita = atoi(vel);
+  if (strcmp("A", direzione) == 0)
+  {
+    digitalWrite(INDIETRO_PIN, LOW);
+    digitalWrite(AVANTI_PIN, HIGH);
+    analogWrite(VELOCITA_PIN, velocita);
+  }
+  if (strcmp("I", direzione) == 0)
+  {
+    digitalWrite(INDIETRO_PIN, HIGH);
+    digitalWrite(AVANTI_PIN, LOW);
+    analogWrite(VELOCITA_PIN, velocita);
+  }
  
   // stampa 
   Serial.print("Caratteristica 1: "); 
@@ -82,9 +97,9 @@ void loop()
   Serial.print(s);
   Serial.println();
   Serial.print("Caratteristica motore direzione: "); 
-  Serial.print(direzione.c_str());
+  Serial.print(direzione);
   Serial.print("    -    Caratteristica motore velocità: "); 
-  Serial.print(velocita.c_str());
+  Serial.print(velocita);
   Serial.println();
  
   // ripresa dell'advertising 
