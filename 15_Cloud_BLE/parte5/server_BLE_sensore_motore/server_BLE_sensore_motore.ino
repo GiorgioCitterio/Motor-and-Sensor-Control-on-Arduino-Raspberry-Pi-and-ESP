@@ -25,6 +25,8 @@ void setup()
 {
   Serial.begin(115200); 
   Serial.println("Starting BLE Server!"); 
+  pinMode(AVANTI_PIN, OUTPUT);
+  pinMode(INDIETRO_PIN, OUTPUT);
  
   // attivazione del device BLE e creazione delle caratteristiche 
   // la prima in R/W la seconda solo R 
