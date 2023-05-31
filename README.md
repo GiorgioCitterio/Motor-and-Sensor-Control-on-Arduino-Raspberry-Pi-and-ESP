@@ -157,3 +157,31 @@ Per utilizzare mqtt da python bisogna importare la libreria *paho-mqtt* con il c
 ```
 python3 -m pip install paho-mqtt  
 ```
+
+---
+
+# Attività 13
+
+**Relazione attività 13**: [Utilizzare MQTT con l'ESP8266](13_Cloud-MQTT-ESP8266/13_Cloud_MQTT_ESP8266_Relazione.pdf).
+
+Come utilizzare MQTT per lo scambio di messaggi fra dispositivi IoT connessi direttamente all'ESP8266 con funzionalità per la connessione WiFi.
+
+Bisognerà aggiungere il gestore schede nell'IDE di Arduino per poter gestire l'ESP8266.
+
+[Tutorial per l'installazione](https://www.vincenzov.net/tutorial/ESP/ESP8266/Arduino-IDE.htm).
+
+---
+
+# Attività 14
+
+TODO: Come controllare sensore e attuatore tramite alexa.
+
+---
+
+# Attività 15
+
+**Relazione attività 15**: [Utilizzare BLE per il controllo dell'ambiente](15_Cloud_BLE/15_Cloud_BLE_Relazione.pdf).
+
+Come utilizzare ESP32 per realizzare dispositivi che utilizzano il protocollo Bluetooth Low Energy (BLE) per la comunicazione.
+
+Per il controllo dell'ESP32 dall'IDE di Arduino bisognerà aggiungere il gestore schede come fatto precedentemente per l'ESP8266.
