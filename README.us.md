@@ -13,11 +13,8 @@
 ![Zigbee](https://img.shields.io/badge/zigbee-%23EB0443.svg?style=for-the-badge&logo=zigbee&logoColor=white)
 ![Amazon Alexa](https://img.shields.io/badge/amazon%20alexa-52b5f7?style=for-the-badge&logo=amazon%20alexa&logoColor=white)
 
-## tps_GiorgioCitterio_UmbertoColombo_2022_2023
-
-
-
 ---
+## tps_GiorgioCitterio_UmbertoColombo_2022_2023
 ### Table of Contents
 - Activity 1: <a  href="#serard">Serial Communication on Arduino</a>
 - Activity 2: <a  href="#serpy">Serial Communication with Python and Arduino</a>
