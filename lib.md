@@ -23,9 +23,10 @@ To uninstall a library, use the command:
 ```
 pip uninstall libraryName
 ```
----
+
 In case of any issues, you can search the internet for your specific problem and distribution to find a resolution.
 
+---
 # Guida generale all'installazione delle librerie python nelle principali distro linux utilizzando *pip*
 ---
 Per l'installazione di *pip* su **Arch** il comando sarà il seguente:
@@ -51,5 +52,5 @@ Per disinstallare  una libreria basterà utilizzare il comando:
 ```
 pip uninstall nomeLibreria
 ```
----
+
 In caso di problemi basterà cercare su Internet il proprio problema e distro e si troverà la risoluzione ad esso.
