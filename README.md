@@ -13,6 +13,23 @@
 ![Zigbee](https://img.shields.io/badge/zigbee-%23EB0443.svg?style=for-the-badge&logo=zigbee&logoColor=white)
 ![Amazon Alexa](https://img.shields.io/badge/amazon%20alexa-52b5f7?style=for-the-badge&logo=amazon%20alexa&logoColor=white)
 ---
+Indice
+
+    Attività 1: Trasmissione seriale su Arduino
+    Attività 2: Comunicazione seriale con Python e Arduino
+    Attività 3: Comunicazione con pacchetto modello ISO/OSI
+    Attività 4: Controllo sensore/attuatore tramite interfaccia grafica GUI (Python)
+    Attività 5: Memorizzazione dati sensore su un file JSON
+    Attività 7: Rendere disponibili sul Web i dati del sensore
+    Attività 8: Controllo del motore tramite browser
+    Attività 9: Installazione e importazione programmi su Raspberry
+    Attività 10: Inviare pacchetti tramite modulo radio RF24
+    Attività 11: Controllo motore e sensore da Raspberry
+    Attività 12: Utilizzare MQTT tra dispositivi IoT
+    Attività 13: Utilizzare MQTT con l'ESP8266
+    Attività 14: Come controllare sensore e attuatore tramite Alexa
+    Attività 15: Utilizzare BLE per il controllo dell'ambiente
+---
 
 Per l'installazione delle librerie su sistemi [Linux](lib.md).
 
