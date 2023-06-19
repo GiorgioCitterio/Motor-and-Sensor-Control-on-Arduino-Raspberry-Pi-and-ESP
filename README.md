@@ -29,9 +29,8 @@
 - Attività 13: <a  href="#mqttesp">Utilizzare MQTT con l'ESP8266</a>
 - Attività 14: <a  href="#alexa">Come controllare sensore e attuatore tramite Alexa</a>
 - Attività 15: <a  href="#ble">Utilizzare BLE per il controllo dell'ambiente</a>
----
 
-Per l'installazione delle librerie su sistemi [Linux](lib.md).
+Installazione delle librerie su sistemi [Linux](lib.md).
 
 ---
 
