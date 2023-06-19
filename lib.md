@@ -1,5 +1,5 @@
 # General Guide to Installing Python Libraries on Major Linux Distributions Using *pip*
----
+
 For installing *pip* on **Arch**, use the following command:
 ```
 sudo pacman -S python-pip
@@ -28,7 +28,7 @@ In case of any issues, you can search the internet for your specific problem and
 
 ---
 # Guida generale all'installazione delle librerie python nelle principali distro linux utilizzando *pip*
----
+
 Per l'installazione di *pip* su **Arch** il comando sarà il seguente:
 ```
 sudo pacman -S python-pip
