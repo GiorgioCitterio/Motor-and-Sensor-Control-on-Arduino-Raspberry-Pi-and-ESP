@@ -14,27 +14,27 @@
 ![Amazon Alexa](https://img.shields.io/badge/amazon%20alexa-52b5f7?style=for-the-badge&logo=amazon%20alexa&logoColor=white)
 ---
 ### Indice
-- Attività 1: <a  href="#ta"> Trasmissione seriale su Arduino </a>
-- Attività 2: Comunicazione seriale con Python e Arduino
-- Attività 3: Comunicazione con pacchetto modello ISO/OSI
-- Attività 4: Controllo sensore/attuatore tramite interfaccia grafica GUI (Python)
-- Attività 5: Memorizzazione dati sensore su un file JSON
-- Attività 7: Rendere disponibili sul Web i dati del sensore
-- Attività 8: Controllo del motore tramite browser
-- Attività 9: Installazione e importazione programmi su Raspberry
-- Attività 10: Inviare pacchetti tramite modulo radio RF24
-- Attività 11: Controllo motore e sensore da Raspberry
-- Attività 12: Utilizzare MQTT tra dispositivi IoT
-- Attività 13: Utilizzare MQTT con l'ESP8266
-- Attività 14: Come controllare sensore e attuatore tramite Alexa
-- Attività 15: Utilizzare BLE per il controllo dell'ambiente
+- Attività 1: <a  href="#serard"> Trasmissione seriale su Arduino </a>
+- Attività 2: <a  href="#serpy">Comunicazione seriale con Python e Arduino </a>
+- Attività 3: <a  href="#isoosi">Comunicazione con pacchetto modello ISO/OSI</a>
+- Attività 4: <a  href="#guisensatt">Controllo sensore/attuatore tramite interfaccia grafica GUI (Python)</a>
+- Attività 5: <a  href="#sensjson">Memorizzazione dati sensore su un file JSON</a>
+- Attività 7: <a  href="#websens">Rendere disponibili sul Web i dati del sensore</a>
+- Attività 8: <a  href="#sensbrow">Controllo del motore tramite browser</a>
+- Attività 9: <a  href="#initrasp">Installazione e importazione programmi su Raspberry</a>
+- Attività 10: <a  href="#rf24">Inviare pacchetti tramite modulo radio RF24</a>
+- Attività 11: <a  href="#raspberry">Controllo motore e sensore da Raspberry</a>
+- Attività 12: <a  href="#mqtt">Utilizzare MQTT tra dispositivi IoT</a>
+- Attività 13: <a  href="#mqttesp">Utilizzare MQTT con l'ESP8266</a>
+- Attività 14: <a  href="#alexa">Come controllare sensore e attuatore tramite Alexa</a>
+- Attività 15: <a  href="#ble">Utilizzare BLE per il controllo dell'ambiente</a>
 ---
 
 Per l'installazione delle librerie su sistemi [Linux](lib.md).
 
 ---
 
-# Attività 1 <a name="ta"></a>
+# Attività 1 <a name="serard"></a>
 
 **Relazione attività 1**: [Trasmissione seriale su arduino](01_TrasmissioneSerialeArduino/01_TrasmissioneSerialeArduino_Relazione.pdf).
 
@@ -42,7 +42,7 @@ Controllare come avviene comunicazione sulla seriale da parte di arduino.
 
 ---
 
-# Attività 2
+# Attività 2 <a name="serard"></a>
 
 **Relazione attività 2**: [Comunicazione seriale con python e arduino](02_Python-2-Seriale/02_Python_2_Seriale_Relazione.pdf).
 
@@ -58,7 +58,7 @@ Documentazione ufficiale libreria [serial](https://pyserial.readthedocs.io/en/la
 
 ---
 
-# Attività 3
+# Attività 3<a name="serard"></a>
 
 **Relazione attività 3**: [Comunicazione con pacchetto modello ISO/OSI](03_Python-3-Pacchetto_livello_3_7_del%20modello_ISO-OSI_su_seriale/03_Python_3_Pacchetto_livello_3_7_modello_ISOOSI_su_seriale_Relazione.pdf).
 
@@ -70,7 +70,7 @@ Documentazione ufficiale libreria [struct](https://docs.python.org/3/library/str
 
 ---
 
-# Attività 4
+# Attività 4<a name="serard"></a>
 
 **Relazione attività 4**: [Controllo sensore/attuatore tramite interfaccia grafica GUI (Python)](04_Python-4-GUI/04_Python_4_GUI_Relazione.pdf).
 
@@ -92,7 +92,7 @@ Documentazione ufficiale libreria [matplotlib](https://matplotlib.org/).
 
 ---
 
-# Attività 5
+# Attività 5<a name="serard"></a>
 
 **Relazione attività 5**: [Memorizzazione dati sensore su un file JSON](05_Python-5-JSON/05_Python_5_JSON_Relazione.pdf).
 
@@ -104,7 +104,7 @@ Documentazione ufficiale libreria [json](https://docs.python.org/3/library/json.
 
 ---
 
-# Attività 7
+# Attività 7<a name="serard"></a>
 
 **Relazione attività 7**: [Rendere disponibili sul Web i dati del sensore](07_Python-7-Flask/07_Python_7_Flask_Relazione.pdf).
 
@@ -119,7 +119,7 @@ Documentazione ufficiale libreria [Flask](https://flask.palletsprojects.com/en/2
 
 ---
 
-# Attività 8
+# Attività 8<a name="serard"></a>
 
 **Relazione attività 8**: [Controllo del motore tramite browser](08_Python-8-Form/08_Python_8_Form_Relazione.pdf).
 
@@ -127,13 +127,13 @@ Come inviare dati da Web all’applicazione Flask, in modo da poter controllare 
 
 ---
 
-# Attività 9
+# Attività 9<a name="serard"></a>
 
 Installazione e importazione programmi su **Raspberry**.
 
 ---
 
-# Attività 10
+# Attività 10<a name="serard"></a>
 
 **Relazione attività 10**: [Inviare pacchetti tramite modulo radio RF24](10_Pacchetto-RF24-Arduino/10_Pacchetto_RF24_Arduino_Relazione.pdf).
 
@@ -146,7 +146,7 @@ Documentazione ufficiale libreria [RF24](https://nrf24.github.io/RF24/classRF24.
 
 ---
 
-# Attività 11
+# Attività 11<a name="serard"></a>
 
 **Relazione attività 11**: [Controllo motore e sensore da Raspberry](11_Pacchetto-RF24-Raspberry/11_Pacchetto-RF24-Raspberry_Relazione.pdf).
 
@@ -164,7 +164,7 @@ python3 –m pip install nrf24
 
 ---
 
-# Attività 12
+# Attività 12<a name="serard"></a>
 
 **Relazione attività 12**: [Utilizzare MQTT tra dispositivi IoT](12_Cloud-MQTT/12_Cloud_MQTT_Relazione.pdf).
 
@@ -177,7 +177,7 @@ python3 -m pip install paho-mqtt
 
 ---
 
-# Attività 13
+# Attività 13<a name="serard"></a>
 
 **Relazione attività 13**: [Utilizzare MQTT con l'ESP8266](13_Cloud-MQTT-ESP8266/13_Cloud_MQTT_ESP8266_Relazione.pdf).
 
@@ -189,13 +189,13 @@ Bisognerà aggiungere il gestore schede nell'IDE di Arduino per poter gestire l'
 
 ---
 
-# Attività 14
+# Attività 14<a name="serard"></a>
 
 TODO: Come controllare sensore e attuatore tramite alexa.
 
 ---
 
-# Attività 15
+# Attività 15<a name="serard"></a>
 
 **Relazione attività 15**: [Utilizzare BLE per il controllo dell'ambiente](15_Cloud_BLE/15_Cloud_BLE_Relazione.pdf).
 
