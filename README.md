@@ -1,5 +1,4 @@
 # Motor and Sensor Control on Arduino Raspberry Pi and ESP
-## tps_GiorgioCitterio_UmbertoColombo_2022_2023
 <a href="https://github.com/GiorgioCitterio/Motor-and-Sensor-Control-on-Arduino-Raspberry-Pi-and-ESP/blob/main/README.us.md">README.us 🇺🇸</a>
 
 ---
@@ -15,6 +14,7 @@
 ![Zigbee](https://img.shields.io/badge/zigbee-%23EB0443.svg?style=for-the-badge&logo=zigbee&logoColor=white)
 ![Amazon Alexa](https://img.shields.io/badge/amazon%20alexa-52b5f7?style=for-the-badge&logo=amazon%20alexa&logoColor=white)
 ---
+## tps_GiorgioCitterio_UmbertoColombo_2022_2023
 ### Indice
 - Attività 1: <a  href="#serard"> Trasmissione seriale su Arduino </a>
 - Attività 2: <a  href="#serpy">Comunicazione seriale con Python e Arduino </a>
