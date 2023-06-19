@@ -14,7 +14,7 @@
 ![Amazon Alexa](https://img.shields.io/badge/amazon%20alexa-52b5f7?style=for-the-badge&logo=amazon%20alexa&logoColor=white)
 ---
 ### Indice
-- Attività 1: Trasmissione seriale su Arduino
+- Attività 1: <a  href="#ta"> Trasmissione seriale su Arduino </a>
 - Attività 2: Comunicazione seriale con Python e Arduino
 - Attività 3: Comunicazione con pacchetto modello ISO/OSI
 - Attività 4: Controllo sensore/attuatore tramite interfaccia grafica GUI (Python)
@@ -34,7 +34,7 @@ Per l'installazione delle librerie su sistemi [Linux](lib.md).
 
 ---
 
-# Attività 1
+# Attività 1 <a name="ta"></a>
 
 **Relazione attività 1**: [Trasmissione seriale su arduino](01_TrasmissioneSerialeArduino/01_TrasmissioneSerialeArduino_Relazione.pdf).
 
