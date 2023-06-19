@@ -118,5 +118,79 @@ Official documentation for the [Flask library](https://flask.palletsprojects.com
 Sending data from a web browser to a Flask application to control the motor.
 
 ---
+# Activity 9<a name="initrasp"></a>
 
+Installation and program importation on **Raspberry Pi**.
+
+---
+
+# Activity 10<a name="rf24"></a>
+
+**Activity Report 10**: [Sending Packets via RF24 Radio Module](10_RF24-Packet-Arduino/10_RF24_Packet_Arduino_Report.pdf).
+
+How to send packets created in the "Layer 3 Packet - Serial" phase using the **nRF24L01+** radio module.
+
+To use the **nRF24L01+** radio module, you need to import the *RF24* library on Arduino.
+
+Official documentation for the [RF24 library](https://nrf24.github.io/RF24/classRF24.html).
+[RF24 GitHub](https://github.com/bjarne-hansen/py-nrf24).
+
+---
+
+# Activity 11<a name="sensattrasp"></a>
+
+**Activity Report 11**: [Motor and Sensor Control from Raspberry Pi](11_RF24-Packet-Raspberry/11_RF24-Packet-Raspberry_Report.pdf).
+
+How to display sensor data and control the motor through a Flask server running on **Raspberry Pi**, which communicates with the two Arduinos using the **nRF24L01+** radio module.
+
+To control the **GPIO** pins on **Raspberry Pi**, you need to install the *pigpiod* library using the following command:
+```
+sudo apt-get install pigpiod
+```
+
+To interface with the **RF24** radio module from Python, you need to import the *nrf24* library using the following command:
+```
+python3 -m pip install nrf24
+```
+
+---
+
+# Activity 12<a name="mqtt"></a>
+
+**Activity Report 12**: [Using MQTT for IoT Device Communication](12_Cloud-MQTT/12_Cloud_MQTT_Report.pdf).
+
+How to use the MQTT protocol to communicate between IoT devices, including through apps.
+
+To use MQTT with Python, you need to import the *paho-mqtt* library using the following command:
+```
+python3 -m pip install paho-mqtt
+```
+
+---
+
+# Activity 13<a name="mqttesp"></a>
+
+**Activity Report 13**: [Using MQTT with ESP8266](13_Cloud-MQTT-ESP8266/13_Cloud_MQTT_ESP8266_Report.pdf).
+
+How to use MQTT for message exchange between IoT devices directly connected to ESP8266 with WiFi connectivity.
+
+You will need to add the board manager to the Arduino IDE to manage the ESP8266.
+
+[Tutorial for installation](https://www.vincenzov.net/tutorial/ESP/ESP8266/Arduino-IDE.htm).
+
+---
+
+# Activity 14<a name="alexa"></a>
+
+TODO: How to control the sensor and actuator using Alexa.
+
+---
+
+# Activity 15<a name="ble"></a>
+
+**Activity Report 15**: [Using BLE for Environment Control](15_Cloud_BLE/15_Cloud_BLE_Report.pdf).
+
+How to use ESP32 to create devices that utilize the Bluetooth Low Energy (BLE) protocol for communication.
+
+To control the ESP32 from the Arduino IDE, you will need to add the board manager as previously done for the ESP8266.
 
