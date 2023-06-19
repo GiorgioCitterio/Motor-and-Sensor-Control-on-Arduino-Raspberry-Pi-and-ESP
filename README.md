@@ -30,7 +30,6 @@
 - Activity 13: <a  href="#mqttesp">Using MQTT with ESP8266</a>
 - Activity 14: <a  href="#alexa">Controlling Sensor and Actuator with Alexa</a>
 - Activity 15: <a  href="#ble">Using BLE for Environment Control</a>
----
 
 For library installation on [Linux systems](lib.md).
 
