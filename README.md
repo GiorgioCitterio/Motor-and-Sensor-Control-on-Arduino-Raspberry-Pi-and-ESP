@@ -1,6 +1,5 @@
 # Motor and Sensor Control on Arduino Raspberry Pi and ESP
 ## tps_GiorgioCitterio_UmbertoColombo_2022_2023
----
 <a href="https://github.com/GiorgioCitterio/Motor-and-Sensor-Control-on-Arduino-Raspberry-Pi-and-ESP/blob/main/README.us.md">README.us</a>
 
 ---
