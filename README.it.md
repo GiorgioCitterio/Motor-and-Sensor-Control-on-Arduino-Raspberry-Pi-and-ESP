@@ -1,5 +1,4 @@
 # Controllo di Motori e Sensori su Arduino, Raspberry Pi e ESP
-<a href="https://github.com/GiorgioCitterio/Motor-and-Sensor-Control-on-Arduino-Raspberry-Pi-and-ESP/blob/main/README.md">README.us 🇺🇸</a>
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
@@ -12,6 +11,8 @@
 ![Mosquitto](https://img.shields.io/badge/mosquitto-%233C5280.svg?style=for-the-badge&logo=eclipsemosquitto&logoColor=white)
 ![Zigbee](https://img.shields.io/badge/zigbee-%23EB0443.svg?style=for-the-badge&logo=zigbee&logoColor=white)
 ![Amazon Alexa](https://img.shields.io/badge/amazon%20alexa-52b5f7?style=for-the-badge&logo=amazon%20alexa&logoColor=white)
+
+<a href="https://github.com/GiorgioCitterio/Motor-and-Sensor-Control-on-Arduino-Raspberry-Pi-and-ESP/blob/main/README.md">README.us 🇺🇸</a>
 
 ---
 ## tps_GiorgioCitterio_UmbertoColombo_2022_2023
