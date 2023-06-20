@@ -19,7 +19,7 @@
 ![Amazon Alexa](https://img.shields.io/badge/amazon%20alexa-52b5f7?style=for-the-badge&logo=amazon%20alexa&logoColor=white)
 
 <a href="https://github.com/GiorgioCitterio/Motor-and-Sensor-Control-on-Arduino-Raspberry-Pi-and-ESP/blob/main/README.it.md">README.it 🇮🇹</a>
-a
+
 ---
 ## tps_GiorgioCitterio_UmbertoColombo_2022_2023
 ### Table of Contents
