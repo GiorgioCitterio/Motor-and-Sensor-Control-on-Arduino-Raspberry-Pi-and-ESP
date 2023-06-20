@@ -1,6 +1,10 @@
 # Motor and Sensor Control on Arduino Raspberry Pi and ESP
 
-
+![GitHub all releases](https://img.shields.io/github/downloads/GiorgioCitterio/Motor-and-Sensor-Control-on-Arduino-Raspberry-Pi-and-ESP/total)
+![GitHub](https://img.shields.io/github/license/GiorgioCitterio/Motor-and-Sensor-Control-on-Arduino-Raspberry-Pi-and-ESP)
+![GitHub deployments](https://img.shields.io/github/deployments/GiorgioCitterio/Motor-and-Sensor-Control-on-Arduino-Raspberry-Pi-and-ESP/github-pages)
+![GitHub repo size](https://img.shields.io/github/repo-size/GiorgioCitterio/Motor-and-Sensor-Control-on-Arduino-Raspberry-Pi-and-ESP)
+![GitHub Repo stars](https://img.shields.io/github/stars/GiorgioCitterio/Motor-and-Sensor-Control-on-Arduino-Raspberry-Pi-and-ESP)
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
