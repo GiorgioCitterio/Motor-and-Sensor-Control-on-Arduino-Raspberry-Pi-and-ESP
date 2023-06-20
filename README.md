@@ -1,5 +1,10 @@
 # Motor and Sensor Control on Arduino Raspberry Pi and ESP
-<a href="https://github.com/GiorgioCitterio/Motor-and-Sensor-Control-on-Arduino-Raspberry-Pi-and-ESP/blob/main/README.it.md">README.it 🇮🇹</a>
+
+![GitHub all releases](https://img.shields.io/github/downloads/GiorgioCitterio/Motor-and-Sensor-Control-on-Arduino-Raspberry-Pi-and-ESP/total)
+![GitHub](https://img.shields.io/github/license/GiorgioCitterio/Motor-and-Sensor-Control-on-Arduino-Raspberry-Pi-and-ESP)
+![GitHub deployments](https://img.shields.io/github/deployments/GiorgioCitterio/Motor-and-Sensor-Control-on-Arduino-Raspberry-Pi-and-ESP/github-pages)
+![GitHub repo size](https://img.shields.io/github/repo-size/GiorgioCitterio/Motor-and-Sensor-Control-on-Arduino-Raspberry-Pi-and-ESP)
+![GitHub Repo stars](https://img.shields.io/github/stars/GiorgioCitterio/Motor-and-Sensor-Control-on-Arduino-Raspberry-Pi-and-ESP)
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
@@ -12,6 +17,8 @@
 ![Mosquitto](https://img.shields.io/badge/mosquitto-%233C5280.svg?style=for-the-badge&logo=eclipsemosquitto&logoColor=white)
 ![Zigbee](https://img.shields.io/badge/zigbee-%23EB0443.svg?style=for-the-badge&logo=zigbee&logoColor=white)
 ![Amazon Alexa](https://img.shields.io/badge/amazon%20alexa-52b5f7?style=for-the-badge&logo=amazon%20alexa&logoColor=white)
+
+<a href="https://github.com/GiorgioCitterio/Motor-and-Sensor-Control-on-Arduino-Raspberry-Pi-and-ESP/blob/main/README.it.md">README.it 🇮🇹</a>
 
 ---
 ## tps_GiorgioCitterio_UmbertoColombo_2022_2023
