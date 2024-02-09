@@ -144,7 +144,7 @@ Installation and program importation on **Raspberry Pi**.
 
 # Activity 10<a name="rf24"></a>
 
-**Activity Report 10**: [Sending Packets via RF24 Radio Module](10_RF24-Packet-Arduino/10_RF24_Packet_Arduino_Report.pdf).
+**Activity Report 10**: [Sending Packets via RF24 Radio Module](10_Pacchetto-RF24-Arduino/10_Pacchetto_RF24_Arduino_Relazione.pdf).
 
 How to send packets created in the "Layer 3 Packet - Serial" phase using the **nRF24L01+** radio module.
 
@@ -157,7 +157,7 @@ Official documentation for the [RF24 library](https://nrf24.github.io/RF24/class
 
 # Activity 11<a name="sensattrasp"></a>
 
-**Activity Report 11**: [Motor and Sensor Control from Raspberry Pi](11_RF24-Packet-Raspberry/11_RF24-Packet-Raspberry_Report.pdf).
+**Activity Report 11**: [Motor and Sensor Control from Raspberry Pi](11_Pacchetto-RF24-Raspberry/11_Pacchetto-RF24-Raspberry_Relazione.pdf).
 
 How to display sensor data and control the motor through a Flask server running on **Raspberry Pi**, which communicates with the two Arduinos using the **nRF24L01+** radio module.
 
@@ -175,7 +175,7 @@ python3 -m pip install nrf24
 
 # Activity 12<a name="mqtt"></a>
 
-**Activity Report 12**: [Using MQTT for IoT Device Communication](12_Cloud-MQTT/12_Cloud_MQTT_Report.pdf).
+**Activity Report 12**: [Using MQTT for IoT Device Communication](12_Cloud-MQTT/12_Cloud_MQTT_Relazione.pdf).
 
 How to use the MQTT protocol to communicate between IoT devices, including through apps.
 
@@ -188,7 +188,7 @@ python3 -m pip install paho-mqtt
 
 # Activity 13<a name="mqttesp"></a>
 
-**Activity Report 13**: [Using MQTT with ESP8266](13_Cloud-MQTT-ESP8266/13_Cloud_MQTT_ESP8266_Report.pdf).
+**Activity Report 13**: [Using MQTT with ESP8266](13_Cloud-MQTT-ESP8266/13_Cloud_MQTT_ESP8266_Relazione.pdf).
 
 How to use MQTT for message exchange between IoT devices directly connected to ESP8266 with WiFi connectivity.
 
@@ -206,7 +206,7 @@ TODO: How to control the sensor and actuator using Alexa.
 
 # Activity 15<a name="ble"></a>
 
-**Activity Report 15**: [Using BLE for Environment Control](15_Cloud_BLE/15_Cloud_BLE_Report.pdf).
+**Activity Report 15**: [Using BLE for Environment Control](15_Cloud_BLE/15_Cloud_BLE_Relazione.pdf).
 
 How to use ESP32 to create devices that utilize the Bluetooth Low Energy (BLE) protocol for communication.
 
